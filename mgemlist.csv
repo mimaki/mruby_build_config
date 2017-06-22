@@ -1,0 +1,261 @@
+Name,Author,Description,Website,Repository,Repo Options,Protocol
+mruby-alarm,k0u5uk3,Alarm Module,https://github.com/k0u5uk3/mruby-alarm,https://github.com/k0u5uk3/mruby-alarm.git,"",git
+mruby-allegro,cremno,mruby binding to Allegro 5,https://github.com/cremno/mruby-allegro,https://github.com/cremno/mruby-allegro.git,"",git
+mruby-allocate,ppibburr,Class allocate,https://github.com/ppibburr/mruby-allocate,https://github.com/ppibburr/mruby-allocate.git,"",git
+mruby-ansi-colors,Mav7,Extends String class to use ANSI color escape codes.,https://github.com/Mav7/mruby-ansi-colors,https://github.com/Mav7/mruby-ansi-colors.git,"",git
+mruby-apr,Jared Breeden,Cross platform standard library components à la MRI,https://github.com/jbreeden/mruby-apr,https://github.com/jbreeden/mruby-apr.git,"",git
+mruby-arduino,kyab,Arduino binding,https://github.com/kyab/mruby-arduino,https://github.com/kyab/mruby-arduino.git,"",git
+mruby-argtable,"[""Uchio Kondo"", ""Stewart Heitmann""]",Argtable class,https://github.com/udzura/mruby-argtable,https://github.com/udzura/mruby-argtable.git,"",git
+mruby-at_exit,ksss,Kernel.at_exit method,https://github.com/ksss/mruby-at_exit,https://github.com/ksss/mruby-at_exit.git,"",git
+mruby-audite,Matthias Georgi,Portable MP3 Player based on libmp123 and portaudio,https://github.com/georgi/mruby-audite,https://github.com/georgi/mruby-audite.git,"",git
+mruby-augeas,lutter,Bindings to augeas,https://github.com/hercules-team/mruby-augeas,https://github.com/hercules-team/mruby-augeas,"",git
+mruby-avl,randym,Avl Tree implementation,https://github.com/randym/mruby-avl,https://github.com/randym/mruby-avl.git,"",git
+mruby-aws-s3,iij,Client library for Amazon's (AWS) S3 REST API,https://github.com/iij/mruby-aws-s3,https://github.com/iij/mruby-aws-s3.git,"",git
+mruby-b64,Hendrik Beskow,Base64 for mruby with streaming interface,https://github.com/Asmod4n/mruby-b64,https://github.com/Asmod4n/mruby-b64.git,"",git
+mruby-backtrace,crimsonwoods,Display backtrace,https://github.com/crimsonwoods/mruby-backtrace,https://github.com/crimsonwoods/mruby-backtrace.git,"",git
+mruby-base32,qtakamitsu,Base32 Encoder/Decoder,https://github.com/qtkmz/mruby-base32,https://github.com/qtkmz/mruby-base32.git,"",git
+mruby-base58,h2so5,Base58 Encoder/Decoder,https://github.com/h2so5/mruby-base58,https://github.com/h2so5/mruby-base58.git,"",git
+mruby-base64,mattn,Base64 Encoder/Decoder,https://github.com/mattn/mruby-base64,https://github.com/mattn/mruby-base64.git,"",git
+mruby-bcrypt,Emanuele Vicentini,OpenBSD-style Blowfish-based password hashing,https://github.com/baldowl/mruby-bcrypt,https://github.com/baldowl/mruby-bcrypt.git,"",git
+mruby-bignum,Ray Chason,Self-contained Bignum implementation for mruby,https://github.com/chasonr/mruby-bignum,https://github.com/chasonr/mruby-bignum.git,"",git
+mruby-irb-mirb-hostbased,kyab,Hostbased mirb for serial connection,https://github.com/kyab/mruby-bin-mirb-hostbased,https://github.com/kyab/mruby-bin-mirb-hostbased.git,"",git
+mruby-bin-mruby-afl,Daniel Bovensiepen <daniel@bovensiepen.net>,mruby interpreter in american fuzzy lop persistent mode,https://github.com/bovi/mruby-bin-mruby-afl,https://github.com/bovi/mruby-bin-mruby-afl.git,"",git
+mruby-bin-scite-mruby,Takashi Sawanaka,A SciTE based text editor with mruby scripting extension,https://github.com/sdottaka/mruby-bin-scite-mruby,https://github.com/sdottaka/mruby-bin-scite-mruby.git,"",git
+mruby-blendish,Corey Powell,Duangle OUI-blendish bindings.,https://github.com/IceDragon200/mruby-blendish,https://github.com/IceDragon200/mruby-blendish,"",git
+mruby-cache,charlescui,mruby inter process share memory cache,https://github.com/charlescui/mruby-cache,https://github.com/charlescui/mruby-cache.git,"",git
+mruby-capability,MATSUMOTO Ryosuke,Linux Capability Binding,https://github.com/matsumotory/mruby-capability,https://github.com/matsumotory/mruby-capability.git,"",git
+mruby-catch-throw,Corey Powell,catch and throw for mruby.,https://github.com/IceDragon200/mruby-catch-throw,https://github.com/IceDragon200/mruby-catch-throw,"",git
+mruby-cfunc,Yuichiro MASUI,Interface to C functions based on libffi.,https://github.com/mobiruby/mruby-cfunc,https://github.com/mobiruby/mruby-cfunc.git,"",git
+mruby-cgroup,MATSUMOTO Ryosuke,cgroup binding,https://github.com/matsumotory/mruby-cgroup,https://github.com/matsumotory/mruby-cgroup.git,"",git
+mruby-changefinder,MATSUMOTO Ryosuke,Detect change point via continuous outlier and smoothing,https://github.com/matsumotory/mruby-changefinder,https://github.com/matsumotory/mruby-changefinder.git,"",git
+mruby-channel,bggd,named FIFO queue with multithreading,https://github.com/bggd/mruby-channel,https://github.com/bggd/mruby-channel.git,"",git
+mruby-chipmunk2d,Corey Powell,chipmunk2d bindings,https://github.com/IceDragon200/mruby-chipmunk2d,https://github.com/IceDragon200/mruby-chipmunk2d,"",git
+mruby-chrony,Hendrik Beskow,Steady and System clocks for mruby,https://github.com/Asmod4n/mruby-chrono,https://github.com/Asmod4n/mruby-chrono.git,"",git
+mruby-cidr,kaihar4,CIDR class,https://github.com/kaihar4/mruby-cidr,https://github.com/kaihar4/mruby-cidr.git,"",git
+mruby-cipher,Seiei Miyagi,OpenSSL Cipher wrapper,https://github.com/hanachin/mruby-cipher,https://github.com/hanachin/mruby-cipher.git,"",git
+mruby-clang-plugin,Takeshi Watanabe,clang plugin to check mruby API call mistakes.,https://github.com/take-cheeze/mruby-clang-plugin,https://github.com/take-cheeze/mruby-clang-plugin.git,"",git
+mruby-cocoa,Yuichiro MASUI,Interface to Cocoa based on Objective-C Runtime and mruby-cfunc.,https://github.com/mobiruby/mruby-cocoa,https://github.com/mobiruby/mruby-cocoa.git,"",git
+mruby-complex,"Paolo Bosetti, University of Trento",Complex numbers.,https://github.com/pbosetti/mruby-complex,https://github.com/pbosetti/mruby-complex.git,"",git
+mruby-config,MATSUMOTO Ryosuke,With mruby we continuously switching between Ruby and C code. mruby-config gives you an easy way to maintain configuration values on both sides.,https://github.com/matsumotory/mruby-config,https://github.com/matsumotory/mruby-config.git,"",git
+mruby-consul,Yohei Kawahara,Consul HTTP API Client.,https://github.com/inokappa/mruby-consul,https://github.com/inokappa/mruby-consul.git,"",git
+mruby-correlation,MATSUMOTO Ryosuke,Array extended for correlation coefficient,https://github.com/matsumotory/mruby-correlation,https://github.com/matsumotory/mruby-correlation.git,"",git
+mruby-criu,MATSUMOTO Ryosuke,"CRIU, Checkpoint Restart In Userspace for Linux, class",https://github.com/matsumotory/mruby-criu,https://github.com/matsumotory/mruby-criu.git,"",git
+mruby-cross-compile-on-mac-osx,MATSUMOTO Ryosuke,"Cross compile osx, linux or win32 binary of mruby on Mac OSX",https://github.com/matsumotory/mruby-cross-compile-on-mac-osx,https://github.com/matsumotory/mruby-cross-compile-on-mac-osx.git,"",git
+mruby-curl,mattn,CURL HTTP Client,https://github.com/mattn/mruby-curl,https://github.com/mattn/mruby-curl.git,"",git
+mruby-curses,Jared Breeden,Curses for MRuby. Links to NCurses or PDCurses.,https://github.com/jbreeden/mruby-curses,https://github.com/jbreeden/mruby-curses.git,"",git
+mruby-czmq,Hendrik Beskow,mruby bindings for czmq.,https://github.com/Asmod4n/mruby-czmq,https://github.com/Asmod4n/mruby-czmq.git,"",git
+mruby-datadog,Yohei Kawahara,Datadog API Client.,https://github.com/inokappa/mruby-datadog,https://github.com/inokappa/mruby-datadog.git,"",git
+mruby-digest,"Internet Initiative Japan., Inc.","MD5, RMD160, SHA1, SHA256, SHA384, SHA512 and HMAC Digests.",https://github.com/iij/mruby-digest,https://github.com/iij/mruby-digest.git,"",git
+mruby-dir-glob,Alexander Gromnitsky,File.fnmatch() & Dir.glob(),https://github.com/gromnitsky/mruby-dir-glob.git,https://github.com/gromnitsky/mruby-dir-glob.git,"",git
+mruby-dir,"Internet Initiative Japan., Inc.",Dir Class,https://github.com/iij/mruby-dir,https://github.com/iij/mruby-dir.git,"",git
+mruby-discount,MATSUMOTO Ryosuke,html generater from markdown using discount,https://github.com/matsumotory/mruby-discount,https://github.com/matsumotory/mruby-discount.git,"",git
+mruby-disque,MATSUMOTO Ryosuke,Disque client class,https://github.com/matsumotory/mruby-disque,https://github.com/matsumotory/mruby-disque.git,"",git
+mruby-dll,mattn,DLL Windows Support,https://github.com/mattn/mruby-dll,https://github.com/mattn/mruby-dll.git,"",git
+mruby-eject,mattn,Eject CD-ROM,https://github.com/mattn/mruby-eject,https://github.com/mattn/mruby-eject.git,"",git
+mruby-env,iij,ENV class implementation,https://github.com/iij/mruby-env,https://github.com/iij/mruby-env.git,"",git
+mruby-erb,Jared Breeden,Port of CRuby's ERB,https://github.com/jbreeden/mruby-erb,https://github.com/jbreeden/mruby-erb.git,"",git
+mruby-errno,iij,Errno module,https://github.com/iij/mruby-errno,https://github.com/iij/mruby-errno.git,"",git
+mruby-etcd,Uchio Kondo,Simple etcd API wrapper,https://github.com/udzura/mruby-etcd,https://github.com/udzura/mruby-etcd.git,"",git
+mruby-eventfd,MATSUMOTO Ryosuke,Eventfd class,https://github.com/matsumotory/mruby-eventfd,https://github.com/matsumotory/mruby-eventfd.git,"",git
+mruby-fast-remote-check,MATSUMOTO Ryosuke,FastRemoteCheck can perform port listening check at high speed using raw socket,https://github.com/matsumotory/mruby-fast-remote-check,https://github.com/matsumotory/mruby-fast-remote-check.git,"",git
+mruby-file-stat,ksss,File::Stat class implementation,https://github.com/ksss/mruby-file-stat,https://github.com/ksss/mruby-file-stat.git,"",git
+mruby-filemagic,k0u5uk3,filemagic class implementation,https://github.com/k0u5uk3/mruby-filemagic.git,https://github.com/k0u5uk3/mruby-filemagic.git,"",git
+mruby-float4,Tomasz Dabrowski,small vector classes for mruby,https://github.com/dabroz/mruby-float4,https://github.com/dabroz/mruby-float4.git,"",git
+mruby-fltk3,mattn,FLTK3 GUI binding.,https://github.com/mattn/mruby-fltk3,https://github.com/mattn/mruby-fltk3.git,"",git
+mruby-fluent-logger,Kentaro Yoshida,A structured logger for Fluentd.,https://github.com/y-ken/fluent-logger-mruby,https://github.com/y-ken/fluent-logger-mruby.git,"",git
+mruby-forwardable,Masayoshi Takahashi,forwardable module for mruby,https://github.com/takahashim/mruby-forwardable,https://github.com/takahashim/mruby-forwardable.git,"",git
+mruby-fsm,"Paolo Bosetti, University of Trento",Finite State Machine.,https://github.com/UniTN-Mechatronics/mruby-fsm,https://github.com/UniTN-Mechatronics/mruby-fsm.git,"",git
+mruby-ftp,"Paolo Bosetti and Matteo Ragni, University of Trento",FTP client library.,https://github.com/UniTN-Mechatronics/mruby-ftp,https://github.com/UniTN-Mechatronics/mruby-ftp.git,"",git
+mruby-geoip,MATSUMOTO Ryosuke,GeoIP(City) class using GeoIPCity.dat for mruby,https://github.com/matsumotory/mruby-geoip,https://github.com/matsumotory/mruby-geoip.git,"",git
+mruby-getloadavg,takumakume,Linux getloadavg(3) module,https://github.com/takumakume/mruby-getloadavg,https://github.com/takumakume/mruby-getloadavg.git,"",git
+mruby-getoptlong,Sergio Rubio <rubiojr@frameos.org>,An almost straight mruby port of Ruby's GetoptLong,https://github.com/rubiojr/mruby-getoptlong,https://github.com/rubiojr/mruby-getoptlong,"",git
+mruby-getopts,"M&T Technology, Inc.",GNU getopt for mruby,https://github.com/mttech/mruby-getopts,https://github.com/mttech/mruby-getopts,"",git
+mruby-getpass,Hendrik Beskow,Read passwords from the command prompt,https://github.com/Asmod4n/mruby-getpass,https://github.com/Asmod4n/mruby-getpass.git,"",git
+mruby-girffi-docgen,ppibburr,Generates YARD docuemntation for bindings generated by mruby-girffi,https://github.com/ppibburr/mruby-girffi-docgen,https://github.com/ppibburr/mruby-girffi-docgen.git,"",git
+mruby-girffi,ppibburr,"GObjectIntrospection bindings that dynamically bind GLib based libraries. ie, GLib,Gtk,WebKit ...",https://github.com/ppibburr/mruby-girffi,https://github.com/ppibburr/mruby-girffi.git,"",git
+mruby-gles,xxuejie,OpenGL ES 2.0 binding,https://github.com/xxuejie/mruby-gles,https://github.com/xxuejie/mruby-gles.git,"",git
+mruby-glfw3,Takeshi Watanabe,GLFW3 binding,https://github.com/take-cheeze/mruby-glfw3,https://github.com/take-cheeze/mruby-glfw3.git,"",git
+mruby-glib,Jared Breeden,Cross platform standard library components à la GLib,https://github.com/jbreeden/mruby-glib,https://github.com/jbreeden/mruby-glib.git,"",git
+mruby-glib2,ppibburr,Bindings to GLib 2.x. uses mruby-girffi,https://github.com/ppibburr/mruby-glib2,https://github.com/ppibburr/mruby-glib2.git,"",git
+mruby-gmp-bignum,Ray Chason,GMP-based Bignum implementation for mruby,https://github.com/chasonr/mruby-gmp-bignum,https://github.com/chasonr/mruby-gmp-bignum.git,"",git
+mruby-gntp,mattn,Growl Notification Transfer Protocol,https://github.com/mattn/mruby-gntp,https://github.com/mattn/mruby-gntp.git,"",git
+mruby-gobject-introspection,ppibburr,bindings to GobjectIntropsection (libgirepository),https://github.com/ppibburr/mruby-gobject-introspection,https://github.com/ppibburr/mruby-gobject-introspection.git,"",git
+mruby-gobject,ppibburr,Bindings to GObject. uses mruby-girffi,https://github.com/ppibburr/mruby-gobject,https://github.com/ppibburr/mruby-gobject.git,"",git
+mruby-growthforecast,MATSUMOTO Ryosuke,GrowthForecast client class,https://github.com/matsumotory/mruby-growthforecast,https://github.com/matsumotory/mruby-growthforecast.git,"",git
+mruby-gsl,"Paolo Bosetti, University of Trento",Wrapper to GNU Scientific Library (GSL).,https://github.com/UniTN-Mechatronics/mruby-gsl,https://github.com/UniTN-Mechatronics/mruby-gsl.git,"",git
+mruby-gtk2,ppibburr,Bindings to Gtk2. uses mruby-girffi,https://github.com/ppibburr/mruby-gtk2,https://github.com/ppibburr/mruby-gtk2.git,"",git
+mruby-gtk3,ppibburr,Bindings to Gtk3. uses mruby-girffi,https://github.com/ppibburr/mruby-gtk3,https://github.com/ppibburr/mruby-gtk3.git,"",git
+mruby-hashie,"[""Michael Bleigh"", ""Jerry Cheung"", ""Takashi Kokubun""]",Collection of classes and mixins that makes hashes more powerful,https://github.com/k0kubun/mruby-hashie,https://github.com/k0kubun/mruby-hashie.git,"",git
+mruby-hibari,Kentaro Kuribayashi,A Web application framework for Web servers that support mruby and Rack-based API,https://github.com/kentaro/mruby-hibari,https://github.com/kentaro/mruby-hibari.git,"",git
+mruby-hiredis,Hendrik Beskow,hiredis bindings for mruby.,https://github.com/Asmod4n/mruby-hiredis,https://github.com/Asmod4n/mruby-hiredis.git,"",git
+mruby-hogun,qtakamitsu,convenient library to build the command line interface.,https://github.com/qtkmz/mruby-hogun,https://github.com/qtkmz/mruby-hogun.git,"",git
+mruby-host-stats,Julien Ammous,"library to gather stats on running system (cpu, memory, ...).",https://github.com/schmurfy/host-stats,https://github.com/schmurfy/host-stats.git,"",git
+mruby-hs-regexp,Masamitsu MURASE,Light-weight Henry Spencer's Regular Expression,https://github.com/masamitsu-murase/mruby-hs-regexp,https://github.com/masamitsu-murase/mruby-hs-regexp.git,"",git
+mruby-http,mattn,HTTP Parser,https://github.com/mattn/mruby-http,https://github.com/mattn/mruby-http.git,"",git
+mruby-http2,MATSUMOTO Ryosuke,HTTP2 module for mruby,https://github.com/matsumotory/mruby-http2,https://github.com/matsumotory/mruby-http2.git,"",git
+mruby-httprequest,MATSUMOTO Ryosuke,create http request class,https://github.com/matsumotory/mruby-httprequest,https://github.com/matsumotory/mruby-httprequest.git,"",git
+mruby-httpsclient,Hendrik Beskow,A simple https only Client,https://github.com/Asmod4n/mruby-httpsclient,https://github.com/Asmod4n/mruby-httpsclient.git,"",git
+mruby-iconv,mattn,libiconv interface,https://github.com/mattn/mruby-iconv,https://github.com/mattn/mruby-iconv.git,"",git
+mruby-iijson,iij,JSON parser and generator,https://github.com/iij/mruby-iijson,https://github.com/iij/mruby-iijson.git,"",git
+mruby-inotify,FlavourSys Technology GmbH,Inotify bindings,https://github.com/FlavourSys/mruby-inotify,https://github.com/FlavourSys/mruby-inotify.git,"",git
+mruby-io-console,ksss,The implementation of io/console as CRuby.,https://github.com/ksss/mruby-io-console,https://github.com/ksss/mruby-io-console.git,"",git
+mruby-io-copy_stream,ksss,IO.copy_stream method for mruby,https://github.com/ksss/mruby-io-copy_stream,https://github.com/ksss/mruby-io-copy_stream.git,"",git
+mruby-io,iij,"IO, File class implementation",https://github.com/iij/mruby-io,https://github.com/iij/mruby-io.git,"",git
+mruby-ionice,takumakume,Ionice class,https://github.com/takumakume/mruby-ionice,https://github.com/takumakume/mruby-ionice.git,"",git
+mruby-ipaddr,iij,IPAddr class,https://github.com/iij/mruby-ipaddr,https://github.com/iij/mruby-ipaddr.git,"",git
+mruby-ipfilter,tap1ra,IPFilter class,https://github.com/pepabo/mruby-ipfilter,https://github.com/pepabo/mruby-ipfilter.git,"",git
+mruby-ipvs,YOSHIKAWA Ryota,interface to IP Virtual Server (IPVS) for mruby,https://github.com/rrreeeyyy/mruby-ipvs,https://github.com/rrreeeyyy/mruby-ipvs,--recursive,git
+mruby-javascriptcore,ppibburr,bindings to an from JavaScript for JavaScriptCore from WebKitGTK,https://github.com/ppibburr/mruby-javascriptcore,https://github.com/ppibburr/mruby-javascriptcore.git,"",git
+mruby-jpeg,Carson McDonald,JPeg library,https://github.com/carsonmcdonald/mruby-jpeg,https://github.com/carsonmcdonald/mruby-jpeg.git,"",git
+mruby-json,mattn,JavaScript Object Notation,https://github.com/mattn/mruby-json,https://github.com/mattn/mruby-json.git,"",git
+mruby-jvm,jkutner,Utility for invoking the JVM,https://github.com/jkutner/mruby-jvm,https://github.com/jkutner/mruby-jvm.git,"",git
+mruby-jwt,Naoki AINOYA,A mruby implementation of JSON Web Token draft 06,https://github.com/prevs-io/mruby-jwt,https://github.com/prevs-io/mruby-jwt.git,"",git
+mruby-k2hash,Ryo Okubo,mruby binding of yahoojapan/k2hash,https://github.com/syucream/mruby-k2hash,https://github.com/syucream/mruby-k2hash.git,"",git
+mruby-kmp,santazhang,KMP searching algorithm in mruby,https://github.com/santazhang/mruby-kmp,https://github.com/santazhang/mruby-kmp.git,"",git
+mruby-leapmotion,crimsonwoods,Providing wrapper classes for Leap Motion SDK.,https://github.com/crimsonwoods/mruby-leapmotion,https://github.com/crimsonwoods/mruby-leapmotion.git,"",git
+mruby-leveldb,Takeshi Watanabe,mruby LevelDB binding,https://github.com/take-cheeze/mruby-leveldb,https://github.com/take-cheeze/mruby-leveldb.git,"",git
+mruby-libqrng,cremno,libQRNG interface,https://github.com/cremno/mruby-libqrng,https://github.com/cremno/mruby-libqrng.git,"",git
+mruby-libsodium,Hendrik Beskow,mruby wrapper for libsodium.,https://github.com/Asmod4n/mruby-libsodium,https://github.com/Asmod4n/mruby-libsodium.git,"",git
+mruby-limits,ksss,Const collection of limits.h,https://github.com/ksss/mruby-limits,https://github.com/ksss/mruby-limits.git,"",git
+mruby-linenoise,Hendrik Beskow,"linenoise for mruby, a line editing library akin to readline",https://github.com/Asmod4n/mruby-linenoise,https://github.com/Asmod4n/mruby-linenoise.git,"",git
+mruby-linux-namespace,Russel Hunter Yukawa / Uchio Kondo,A mgem to utilize linux namespaces,https://github.com/haconiwa/mruby-linux-namespace,https://github.com/haconiwa/mruby-linux-namespace.git,"",git
+mruby-lmdb,Hendrik Beskow,mruby wrapper for Lightning Memory-Mapped Database from Symas.,https://github.com/Asmod4n/mruby-lmdb,https://github.com/Asmod4n/mruby-lmdb.git,"",git
+mruby-localmemcache,MATSUMOTO Ryosuke,localmemcache binding,https://github.com/matsumotory/mruby-localmemcache,https://github.com/matsumotory/mruby-localmemcache.git,"",git
+mruby-logger,katzer,A simple but sophisticated logging utility,https://github.com/katzer/mruby-logger,https://github.com/katzer/mruby-logger.git,"",git
+mruby-lruc,MATSUMOTO Ryosuke,Least Recently Used(LRU) cache using lruc,https://github.com/matsumotory/mruby-lruc,https://github.com/matsumotory/mruby-lruc.git,"",git
+mruby-lua,Daisuke YAMAGUCHI,Lua script engine,https://github.com/dyama/mruby-lua,https://github.com/dyama/mruby-lua.git,"",git
+mruby-m2x,AT&T M2X Team,Client library for AT&T’s M2X API,https://github.com/attm2x/m2x-mruby,https://github.com/attm2x/m2x-mruby.git,"",git
+mruby-markdown,Carson McDonald,Markdown library,https://github.com/carsonmcdonald/mruby-markdown,https://github.com/carsonmcdonald/mruby-markdown.git,--recursive,git
+mruby-marshal,Takeshi Watanabe,Marshal module for mruby,https://github.com/take-cheeze/mruby-marshal,https://github.com/take-cheeze/mruby-marshal.git,"",git
+mruby-matrix,listrophy,Matrix and vector library,https://github.com/listrophy/mruby-matrix,https://github.com/listrophy/mruby-matrix.git,"",git
+mruby-maxminddb,Kenichi Mitsugi,mruby [GeoIP2 MaxMind DB](http://maxmind.github.io/MaxMind-DB/) reader,https://github.com/happysiro/mruby-maxminddb,https://github.com/happysiro/mruby-maxminddb,"",git
+mruby-md5,mattn,MD5 Hash Alghorithm,https://github.com/mattn/mruby-md5,https://github.com/mattn/mruby-md5.git,"",git
+mruby-mecab,mattn,Japanese morphological analyzer,https://github.com/mattn/mruby-mecab,https://github.com/mattn/mruby-mecab.git,"",git
+mruby-memcached,MATSUMOTO Ryosuke,libmemcached bindings by mruby,https://github.com/matsumotory/mruby-memcached,https://github.com/matsumotory/mruby-memcached.git,"",git
+mruby-merb,pbosetti,ERB-like mruby gem,https://github.com/pbosetti/mruby-merb,https://github.com/pbosetti/mruby-merb.git,"",git
+mruby-method,ksss,A implementetion of class Method and UnboundMethod for mruby,https://github.com/ksss/mruby-method,https://github.com/ksss/mruby-method.git,"",git
+mruby-minigame,bggd,2D Game Framework for rapid prototyping,https://github.com/bggd/mruby-minigame,https://github.com/bggd/mruby-minigame.git,"",git
+mruby-mod-mruby-ext,MATSUMOTO Ryosuke,Extended Apache class,https://github.com/matsumotory/mruby-mod-mruby-ext,https://github.com/matsumotory/mruby-mod-mruby-ext.git,"",git
+mruby-mrbgem-template,MATSUMOTO Ryosuke,Generate mrbgem template,https://github.com/matsumotory/mruby-mrbgem-template,https://github.com/matsumotory/mruby-mrbgem-template.git,"",git
+mruby-mrmagick,Junichi Kajiwara,ImageMagick binding for mruby.,https://github.com/kjunichi/mruby-mrmagick,https://github.com/kjunichi/mruby-mrmagick.git,"",git
+mruby-msagent,mattn,Microsoft Agent,https://github.com/mattn/mruby-msagent,https://github.com/mattn/mruby-msagent.git,"",git
+mruby-msd,pyama86,msd class,https://github.com/pepabo/mruby-msd,https://github.com/pepabo/mruby-msd.git,"",git
+mruby-msgpack,Jun Hiroe,MessagePack for mruby.,https://github.com/suzukaze/mruby-msgpack,https://github.com/suzukaze/mruby-msgpack.git,"",git
+mruby-mtest,"Internet Initiative Japan., Inc.",Minimum Test Framework,https://github.com/iij/mruby-mtest,https://github.com/iij/mruby-mtest.git,"",git
+mruby-murmurhash1,ksss,Murmurhash1 digest,https://github.com/ksss/mruby-murmurhash1,https://github.com/ksss/mruby-murmurhash1.git,"",git
+mruby-murmurhash2,ksss,Murmurhash2 digest,https://github.com/ksss/mruby-murmurhash2,https://github.com/ksss/mruby-murmurhash2.git,"",git
+mruby-mutex,MATSUMOTO Ryosuke,Mutex class,https://github.com/matsumotory/mruby-mutex,https://github.com/matsumotory/mruby-mutex.git,"",git
+mruby-mysql,mattn,MySQL Database,https://github.com/mattn/mruby-mysql,https://github.com/mattn/mruby-mysql.git,"",git
+mruby-named-constants,ppibburr,Allows dynamically defined constants of (Class|Module) to return the constant name when inspected,https://github.com/ppibburr/mruby-named-constants,https://github.com/ppibburr/mruby-named-constants.git,"",git
+mruby-nanovg,Corey Powell,nanovg bindings,https://github.com/IceDragon200/mruby-nanovg,https://github.com/IceDragon200/mruby-nanovg,"",git
+mruby-netlink,MATSUMOTO Ryosuke,libnetlink binding,https://github.com/matsumotory/mruby-netlink,https://github.com/matsumotory/mruby-netlink.git,"",git
+mruby-ngx-mruby-ext,MATSUMOTO Ryosuke,Nginx ext class,https://github.com/matsumotory/mruby-ngx-mruby-ext,https://github.com/matsumotory/mruby-ngx-mruby-ext.git,"",git
+mruby-oauth,MATSUMOTO Ryosuke,OAuth class,https://github.com/matsumotory/mruby-oauth,https://github.com/matsumotory/mruby-oauth.git,"",git
+mruby-odbc,qtakamitsu,unixODBC bindings,https://github.com/qtkmz/mruby-odbc,https://github.com/qtkmz/mruby-odbc.git,"",git
+mruby-onig-regexp,mattn,Onigumo Regular Expression,https://github.com/mattn/mruby-onig-regexp,https://github.com/mattn/mruby-onig-regexp.git,"",git
+mruby-open3,Takashi Kokubun,"Popen, but with stderr, too",https://github.com/k0kubun/mruby-open3,https://github.com/k0kubun/mruby-open3.git,"",git
+mruby-optparse,fastly,OptionParser ported to mruby,https://github.com/fastly/mruby-optparse,https://github.com/fastly/mruby-optparse.git,"",git
+mruby-opvault,Seiei Miyagi,decrypt OPVault,https://github.com/hanachin/mruby-opvault,https://github.com/hanachin/mruby-opvault.git,"",git
+mruby-os,katzer,Determine system and binary capabilities,https://github.com/appPlant/mruby-os,https://github.com/appPlant/mruby-os.git,"",git
+mruby-ostruct,ksss,OpenStruct binding in mruby,https://github.com/ksss/mruby-ostruct,https://github.com/ksss/mruby-ostruct.git,"",git
+mruby-otpauth,qtakamitsu,One time password class,https://github.com/qtkmz/mruby-otpauth,https://github.com/qtkmz/mruby-otpauth.git,"",git
+mruby-oui,Corey Powell,Duangle OUI bindings.,https://github.com/IceDragon200/mruby-oui,https://github.com/IceDragon200/mruby-oui,"",git
+mruby-pack,"Internet Initiative Japan., Inc.",Array#pack implementation,https://github.com/iij/mruby-pack,https://github.com/iij/mruby-pack.git,"",git
+mruby-passwdqc,Hendrik Beskow,A Password quality checker,https://github.com/Asmod4n/mruby-passwdqc,https://github.com/Asmod4n/mruby-passwdqc,"",git
+mruby-pcre-regexp,mattn,PCRE - Perl Compatible Regular Expressions,https://github.com/mattn/mruby-pcre-regexp,https://github.com/mattn/mruby-pcre-regexp.git,"",git
+mruby-perlin-noise,"[""Junegunn Choi"", ""Matthew Johnston"", ""Tomasz Dabrowski""]",Perlin noise generator for mruby,https://github.com/dabroz/mruby-perlin-noise,https://github.com/dabroz/mruby-perlin-noise.git,"",git
+mruby-phr,Hendrik Beskow,mruby bindings for picohttpparser,https://github.com/Asmod4n/mruby-phr,https://github.com/Asmod4n/mruby-phr.git,"",git
+mruby-pid,Andrew Nordman,A PID algorithm library based on Temper,https://github.com/cadwallion/mruby-pid,https://github.com/cadwallion/mruby-pid.git,"",git
+mruby-ping,Julien Ammous,ping hosts using ICMP or ARP packets.,https://github.com/schmurfy/mruby-ping,https://github.com/schmurfy/mruby-ping,"",git
+mruby-pjson,mattn,JSON Parser written in pure mruby,https://github.com/mattn/mruby-pjson,https://github.com/mattn/mruby-pjson.git,"",git
+mruby-pkcs5,Seiei Miyagi,Provide PKCS5 functionality with mruby-digest,https://github.com/hanachin/mruby-pkcs5,https://github.com/hanachin/mruby-pkcs5.git,"",git
+mruby-plplot,Paolo Bosetti,PLPlot mruby interface,https://github.com/pbosetti/mruby-plplot,https://github.com/pbosetti/mruby-plplot.git,"",git
+mruby-polarssl,luisbebop,SSL and cryptography functionality from PolarSSL in your mruby programs,https://github.com/luisbebop/mruby-polarssl,https://github.com/luisbebop/mruby-polarssl.git,"",git
+mruby-poll,Asmod4n,Low level system poll for mruby,https://github.com/Asmod4n/mruby-poll,https://github.com/Asmod4n/mruby-poll.git,"",git
+mruby-posix_ipc,Uchio Kondo,A mgem for access to POSIX IPC API,https://github.com/udzura/mruby-posix_ipc,https://github.com/udzura/mruby-posix_ipc.git,"",git
+mruby-proc-irep-ext,Hendrik Beskow,irep extensions for Proc class,https://github.com/Asmod4n/mruby-proc-irep-ext,https://github.com/Asmod4n/mruby-proc-irep-ext.git,"",git
+mruby-process,"Internet Initiative Japan., Inc.","Process interface (waitpid, pid, kill, fork, ppid)",https://github.com/iij/mruby-process,https://github.com/iij/mruby-process.git,"",git
+mruby-pure-regexp,h2so5,Pure mruby Regexp,https://github.com/h2so5/mruby-pure-regexp,https://github.com/h2so5/mruby-pure-regexp.git,"",git
+mruby-r3,katzer,mruby binding for libr3 (path dispatching library),https://github.com/katzer/mruby-r3,https://github.com/katzer/mruby-r3.git,"",git
+mruby-rake,ksss,rake for mruby,https://github.com/ksss/mruby-rake,https://github.com/ksss/mruby-rake.git,"",git
+mruby-random,MATSUMOTO Ryosuke,random class with Mersenne Twister,https://github.com/matsumotory/mruby-random,https://github.com/matsumotory/mruby-random.git,"",git
+mruby-raspberry,"Paolo Bosetti, University of Trento",Wrapper for WiringPi library for accessing Raspberry Pi hardware.,https://github.com/UniTN-Mechatronics/mruby-raspberry,https://github.com/UniTN-Mechatronics/mruby-raspberry.git,"",git
+mruby-rational,Daisuke YAMAGUCHI,Rational class,https://github.com/dyama/mruby-rational,https://github.com/dyama/mruby-rational.git,"",git
+mruby-rcon,MATSUMOTO Ryosuke,resource management mrbgem using cgroup,https://github.com/matsumotory/mruby-rcon,https://github.com/matsumotory/mruby-rcon.git,"",git
+mruby-redis-ae,Hendrik Beskow,mruby wrapper for the Redis Ae event loop.,https://github.com/Asmod4n/mruby-redis-ae,https://github.com/Asmod4n/mruby-redis-ae.git,"",git
+mruby-redis,MATSUMOTO Ryosuke,redis client using hiredis,https://github.com/matsumotory/mruby-redis,https://github.com/matsumotory/mruby-redis.git,"",git
+mruby-regexp-pcre,iij,regular expression module utilizing PCRE library,https://github.com/iij/mruby-regexp-pcre,https://github.com/iij/mruby-regexp-pcre.git,"",git
+mruby-require,mattn,require implementation,https://github.com/mattn/mruby-require,https://github.com/mattn/mruby-require.git,"",git
+mruby-research,ksss,research for mruby,https://github.com/ksss/mruby-research,https://github.com/ksss/mruby-research.git,"",git
+mruby-resource,harasou,resource binding,https://github.com/harasou/mruby-resource,https://github.com/harasou/mruby-resource.git,"",git
+mruby-romajify,emsk,Japanese romanization library for mruby,https://github.com/emsk/mruby-romajify,https://github.com/emsk/mruby-romajify.git,"",git
+mruby-rubyffi-compat,"Julien Ammous, ppibburr",rubyffi compatibility layer on top of mruby-cfunc.,https://github.com/schmurfy/mruby-rubyffi-compat,https://github.com/schmurfy/mruby-rubyffi-compat.git,"",git
+mruby-seccomp,Uchio Kondo,libseccomp wrapper for mruby,https://github.com/haconiwa/mruby-seccomp,https://github.com/haconiwa/mruby-seccomp.git,"",git
+mruby-secure-compare,Hendrik Beskow,Secure String comparisons for mruby,https://github.com/Asmod4n/mruby-secure-compare,https://github.com/Asmod4n/mruby-secure-compare.git,"",git
+mruby-secure-random,monochromegane,SecureRandom class,https://github.com/monochromegane/mruby-secure-random,https://github.com/monochromegane/mruby-secure-random.git,"",git
+mruby-serialport,"Monami-ya LLC, Japan",Serialport support,https://github.com/monami-ya-mrb/mruby-serialport/,https://github.com/monami-ya-mrb/mruby-serialport.git,"",git
+mruby-set,yui-knk,Set class,https://github.com/yui-knk/mruby-set,https://github.com/yui-knk/mruby-set.git,"",git
+mruby-sha1,mattn,SHA1 Hash Alghorithm,https://github.com/mattn/mruby-sha1,https://github.com/mattn/mruby-sha1.git,"",git
+mruby-sha2,h2so5,SHA2 Hash Algorithm,https://github.com/h2so5/mruby-sha2,https://github.com/h2so5/mruby-sha2.git,"",git
+mruby-shelf,katzer,modular webserver interface inspired by rack,https://github.com/katzer/mruby-shelf,https://github.com/katzer/mruby-shelf.git,"",git
+mruby-shellwords,"[""Wakou Aoyama"", ""Akinori MUSHA"", ""Takashi Kokubun""]",Manipulates strings like the UNIX Bourne shell,https://github.com/k0kubun/mruby-shellwords,https://github.com/k0kubun/mruby-shellwords.git,"",git
+mruby-sidekiq-client,monochromegane,SidekiqClient class,https://github.com/monochromegane/mruby-sidekiq-client,https://github.com/monochromegane/mruby-sidekiq-client.git,"",git
+mruby-signal-thread,pyama86,Multi thread Signal trap and callback in mruby,https://github.com/pyama86/mruby-signal-thread,https://github.com/pyama86/mruby-signal-thread.git,"",git
+mruby-signal,ksss,Signal trap and callback in mruby,https://github.com/ksss/mruby-signal,https://github.com/ksss/mruby-signal.git,"",git
+mruby-simple-random,"Internet Initiative Japan., Inc.",Kernel#rand and Kernel#srand,https://github.com/iij/mruby-simple-random,https://github.com/iij/mruby-simple-random.git,"",git
+mruby-simplehttp-socket,"Kentaro Yoshida, Internet Initiative Japan Inc.",Simple http client using mruby-socket,https://github.com/y-ken/mruby-simplehttp-socket,https://github.com/y-ken/mruby-simplehttp-socket.git,"",git
+mruby-simplehttp,MATSUMOTO Ryosuke,Simple http client,https://github.com/matsumotory/mruby-simplehttp,https://github.com/matsumotory/mruby-simplehttp.git,"",git
+mruby-simplehttpserver,MATSUMOTO Ryosuke,SimpleHttpServer class,https://github.com/matsumotory/mruby-simplehttpserver,https://github.com/matsumotory/mruby-simplehttpserver.git,"",git
+mruby-simplemsgpack,Hendrik Beskow,A simple mruby wrapper for msgpack,https://github.com/Asmod4n/mruby-simplemsgpack,https://github.com/Asmod4n/mruby-simplemsgpack.git,"",git
+mruby-simpletest,MATSUMOTO Ryosuke,SimpleTest class,https://github.com/matsumotory/mruby-simpletest,https://github.com/matsumotory/mruby-simpletest.git,"",git
+mruby-sinatic,mattn,Sinatra like Web Framework,https://github.com/mattn/mruby-sinatic,https://github.com/mattn/mruby-sinatic.git,"",git
+mruby-singleton,ksss,Singleton module in mruby,https://github.com/ksss/mruby-singleton,https://github.com/ksss/mruby-singleton.git,"",git
+mruby-siphash,ksss,Message digest by SipHash,https://github.com/ksss/mruby-siphash,https://github.com/ksss/mruby-siphash.git,"",git
+mruby-sleep,MATSUMOTO Ryosuke,Sleep Module,https://github.com/matsumotory/mruby-sleep,https://github.com/matsumotory/mruby-sleep.git,"",git
+mruby-smallhttp,Nazarii Sheremet,Small http-client gem for mruby,https://github.com/nsheremet/mruby-smallhttp,https://github.com/nsheremet/mruby-smallhttp.git,"",git
+mruby-socket,iij,Socket library for mruby,https://github.com/iij/mruby-socket,https://github.com/iij/mruby-socket.git,"",git
+mruby-spdy,MATSUMOTO Ryosuke,SPDY module for mruby,https://github.com/matsumotory/mruby-spdy,https://github.com/matsumotory/mruby-spdy.git,"",git
+mruby-specinfra,"[""Gosuke Miyashita"", ""Takashi Kokubun""]",Common layer for serverspec and itamae,https://github.com/k0kubun/mruby-specinfra,https://github.com/k0kubun/mruby-specinfra.git,"",git
+mruby-sqlite,Jared Breeden,"(Another) SQLite3 mrbgem, aiming for compatability with MRI's sqlite3 gem.",https://github.com/jbreeden/mruby-sqlite,https://github.com/jbreeden/mruby-sqlite.git,"",git
+mruby-sqlite3,mattn,SQLite3 Database,https://github.com/mattn/mruby-sqlite3,https://github.com/mattn/mruby-sqlite3.git,"",git
+mruby-statemachine,Hendrik Beskow,a tiny state machine for mruby,https://github.com/ascaridol/mruby-statemachine,https://github.com/ascaridol/mruby-statemachine.git,"",git
+mruby-string-crypt,mattn,implementation of String#crypt,https://github.com/mattn/mruby-string-crypt,https://github.com/mattn/mruby-string-crypt.git,"",git
+mruby-string-is-utf8,Hendrik Beskow,checks if a string is valid utf8,https://github.com/Asmod4n/mruby-string-is-utf8,https://github.com/Asmod4n/mruby-string-is-utf8.git,"",git
+mruby-string-xor,Seiei Miyagi,XOR two strings,https://github.com/hanachin/mruby-string-xor,https://github.com/hanachin/mruby-string-xor.git,"",git
+mruby-stringio,ksss,StringIO class,https://github.com/ksss/mruby-stringio,https://github.com/ksss/mruby-stringio.git,"",git
+mruby-sysconf,pyama86,Sysconf class,https://github.com/pyama86/mruby-sysconf,https://github.com/pyama86/mruby-sysconf.git,"",git
+mruby-syslog,iij,Syslog binding,https://github.com/iij/mruby-syslog,https://github.com/iij/mruby-syslog.git,"",git
+mruby-sysrandom,Hendrik Beskow,Secure random number generation for mruby,https://github.com/Asmod4n/mruby-sysrandom,https://github.com/Asmod4n/mruby-sysrandom.git,"",git
+mruby-tbot,Nazarii Sheremet,MRuby wrapper for Telegram's Bot API,https://github.com/nsheremet/mruby-tbot,https://github.com/nsheremet/mruby-tbot.git,"",git
+mruby-tempfile,iij,Tempfile class,https://github.com/iij/mruby-tempfile,https://github.com/iij/mruby-tempfile.git,"",git
+mruby-terminal-table,katzer,"A fast and simple, yet feature rich ASCII table generator",https://github.com/appPlant/mruby-terminal-table,https://github.com/appPlant/mruby-terminal-table.git,"",git
+mruby-thread,mattn,Thread Library,https://github.com/mattn/mruby-thread,https://github.com/mattn/mruby-thread.git,"",git
+mruby-time-strftime,monochromegane,Time#strftime for mruby,https://github.com/monochromegane/mruby-time-strftime,https://github.com/monochromegane/mruby-time-strftime.git,"",git
+mruby-timer-thread,MATSUMOTO Ryosuke,Timer Thread class,https://github.com/matsumotory/mruby-timer-thread,https://github.com/matsumotory/mruby-timer-thread.git,"",git
+mruby-tiny-io,mimaki,Tiny IO library for mruby,https://github.com/mimaki/mruby-tiny-io,https://github.com/mimaki/mruby-tiny-io.git,"",git
+mruby-tinymt,MATSUMOTO Ryosuke,random module using TinyMT,https://github.com/matsumotory/mruby-tinymt,https://github.com/matsumotory/mruby-tinymt.git,"",git
+mruby-tinyxml2,h2so5,mruby bindings for TinyXML-2,https://github.com/h2so5/mruby-tinyxml2,https://github.com/h2so5/mruby-tinyxml2.git,"",git
+mruby-tls,Hendrik Beskow,mruby bindings for libtls from libressl,https://github.com/Asmod4n/mruby-tls,https://github.com/Asmod4n/mruby-tls.git,"",git
+mruby-uchardet,Takeshi Watanabe,mruby binding of Mozilla's universal charset detector.,https://github.com/take-cheeze/mruby-uchardet/,https://github.com/take-cheeze/mruby-uchardet.git,"",git
+mruby-uname,MATSUMOTO Ryosuke,Uname class,https://github.com/matsumotory/mruby-uname,https://github.com/matsumotory/mruby-uname.git,"",git
+mruby-unbound,Kouichi Nakanishi,mruby client for Unbound (libunbound),https://github.com/keizo042/mruby-unbound,https://github.com/keizo042/mruby-unbound.git,"",git
+mruby-unicode-display_width,katzer,Monospace Unicode character width,https://github.com/appPlant/mruby-unicode-display_width,https://github.com/appPlant/mruby-unicode-display_width.git,"",git
+mruby-updategems,mattn,Rake task to update GEMs,https://github.com/mattn/mruby-updategems,https://github.com/mattn/mruby-updategems.git,"",git
+mruby-uri-parser,Hendrik Beskow,URI parser for mruby,https://github.com/Asmod4n/mruby-uri-parser,https://github.com/Asmod4n/mruby-uri-parser.git,"",git
+mruby-userdata,MATSUMOTO Ryosuke,"When shared mrb_state, you can share userdata objects between one Ruby code and the other.",https://github.com/matsumotory/mruby-userdata,https://github.com/matsumotory/mruby-userdata.git,"",git
+mruby-uv,mattn,libuv interface,https://github.com/mattn/mruby-uv,https://github.com/mattn/mruby-uv.git,"",git
+mruby-v8,mattn,V8 JavaScript Engine,https://github.com/mattn/mruby-v8,https://github.com/mattn/mruby-v8.git,"",git
+mruby-vedis,MATSUMOTO Ryosuke,vedis binding,https://github.com/matsumotory/mruby-vedis,https://github.com/matsumotory/mruby-vedis.git,"",git
+mruby-virtualing,MATSUMOTO Ryosuke,"creating jail environment, limitting resource and separating filesystem",https://github.com/matsumotory/mruby-virtualing,https://github.com/matsumotory/mruby-virtualing.git,"",git
+mruby-webkit-1,ppibburr,Bindings to WebKitGTK-1.x. uses mruby-girffi,https://github.com/ppibburr/mruby-webkit-1,https://github.com/ppibburr/mruby-webkit-1.git,"",git
+mruby-webkit-3,ppibburr,Bindings to WebKitGTK-3.x. uses mruby-girffi,https://github.com/ppibburr/mruby-webkit-3,https://github.com/ppibburr/mruby-webkit-3.git,"",git
+mruby-win32ole,Takashi Sawanaka,A port of CRuby's WIN32OLE to mruby.,https://github.com/sdottaka/mruby-win32ole,https://github.com/sdottaka/mruby-win32ole.git,"",git
+mruby-winapp,mattn,Create non-console application for windows,https://github.com/mattn/mruby-winapp,https://github.com/mattn/mruby-winapp.git,"",git
+mruby-WiringPi,Akira Yumiyama,Binding for Wiring function of the Raspberry Pi,https://github.com/akiray03/mruby-WiringPi,https://github.com/akiray03/mruby-WiringPi.git,"",git
+mruby-wslay,Hendrik Beskow,mruby wrapper for wslay,https://github.com/Asmod4n/mruby-wslay,https://github.com/Asmod4n/mruby-wslay,"",git
+mruby-yaml,Andrew Belt,YAML parser and emitter,https://github.com/hone/mruby-yaml,https://github.com/hone/mruby-yaml.git,"",git
+mruby-yeah,katzer,mruby on tiny rails,https://github.com/katzer/mruby-yeah,https://github.com/katzer/mruby-yeah.git,"",git
+mruby-zabbix,MATSUMOTO Ryosuke,zabbix 2.0 API client class,https://github.com/matsumotory/mruby-zabbix,https://github.com/matsumotory/mruby-zabbix.git,"",git
+mruby-zlib,Jared Breeden,ZLib bindings for MRuby,https://github.com/jbreeden/mruby-zlib,https://github.com/jbreeden/mruby-zlib.git,"",git
+mruby-zmq,Hendrik Beskow,mruby bindings for libzmq4,https://github.com/zeromq/mruby-zmq,https://github.com/zeromq/mruby-zmq.git,"",git
+mruby-zyre,Hendrik Beskow,Zyre - an open-source framework for proximity-based peer-to-peer applications,https://github.com/Asmod4n/mruby-zyre,https://github.com/Asmod4n/mruby-zyre.git,"",git
