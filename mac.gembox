@@ -206,7 +206,7 @@ MRuby::GemBox.new do |conf|
   conf.gem :git => 'https://github.com/Asmod4n/mruby-simplemsgpack.git'
   conf.gem :git => 'https://github.com/matsumotory/mruby-simpletest.git'
   # conf.gem :git => 'https://github.com/mattn/mruby-sinatic.git' # test abort
-  # conf.gem :git => 'https://github.com/ksss/mruby-singleton.git'
+  conf.gem :git => 'https://github.com/ksss/mruby-singleton.git'
   conf.gem :git => 'https://github.com/ksss/mruby-siphash.git'
   conf.gem :git => 'https://github.com/matsumotory/mruby-sleep.git'
   # conf.gem :git => 'https://github.com/nsheremet/mruby-smallhttp.git' # test abort
