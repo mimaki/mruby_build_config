@@ -23,7 +23,7 @@ MRuby::Build.new do |conf|
 
   # include the default GEMs
   conf.gembox 'default'
-  conf.gembox '../../mruby_build_config/msvc'
+  # conf.gembox '../../mruby_build_config/msvc'
   # C compiler settings
   # conf.cc do |cc|
   #   cc.command = ENV['CC'] || 'gcc'
@@ -126,6 +126,29 @@ MRuby::Build.new('test') do |conf|
   conf.gembox 'full-core'
   conf.gembox '../../mruby_build_config/msvc'
 end
+
+[
+].each {|mgem|
+  _git = mgem[:git]
+  MRuby::Build.new("test-#{_git.split('/')[-1][0..-5]}") do |conf|
+    # Gets set by the VS command prompts.
+    if ENV['VisualStudioVersion'] || ENV['VSINSTALLDIR']
+      toolchain :visualcpp
+    else
+      toolchain :gcc
+    end
+
+    enable_debug
+    conf.defines  = mgem[:defines]  if mgem[:defines]
+    conf.flags    = mgem[:flags]    if mgem[:flags]
+    conf.enable_bintest
+    conf.enable_test
+
+    conf.gembox 'full-core'
+    # conf.gembox '../../mruby_build_config/msvc'
+    conf.gem :git => _git
+  end
+}
 
 # MRuby::Build.new('bench') do |conf|
 #   # Gets set by the VS command prompts.
