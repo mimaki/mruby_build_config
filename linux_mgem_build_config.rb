@@ -23,6 +23,7 @@ MRuby::Build.new do |conf|
 
   # include the default GEMs
   conf.gembox 'default'
+  conf.gem :git => 'https://github.com/randym/mruby-avl.git'
   # conf.gembox '../../mruby_build_config/linux'
   # C compiler settings
   # conf.cc do |cc|
@@ -128,6 +129,7 @@ end
 # end
 
 [
+=begin
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # test crush(3)
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
@@ -145,12 +147,12 @@ end
   {:git => 'https://github.com/qtkmz/mruby-base32.git'},
   {:git => 'https://github.com/h2so5/mruby-base58.git'},
   {:git => 'https://github.com/mattn/mruby-base64.git'},
-  # {:git => 'https://github.com/baldowl/mruby-bcrypt.git'},  # need oniguruma.h
+  {:git => 'https://github.com/baldowl/mruby-bcrypt.git'},
   {:git => 'https://github.com/chasonr/mruby-bignum.git'},
   {:git => 'https://github.com/kyab/mruby-bin-mirb-hostbased.git'},
   # {:git => 'https://github.com/bovi/mruby-bin-mruby-afl.git'},  # compile error (__AFL_LOOP)
   # {:git => 'https://github.com/sdottaka/mruby-bin-scite-mruby.git'},  # need glib.h
-  # {:git => 'https://github.com/IceDragon200/mruby-blendish' # need mruby-glew
+  # {:git => 'https://github.com/IceDragon200/mruby-blendish', :dep => ['https://github.com/IceDragon200/mruby-glew.git']}, # need nanovg.h
   # {:git => 'https://github.com/charlescui/mruby-cache.git'},  # test aborted
   {:git => 'https://github.com/matsumotory/mruby-capability.git'},
   {:git => 'https://github.com/IceDragon200/mruby-catch-throw'},
@@ -160,7 +162,7 @@ end
   # {:git => 'https://github.com/bggd/mruby-channel.git'},  # build error (Variant::Type)
   # {:git => 'https://github.com/IceDragon200/mruby-chipmunk2d' # need chipmunk/chipmunk.h
   {:git => 'https://github.com/Asmod4n/mruby-chrono.git'},
-  # {:git => 'https://github.com/kaihar4/mruby-cidr.git'},  # compile error (oniguruma.h)
+  # {:git => 'https://github.com/kaihar4/mruby-cidr.git'},  # test KO(3) crush(526)
   {:git => 'https://github.com/hanachin/mruby-cipher.git'},
   # {:git => 'https://github.com/take-cheeze/mruby-clang-plugin.git'},  # build error (llvm-config)
   # {:git => 'https://github.com/mobiruby/mruby-cocoa.git'},  # not support
@@ -168,12 +170,14 @@ end
   {:git => 'https://github.com/matsumotory/mruby-config.git'},
   # {:git => 'https://github.com/inokappa/mruby-consul.git'}, # test crush (10)
   {:git => 'https://github.com/matsumotory/mruby-correlation.git'},
-  # {:git => 'https://github.com/matsumotory/mruby-criu.git'},  # need criu/criu.h
+  {:git => 'https://github.com/matsumotory/mruby-criu.git'},
   {:git => 'https://github.com/matsumotory/mruby-cross-compile-on-mac-osx.git'},
-  # {:git => 'https://github.com/mattn/mruby-curl.git'},  # need curl/curl.h
+  {:git => 'https://github.com/mattn/mruby-curl.git'},
   # {:git => 'https://github.com/jbreeden/mruby-curses.git'}, # link error "xxxx_panel"
   # {:git => 'https://github.com/inokappa/mruby-datadog.git'},  # test crush(9)
+=end
   # {:git => 'https://github.com/Asmod4n/mruby-czmq.git'},  # need czmq.h
+=begin
   {:git => 'https://github.com/iij/mruby-digest.git'},
   {:git => 'https://github.com/gromnitsky/mruby-dir-glob.git'},
   {:git => 'https://github.com/iij/mruby-dir.git'},
@@ -274,7 +278,7 @@ end
   {:git => 'https://github.com/matsumotory/mruby-mutex.git'},
   # {:git => 'https://github.com/mattn/mruby-mysql.git'}, # mysql_config
   # {:git => 'https://github.com/ppibburr/mruby-named-constants.git'},  # need cfunc.h
-  # {:git => 'https://github.com/IceDragon200/mruby-nanovg' # need mruby-glew
+  # {:git => 'https://github.com/IceDragon200/mruby-nanovg', :dep => ['https://github.com/IceDragon200/mruby-glew.git']} # need nanovg.h
   # {:git => 'https://github.com/matsumotory/mruby-netlink.git'}, # need libnetlink.h
   {:git => 'https://github.com/matsumotory/mruby-ngx-mruby-ext.git'},
   # {:git => 'https://github.com/matsumotory/mruby-oauth.git'}, # test crysh(9)
@@ -385,6 +389,7 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # link error (Zlib)
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # aitogen error (libzmq)
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},   # need zyre.h
+=end
 ].each {|mgem|
   _git = mgem[:git]
   MRuby::Build.new("test-#{_git.split('/')[-1][0..-5]}") do |conf|
@@ -403,6 +408,11 @@ end
 
     conf.gembox 'full-core'
     # conf.gembox '../../mruby_build_config/linux'
+    if mgem[:dep]
+      mgem[:dep].each {|_dep|
+        conf.gem :git => _dep
+      }
+    end
     conf.gem :git => _git
   end
 }
