@@ -129,7 +129,6 @@ end
 
 [
 =begin
-=end
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # test crush(3)
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
@@ -223,7 +222,7 @@ end
   # {:git => 'https://github.com/masamitsu-murase/mruby-hs-regexp.git'},  # compile error (old API)
   {:git => 'https://github.com/mattn/mruby-http.git'},
   # {:git => 'https://github.com/matsumotory/mruby-http2.git'}, # autoreconf
-  {:git => 'https://github.com/matsumotory/mruby-httprequest.git'}, # test crush(9)
+  # {:git => 'https://github.com/matsumotory/mruby-httprequest.git'}, # test crush(9)
   # {:git => 'https://github.com/Asmod4n/mruby-httpsclient.git'}, # need tls.h
   # {:git => 'https://github.com/mattn/mruby-iconv.git'}, # link error (-liconv)
   {:git => 'https://github.com/iij/mruby-iijson.git'},
@@ -231,7 +230,7 @@ end
   {:git => 'https://github.com/ksss/mruby-io-console.git'},
   {:git => 'https://github.com/ksss/mruby-io-copy_stream.git'},
   {:git => 'https://github.com/iij/mruby-io.git'},
-  {:git => 'https://github.com/iij/mruby-ipaddr.git'},  # test crush(2)
+  # {:git => 'https://github.com/iij/mruby-ipaddr.git'},  # test crush(2)
   # {:git => 'https://github.com/pepabo/mruby-ipfilter.git'}, # need maxminddb.h
   # {:git => 'https://github.com/rrreeeyyy/mruby-ipvs'},  # link error (-lnl)
   # {:git => 'https://github.com/ppibburr/mruby-javascriptcore.git'}, # constant (FFI)
@@ -274,7 +273,7 @@ end
   {:git => 'https://github.com/ksss/mruby-murmurhash1.git'},
   {:git => 'https://github.com/ksss/mruby-murmurhash2.git'},
   # {:git => 'https://github.com/matsumotory/mruby-mutex.git'}, # Segmentation Fault
-  {:git => 'https://github.com/mattn/mruby-mysql.git'}, # mysql_config
+  # {:git => 'https://github.com/mattn/mruby-mysql.git'}, # mysql_config
   # {:git => 'https://github.com/ppibburr/mruby-named-constants.git'},  # need cfunc.h
   # {:git => 'https://github.com/IceDragon200/mruby-nanovg'}, # mruby-glew
   # {:git => 'https://github.com/matsumotory/mruby-netlink.git'}, # need libnetlink.h
@@ -301,10 +300,10 @@ end
   # {:git => 'https://github.com/pbosetti/mruby-plplot.git'}, # need plConfig.h
   # {:git => 'https://github.com/luisbebop/mruby-polarssl.git'},  # test crush(9)
   {:git => 'https://github.com/Asmod4n/mruby-poll.git'},
-  {:git => 'https://github.com/udzura/mruby-posix_ipc.git'},  # test crush(3)
+  # {:git => 'https://github.com/udzura/mruby-posix_ipc.git'},  # test crush(3)
   {:git => 'https://github.com/iij/mruby-process.git'},
   {:git => 'https://github.com/h2so5/mruby-pure-regexp.git'},
-  {:git => 'https://github.com/katzer/mruby-r3.git'},
+  # {:git => 'https://github.com/katzer/mruby-r3.git'}, # link error (R3)
   # {:git => 'https://github.com/ksss/mruby-rake.git'}, # test KO(9) crush(2)
   # {:git => 'https://github.com/matsumotory/mruby-random.git'},  # build error (random.o)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-raspberry.git'},  # need wiringPi.h
@@ -332,6 +331,8 @@ end
   {:git => 'https://github.com/ksss/mruby-signal.git'},
   # {:git => 'https://github.com/iij/mruby-simple-random.git'}, # build error (mt19937ar.o)
   {:git => 'https://github.com/y-ken/mruby-simplehttp-socket.git'},
+=end
+=begin
   # {:git => 'https://github.com/matsumotory/mruby-simplehttp.git'},  # test crush(9)
   # {:git => 'https://github.com/matsumotory/mruby-simplehttpserver.git'},  # test crush(2)
   {:git => 'https://github.com/Asmod4n/mruby-simplemsgpack.git'},
@@ -387,7 +388,6 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # link error (zlib)
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # pkg-config
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
-=begin
 =end
 ].each {|mgem|
   _git = mgem[:git]
