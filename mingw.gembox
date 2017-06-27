@@ -1,12 +1,11 @@
 MRuby::GemBox.new do |conf|
-=begin
   # conf.gem :git => 'https://github.com/k0u5uk3/mruby-alarm.git' # build error (alarm(time))
   # conf.gem :git => 'https://github.com/cremno/mruby-allegro.git' # need allegro5.h
   # conf.gem :git => 'https://github.com/ppibburr/mruby-allocate.git' # build error
   # conf.gem :git => 'https://github.com/Mav7/mruby-ansi-colors.git'  # build error (is_digit())
   # conf.gem :git => 'https://github.com/jbreeden/mruby-apr.git'  # MRB_INT64
   # conf.gem :git => 'https://github.com/kyab/mruby-arduino.git'  # need wProgram.h
-  conf.gem :git => 'https://github.com/udzura/mruby-argtable.git' # need argtable2.h
+  # conf.gem :git => 'https://github.com/udzura/mruby-argtable.git' # need argtable2.h
   conf.gem :git => 'https://github.com/ksss/mruby-at_exit.git'
   # conf.gem :git => 'https://github.com/georgi/mruby-audite.git' # need mpg12.h
   # conf.gem :git => 'https://github.com/hercules-team/mruby-augeas'  # need augeas.h
@@ -151,7 +150,7 @@ MRuby::GemBox.new do |conf|
   conf.gem :git => 'https://github.com/matsumotory/mruby-ngx-mruby-ext.git'
   # conf.gem :git => 'https://github.com/matsumotory/mruby-oauth.git' # need openssl/evp.h
   # conf.gem :git => 'https://github.com/qtkmz/mruby-odbc.git'  # compile error (sqlite)
-  conf.gem :git => 'https://github.com/mattn/mruby-onig-regexp.git'
+  # conf.gem :git => 'https://github.com/mattn/mruby-onig-regexp.git' # link error (???)
   # conf.gem :git => 'https://github.com/k0kubun/mruby-open3.git' # compile error (execvp)
   # conf.gem :git => 'https://github.com/fastly/mruby-optparse.git' # need oniguruma.h
   # conf.gem :git => 'https://github.com/hanachin/mruby-opvault.git'  # need openssl/err.h
@@ -183,12 +182,12 @@ MRuby::GemBox.new do |conf|
   # conf.gem :git => 'https://github.com/Asmod4n/mruby-redis-ae.git'  # need poll.h
   # conf.gem :git => 'https://github.com/matsumotory/mruby-redis.git' # need sys/socket.h
   conf.gem :git => 'https://github.com/iij/mruby-regexp-pcre.git'
-  conf.gem :git => 'https://github.com/mattn/mruby-require.git' # build error (mrbc)
+  # conf.gem :git => 'https://github.com/mattn/mruby-require.git' # build error (mrbc)
   # conf.gem :git => 'https://github.com/ksss/mruby-research.git' # compile error (MRB_FIBER_RESUMING)
   # conf.gem :git => 'https://github.com/harasou/mruby-resource.git' # need sys/resource.h
   # conf.gem :git => 'https://github.com/emsk/mruby-romajify.git' # link error (onig_xxxx)
   # conf.gem :git => 'https://github.com/schmurfy/mruby-rubyffi-compat.git' # need ffi.h
-  conf.gem :git => 'https://github.com/haconiwa/mruby-seccomp.git'  # build error (mkdir)
+  # conf.gem :git => 'https://github.com/haconiwa/mruby-seccomp.git'  # build error (mkdir)
   conf.gem :git => 'https://github.com/Asmod4n/mruby-secure-compare.git'
   # conf.gem :git => 'https://github.com/monochromegane/mruby-secure-random.git'  # mkdtemp/mkstemp
   # conf.gem :git => 'https://github.com/monami-ya-mrb/mruby-serialport.git'  # need termios.h
@@ -256,8 +255,5 @@ MRuby::GemBox.new do |conf|
   conf.gem :git => 'https://github.com/matsumotory/mruby-zabbix.git'
   # conf.gem :git => 'https://github.com/jbreeden/mruby-zlib.git' # need zlib.h
   # conf.gem :git => 'https://github.com/zeromq/mruby-zmq.git'  # pkg-config
-=end
-  conf.gem :git => 'https://github.com/Asmod4n/mruby-zyre.git'
-=begin
-=end
+  # conf.gem :git => 'https://github.com/Asmod4n/mruby-zyre.git'  # need zyre.h
 end
