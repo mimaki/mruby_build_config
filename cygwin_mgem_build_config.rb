@@ -128,6 +128,7 @@ end
 # end
 
 [
+=begin
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # test crush
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
@@ -211,7 +212,7 @@ end
   # {:git => 'https://github.com/ppibburr/mruby-gobject.git'},  # need ffi.h
   {:git => 'https://github.com/matsumotory/mruby-growthforecast.git'},
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-gsl.git'},  # need gsl/gsl_vector.h
-  {:git => 'https://github.com/ppibburr/mruby-gtk2.git'}, # need ffi.h
+  # {:git => 'https://github.com/ppibburr/mruby-gtk2.git'}, # need ffi.h
   # {:git => 'https://github.com/ppibburr/mruby-gtk3.git'}, # need ffi.h
   {:git => 'https://github.com/k0kubun/mruby-hashie.git'},
   # {:git => 'https://github.com/kentaro/mruby-hibari.git'},  # compile error (onigumo)
@@ -303,6 +304,7 @@ end
   {:git => 'https://github.com/iij/mruby-process.git'},
   {:git => 'https://github.com/h2so5/mruby-pure-regexp.git'},
   {:git => 'https://github.com/katzer/mruby-r3.git'},
+=end
   # {:git => 'https://github.com/ksss/mruby-rake.git'}, # test KO(4) crush(2)
   # {:git => 'https://github.com/matsumotory/mruby-random.git'},  # build error (random.o)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-raspberry.git'},  # need  wiringPi.h
@@ -333,6 +335,7 @@ end
   # {:git => 'https://github.com/matsumotory/mruby-simplehttp.git'},  # build error (polarssl.c)
   # {:git => 'https://github.com/matsumotory/mruby-simplehttpserver.git'},  # test hangup
   {:git => 'https://github.com/Asmod4n/mruby-simplemsgpack.git'},
+=begin
   {:git => 'https://github.com/matsumotory/mruby-simpletest.git'},
   # {:git => 'https://github.com/mattn/mruby-sinatic.git'}, # need uv.h
   {:git => 'https://github.com/ksss/mruby-singleton.git'},
@@ -369,7 +372,7 @@ end
   {:git => 'https://github.com/mattn/mruby-updategems.git'},
   {:git => 'https://github.com/Asmod4n/mruby-uri-parser.git'},
   {:git => 'https://github.com/matsumotory/mruby-userdata.git'},
-  {:git => 'https://github.com/mattn/mruby-uv.git'},  # need uv.h
+  # {:git => 'https://github.com/mattn/mruby-uv.git'},  # need uv.h
   # {:git => 'https://github.com/mattn/mruby-v8.git'},  # need v8.h
   {:git => 'https://github.com/matsumotory/mruby-vedis.git'},
   # {:git => 'https://github.com/matsumotory/mruby-virtualing.git'},  # need libcgroup.h
@@ -385,6 +388,7 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # need zlib.h
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  #  pkg-config
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
+=end
 ].each {|mgem|
   _git = mgem[:git]
   MRuby::Build.new("test-#{_git.split('/')[-1][0..-5]}") do |conf|
