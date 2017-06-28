@@ -304,11 +304,12 @@ end
   {:git => 'https://github.com/iij/mruby-process.git'},
   {:git => 'https://github.com/h2so5/mruby-pure-regexp.git'},
   {:git => 'https://github.com/katzer/mruby-r3.git'},
-=end
   # {:git => 'https://github.com/ksss/mruby-rake.git'}, # test KO(4) crush(2)
   # {:git => 'https://github.com/matsumotory/mruby-random.git'},  # build error (random.o)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-raspberry.git'},  # need  wiringPi.h
-  # {:git => 'https://github.com/dyama/mruby-rational.git'},  # test failure (p method)
+=end
+  {:git => 'https://github.com/mimaki/mruby-rational.git', :branch => 'fix_test'},  # original: https://github.com/dyama/mruby-rational.git
+=begin
   # {:git => 'https://github.com/matsumotory/mruby-rcon.git'},  # need sys/eventfd.h
   {:git => 'https://github.com/Asmod4n/mruby-redis-ae.git'},
   # {:git => 'https://github.com/matsumotory/mruby-redis.git'}, # test crush(48)
@@ -335,7 +336,6 @@ end
   # {:git => 'https://github.com/matsumotory/mruby-simplehttp.git'},  # build error (polarssl.c)
   # {:git => 'https://github.com/matsumotory/mruby-simplehttpserver.git'},  # test hangup
   {:git => 'https://github.com/Asmod4n/mruby-simplemsgpack.git'},
-=begin
   {:git => 'https://github.com/matsumotory/mruby-simpletest.git'},
   # {:git => 'https://github.com/mattn/mruby-sinatic.git'}, # need uv.h
   {:git => 'https://github.com/ksss/mruby-singleton.git'},
@@ -391,6 +391,7 @@ end
 =end
 ].each {|mgem|
   _git = mgem[:git]
+  _branch = mgem[:branch] ? mgem[:branch] : 'master'
   MRuby::Build.new("test-#{_git.split('/')[-1][0..-5]}") do |conf|
     # Gets set by the VS command prompts.
     if ENV['VisualStudioVersion'] || ENV['VSINSTALLDIR']
@@ -400,14 +401,14 @@ end
     end
 
     enable_debug
-    conf.defines  = mgem[:defines]  if mgem[:defines]
-    conf.flags    = mgem[:flags]    if mgem[:flags]
+    conf.defines  << mgem[:defines] if mgem[:defines]
+    conf.cc.flags << mgem[:flags]   if mgem[:flags]
     conf.enable_bintest
     conf.enable_test
 
     conf.gembox 'full-core'
     # conf.gembox '../../mruby_build_config/cygwin'
-    conf.gem :git => _git
+    conf.gem :git => _git, :branch => _branch
   end
 }
 
