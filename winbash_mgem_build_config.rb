@@ -129,6 +129,7 @@ end
 
 [
 =begin
+=end
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # test crush(3)
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
@@ -331,8 +332,6 @@ end
   {:git => 'https://github.com/ksss/mruby-signal.git'},
   # {:git => 'https://github.com/iij/mruby-simple-random.git'}, # build error (mt19937ar.o)
   {:git => 'https://github.com/y-ken/mruby-simplehttp-socket.git'},
-=end
-=begin
   # {:git => 'https://github.com/matsumotory/mruby-simplehttp.git'},  # test crush(9)
   # {:git => 'https://github.com/matsumotory/mruby-simplehttpserver.git'},  # test crush(2)
   {:git => 'https://github.com/Asmod4n/mruby-simplemsgpack.git'},
@@ -363,7 +362,7 @@ end
   # {:git => 'https://github.com/matsumotory/mruby-timer-thread.git'},  # Segmentation Fault
   {:git => 'https://github.com/mimaki/mruby-tiny-io.git'},
   {:git => 'https://github.com/matsumotory/mruby-tinymt.git'},
-  {:git => 'https://github.com/h2so5/mruby-tinyxml2.git'},  # build error (g++)
+  # {:git => 'https://github.com/h2so5/mruby-tinyxml2.git'},  # build error (g++)
   # {:git => 'https://github.com/Asmod4n/mruby-tls.git'}, # need tls.h
   # {:git => 'https://github.com/take-cheeze/mruby-uchardet.git'},  # g++
   {:git => 'https://github.com/matsumotory/mruby-uname.git'},
@@ -374,7 +373,7 @@ end
   {:git => 'https://github.com/matsumotory/mruby-userdata.git'},
   # {:git => 'https://github.com/mattn/mruby-uv.git'},  # need libtoolize
   # {:git => 'https://github.com/mattn/mruby-v8.git'},  # g++
-  {:git => 'https://github.com/matsumotory/mruby-vedis.git'},
+  # {:git => 'https://github.com/matsumotory/mruby-vedis.git'}, # test KO(1)
   # {:git => 'https://github.com/matsumotory/mruby-virtualing.git'},  # need libcgroup.h
   # {:git => 'https://github.com/ppibburr/mruby-webkit-1.git'}, # need ffi.h
   # {:git => 'https://github.com/ppibburr/mruby-webkit-3.git'}, # need ffi.h
@@ -388,6 +387,7 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # link error (zlib)
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # pkg-config
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
+=begin
 =end
 ].each {|mgem|
   _git = mgem[:git]
