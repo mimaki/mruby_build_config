@@ -128,6 +128,7 @@ end
 # end
 
 [
+=begin
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # build error (alarm(time))
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
@@ -306,7 +307,9 @@ end
   # {:git => 'https://github.com/ksss/mruby-rake.git'}, # need sys/wait.h
   # {:git => 'https://github.com/matsumotory/mruby-random.git'},  # build error (random.c)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-raspberry.git'},  # need wiringPi.h
-  # {:git => 'https://github.com/dyama/mruby-rational.git'},  # test faile (p method not found)
+=end
+  {:git => 'https://github.com/mimaki/mruby-rational.git', :branch => 'fix_test'},  # original: https://github.com/dyama/mruby-rational.git
+=begin
   # {:git => 'https://github.com/matsumotory/mruby-rcon.git'},  # need sys/eventfd.h
   # {:git => 'https://github.com/Asmod4n/mruby-redis-ae.git'},  # need poll.h
   # {:git => 'https://github.com/matsumotory/mruby-redis.git'}, # need sys/socket.h
@@ -385,8 +388,10 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # need zlib.h
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # pkg-config
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
+=end
 ].each {|mgem|
   _git = mgem[:git]
+  _branch = mgem[:branch] ? mgem[:branch] : 'master'
   MRuby::Build.new("test-#{_git.split('/')[-1][0..-5]}") do |conf|
     # Gets set by the VS command prompts.
     if ENV['VisualStudioVersion'] || ENV['VSINSTALLDIR']
@@ -403,7 +408,7 @@ end
 
     conf.gembox 'full-core'
     # conf.gembox '../../mruby_build_config/mingw'
-    conf.gem :git => _git
+    conf.gem :git => _git, :branch => _branch
   end
 }
 
