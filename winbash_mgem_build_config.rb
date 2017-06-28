@@ -129,13 +129,12 @@ end
 
 [
 =begin
-=end
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # test crush(3)
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
   {:git => 'https://github.com/Mav7/mruby-ansi-colors.git'},
   # {:git => 'https://github.com/jbreeden/mruby-apr.git'},  # MRB_INT64
-  # {:git => 'https://github.com/kyab/mruby-arduino.git'},  # g++ not found
+  # {:git => 'https://github.com/kyab/mruby-arduino.git'},  # need WProgram.h
   # {:git => 'https://github.com/udzura/mruby-argtable.git'}, # need argtable2.h
   {:git => 'https://github.com/ksss/mruby-at_exit.git'},
   # {:git => 'https://github.com/georgi/mruby-audite.git'}, # need mpg123.h
@@ -151,7 +150,7 @@ end
   {:git => 'https://github.com/chasonr/mruby-bignum.git'},
   {:git => 'https://github.com/kyab/mruby-bin-mirb-hostbased.git'},
   # {:git => 'https://github.com/bovi/mruby-bin-mruby-afl.git'},  # compile error (__AFL_LOOP)
-  # {:git => 'https://github.com/sdottaka/mruby-bin-scite-mruby.git'},  # need g++
+  # {:git => 'https://github.com/sdottaka/mruby-bin-scite-mruby.git'},  # need gtk/gtk.h
   # {:git => 'https://github.com/IceDragon200/mruby-blendish' # need mruby-glew
   # {:git => 'https://github.com/charlescui/mruby-cache.git'},  # test aborted
   {:git => 'https://github.com/matsumotory/mruby-capability.git'},
@@ -159,7 +158,7 @@ end
   # {:git => 'https://github.com/mobiruby/mruby-cfunc.git'},  # need ffi.h
   # {:git => 'https://github.com/matsumotory/mruby-cgroup.git'},  # need libcgroup.h
   # {:git => 'https://github.com/matsumotory/mruby-changefinder.git'},  # test abort
-  # {:git => 'https://github.com/bggd/mruby-channel.git'},  # build error (g++ not found)
+  # {:git => 'https://github.com/bggd/mruby-channel.git'},  # compile error (MRB_END_DECL)
   # {:git => 'https://github.com/IceDragon200/mruby-chipmunk2d' # need chipmunk/chipmunk.h
   # {:git => 'https://github.com/Asmod4n/mruby-chrono.git'},  # test abort
   # {:git => 'https://github.com/kaihar4/mruby-cidr.git'},  # compile error (oniguruma.h)
@@ -204,7 +203,7 @@ end
   # {:git => 'https://github.com/ppibburr/mruby-girffi-docgen.git'},  # need ffi.h
   # {:git => 'https://github.com/ppibburr/mruby-girffi.git'}, # need ffi.h
   # {:git => 'https://github.com/xxuejie/mruby-gles.git'},  # need GLES2/gl2.h
-  # {:git => 'https://github.com/take-cheeze/mruby-glfw3.git'}, # g++
+  # {:git => 'https://github.com/take-cheeze/mruby-glfw3.git'}, # need GLFW/glfw3.h
   # {:git => 'https://github.com/jbreeden/mruby-glib.git'}, # need glib.h
   # {:git => 'https://github.com/ppibburr/mruby-glib2.git'},  # need ffi.h
   # {:git => 'https://github.com/chasonr/mruby-gmp-bignum.git'},  # need gmp.h
@@ -241,8 +240,8 @@ end
   {:git => 'https://github.com/prevs-io/mruby-jwt.git'},
   # {:git => 'https://github.com/syucream/mruby-k2hash.git'}, # need k2hash.h
   {:git => 'https://github.com/santazhang/mruby-kmp.git'},
-  # {:git => 'https://github.com/crimsonwoods/mruby-leapmotion.git'}, # g++ not found
-  # {:git => 'https://github.com/take-cheeze/mruby-leveldb.git'}, # g++ not found
+  {:git => 'https://github.com/crimsonwoods/mruby-leapmotion.git'}, # need Leap.h
+  # {:git => 'https://github.com/take-cheeze/mruby-leveldb.git'}, # need leveldb-1.15.0
   # {:git => 'https://github.com/cremno/mruby-libqrng.git'},  # link error (-llibQRNG)
   # {:git => 'https://github.com/Asmod4n/mruby-libsodium.git'}, # link error (crypto_xxxxx)
   {:git => 'https://github.com/ksss/mruby-limits.git'},
@@ -255,7 +254,7 @@ end
   # {:git => 'https://github.com/dyama/mruby-lua.git'}, # need lua5.2/lua.h
   # {:git => 'https://github.com/attm2x/m2x-mruby.git'},  # test crush(2)
   # {:git => 'https://github.com/carsonmcdonald/mruby-markdown.git'}, # compile error (old API)
-  # {:git => 'https://github.com/take-cheeze/mruby-marshal.git'}, # g++
+  {:git => 'https://github.com/take-cheeze/mruby-marshal.git'},
   # {:git => 'https://github.com/listrophy/mruby-matrix.git'},  # build error (mruby-mtest)
   # {:git => 'https://github.com/happysiro/mruby-maxminddb'}, # need maxminddb.h
   {:git => 'https://github.com/mattn/mruby-md5.git'},
@@ -308,7 +307,9 @@ end
   # {:git => 'https://github.com/ksss/mruby-rake.git'}, # test KO(9) crush(2)
   # {:git => 'https://github.com/matsumotory/mruby-random.git'},  # build error (random.o)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-raspberry.git'},  # need wiringPi.h
-  # {:git => 'https://github.com/dyama/mruby-rational.git'},  # p method error
+=end
+  {:git => 'https://github.com/mimaki/mruby-rational.git', :branch => 'fix_test'},  # original: https://github.com/dyama/mruby-rational.git
+=begin
   # {:git => 'https://github.com/matsumotory/mruby-rcon.git'},  # need libcgroup.h
   {:git => 'https://github.com/Asmod4n/mruby-redis-ae.git'},
   # {:git => 'https://github.com/matsumotory/mruby-redis.git'}, # test crush(48)
@@ -362,9 +363,9 @@ end
   # {:git => 'https://github.com/matsumotory/mruby-timer-thread.git'},  # Segmentation Fault
   {:git => 'https://github.com/mimaki/mruby-tiny-io.git'},
   {:git => 'https://github.com/matsumotory/mruby-tinymt.git'},
-  # {:git => 'https://github.com/h2so5/mruby-tinyxml2.git'},  # build error (g++)
+  {:git => 'https://github.com/h2so5/mruby-tinyxml2.git'},
   # {:git => 'https://github.com/Asmod4n/mruby-tls.git'}, # need tls.h
-  # {:git => 'https://github.com/take-cheeze/mruby-uchardet.git'},  # g++
+  # {:git => 'https://github.com/take-cheeze/mruby-uchardet.git'},  # build error (mozilla::xxxx)
   {:git => 'https://github.com/matsumotory/mruby-uname.git'},
   # {:git => 'https://github.com/keizo042/mruby-unbound.git'},  # need unbound.h
   {:git => 'https://github.com/appPlant/mruby-unicode-display_width.git'},
@@ -372,7 +373,7 @@ end
   {:git => 'https://github.com/Asmod4n/mruby-uri-parser.git'},
   {:git => 'https://github.com/matsumotory/mruby-userdata.git'},
   # {:git => 'https://github.com/mattn/mruby-uv.git'},  # need libtoolize
-  # {:git => 'https://github.com/mattn/mruby-v8.git'},  # g++
+  # {:git => 'https://github.com/mattn/mruby-v8.git'},  # need v8.h
   # {:git => 'https://github.com/matsumotory/mruby-vedis.git'}, # test KO(1)
   # {:git => 'https://github.com/matsumotory/mruby-virtualing.git'},  # need libcgroup.h
   # {:git => 'https://github.com/ppibburr/mruby-webkit-1.git'}, # need ffi.h
@@ -387,10 +388,10 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # link error (zlib)
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # pkg-config
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
-=begin
 =end
 ].each {|mgem|
   _git = mgem[:git]
+  _branch = mgem[:branch] ? mgem[:branch] : 'master'
   MRuby::Build.new("test-#{_git.split('/')[-1][0..-5]}") do |conf|
     # Gets set by the VS command prompts.
     if ENV['VisualStudioVersion'] || ENV['VSINSTALLDIR']
@@ -407,7 +408,7 @@ end
 
     conf.gembox 'full-core'
     # conf.gembox '../../mruby_build_config/winbash'
-    conf.gem :git => _git
+    conf.gem :git => _git, :branch => _branch
   end
 }
 
