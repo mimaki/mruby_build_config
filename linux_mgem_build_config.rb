@@ -130,11 +130,12 @@ end
 
 [
 =begin
+=end
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # test crush(3)
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
   {:git => 'https://github.com/Mav7/mruby-ansi-colors.git'},
-  # {:git => 'https://github.com/jbreeden/mruby-apr.git'},  # MRB_INT64
+  {:git => 'https://github.com/jbreeden/mruby-apr.git', :flags => ['-DMRB_INT64']},  # need APR
   # {:git => 'https://github.com/kyab/mruby-arduino.git'},  # need wProgram.h
   # {:git => 'https://github.com/udzura/mruby-argtable.git'}, # need argtable2.h
   {:git => 'https://github.com/ksss/mruby-at_exit.git'},
@@ -175,9 +176,7 @@ end
   {:git => 'https://github.com/mattn/mruby-curl.git'},
   # {:git => 'https://github.com/jbreeden/mruby-curses.git'}, # link error "xxxx_panel"
   # {:git => 'https://github.com/inokappa/mruby-datadog.git'},  # test crush(9)
-=end
   # {:git => 'https://github.com/Asmod4n/mruby-czmq.git'},  # need czmq.h
-=begin
   {:git => 'https://github.com/iij/mruby-digest.git'},
   {:git => 'https://github.com/gromnitsky/mruby-dir-glob.git'},
   {:git => 'https://github.com/iij/mruby-dir.git'},
@@ -196,7 +195,7 @@ end
   {:git => 'https://github.com/dabroz/mruby-float4.git'},
   # {:git => 'https://github.com/mattn/mruby-fltk3.git'}, # fltk3-config
   {:git => 'https://github.com/y-ken/fluent-logger-mruby.git'},
-  # {:git => 'https://github.com/takahashim/mruby-forwardable.git'},  # need oniguruma.h
+  {:git => 'https://github.com/takahashim/mruby-forwardable.git'},
   {:git => 'https://github.com/UniTN-Mechatronics/mruby-fsm.git'},
   {:git => 'https://github.com/UniTN-Mechatronics/mruby-ftp.git'},
   # {:git => 'https://github.com/matsumotory/mruby-geoip.git'}, # need GeoIP.h
@@ -218,7 +217,7 @@ end
   # {:git => 'https://github.com/ppibburr/mruby-gtk2.git'}, # compile error (mrb_voidp)
   # {:git => 'https://github.com/ppibburr/mruby-gtk3.git'}, # compile error (ARGS_NONE)
   {:git => 'https://github.com/k0kubun/mruby-hashie.git'},
-  # {:git => 'https://github.com/kentaro/mruby-hibari.git'},  # need oniguruma.h
+  # {:git => 'https://github.com/kentaro/mruby-hibari.git'},  # test crush(2)
   # {:git => 'https://github.com/Asmod4n/mruby-hiredis.git'}, # test KO(1) crush(6)
   {:git => 'https://github.com/qtkmz/mruby-hogun.git'},
   # {:git => 'https://github.com/schmurfy/host-stats.git'}, # compile error (ARGS_NONE)
@@ -240,7 +239,7 @@ end
   # {:git => 'https://github.com/carsonmcdonald/mruby-jpeg.git'}, # jpeglib.h
   # {:git => 'https://github.com/mattn/mruby-json.git'},  # test crush(2)
   # {:git => 'https://github.com/jkutner/mruby-jvm.git'}, # need jni.h
-  # {:git => 'https://github.com/prevs-io/mruby-jwt.git'},  # need onigurumal.h
+  {:git => 'https://github.com/prevs-io/mruby-jwt.git'},
   # {:git => 'https://github.com/syucream/mruby-k2hash.git'}, # need k2hash.h
   {:git => 'https://github.com/santazhang/mruby-kmp.git'},
   # {:git => 'https://github.com/crimsonwoods/mruby-leapmotion.git'}, # need Leap.h
@@ -389,6 +388,7 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # link error (Zlib)
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # aitogen error (libzmq)
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},   # need zyre.h
+=begin
 =end
 ].each {|mgem|
   _git = mgem[:git]
@@ -401,8 +401,8 @@ end
     end
 
     enable_debug
-    conf.defines  = mgem[:defines]  if mgem[:defines]
-    conf.flags    = mgem[:flags]    if mgem[:flags]
+    conf.defines  << mgem[:defines] if mgem[:defines]
+    conf.cc.flags << mgem[:flags]   if mgem[:flags]
     conf.enable_bintest
     conf.enable_test
 
