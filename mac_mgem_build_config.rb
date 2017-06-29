@@ -129,11 +129,11 @@ end
 
 [
 =begin
-  # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # test fail
+  # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # test crush(3)
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
   {:git => 'https://github.com/Mav7/mruby-ansi-colors.git'},
-  # {:git => 'https://github.com/jbreeden/mruby-apr.git'},  # MRB_INT64
+  # {:git => 'https://github.com/jbreeden/mruby-apr.git', :flags => '-DMRB_INT64'},  # need APR
   # {:git => 'https://github.com/kyab/mruby-arduino.git'},
   # {:git => 'https://github.com/udzura/mruby-argtable.git'}, # need argtable2.h
   {:git => 'https://github.com/ksss/mruby-at_exit.git'},
@@ -146,7 +146,9 @@ end
   {:git => 'https://github.com/qtkmz/mruby-base32.git'},
   {:git => 'https://github.com/h2so5/mruby-base58.git'},
   {:git => 'https://github.com/mattn/mruby-base64.git'},
-  # {:git => 'https://github.com/baldowl/mruby-bcrypt.git'},  # need oniguruma.h
+=end
+  {:git => 'https://github.com/baldowl/mruby-bcrypt.git', :inc => '/usr/local/include', :lib => '/usr/local/lib'},  # need oniguruma.h
+=begin
   {:git => 'https://github.com/chasonr/mruby-bignum.git'},
   {:git => 'https://github.com/kyab/mruby-bin-mirb-hostbased.git'},
   # {:git => 'https://github.com/bovi/mruby-bin-mruby-afl.git'},  # compile error (__AFL_LOOP)
@@ -307,9 +309,7 @@ end
   # {:git => 'https://github.com/ksss/mruby-rake.git'}, # test crush(2)
   # {:git => 'https://github.com/matsumotory/mruby-random.git'},  # build error (random.c)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-raspberry.git'},  # need wiringPi.h
-=end
   {:git => 'https://github.com/mimaki/mruby-rational.git', :branch => 'fix_test'},  # original: https://github.com/dyama/mruby-rational.git
-=begin
   # {:git => 'https://github.com/matsumotory/mruby-rcon.git'},  # need sys/eventfd.h
   {:git => 'https://github.com/Asmod4n/mruby-redis-ae.git'},
   # {:git => 'https://github.com/matsumotory/mruby-redis.git'}, # test crush(48)
@@ -401,10 +401,13 @@ end
     end
 
     enable_debug
-    conf.defines  = mgem[:defines]  if mgem[:defines]
-    conf.flags    = mgem[:flags]    if mgem[:flags]
+    conf.defines          << mgem[:defines] if mgem[:defines]
+    conf.cc.flags         << mgem[:flags]   if mgem[:flags]
+    conf.cc.include_paths << mgem[:inc]     if mgem[:inc]
+    conf.linker.library_paths << mgem[:lib] if mgem[:lib]
     conf.enable_bintest
     conf.enable_test
+
 
     conf.gembox 'full-core'
     # conf.gembox '../../mruby_build_config/mac'
