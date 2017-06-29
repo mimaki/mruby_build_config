@@ -306,7 +306,7 @@ end
   # {:git => 'https://github.com/ksss/mruby-rake.git'}, # need sys/time.h
   # {:git => 'https://github.com/matsumotory/mruby-random.git'},  # build error (mt19937ar.c random.c)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-raspberry.git'},  # compile error (raspberry.c)
-  # {:git => 'https://github.com/dyama/mruby-rational.git'},  # test faile (p method not found)
+  {:git => 'https://github.com/mimaki/mruby-rational.git', :branch => 'fix_test'},  # original: 'https://github.com/dyama/mruby-rational.git'
   # {:git => 'https://github.com/matsumotory/mruby-rcon.git'},  # grep command error
   # {:git => 'https://github.com/Asmod4n/mruby-redis-ae.git'},  # need sys/time.h
   # {:git => 'https://github.com/matsumotory/mruby-redis.git'}, # make command error
@@ -352,8 +352,8 @@ end
   # {:git => 'https://github.com/pyama86/mruby-sysconf.git'}, # need unistd.h
   # {:git => 'https://github.com/iij/mruby-syslog.git'},  # need syslog.h
   {:git => 'https://github.com/Asmod4n/mruby-sysrandom.git'},
-  # {:git => 'https://github.com/iij/mruby-tempfile.git'},  # need unistd.h
   # {:git => 'https://github.com/nsheremet/mruby-tbot.git'},  # compile error (/W option)
+  # {:git => 'https://github.com/iij/mruby-tempfile.git'},  # need unistd.h
   # {:git => 'https://github.com/appPlant/mruby-terminal-table.git'}, # test KO(4)
   # {:git => 'https://github.com/mattn/mruby-thread.git'},  # need pthread.h
   # {:git => 'https://github.com/monochromegane/mruby-time-strftime.git'},  # test KO(5)
@@ -387,6 +387,7 @@ end
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
 ].each {|mgem|
   _git = mgem[:git]
+  _branch = mgem[:branch] ? mgem[:branch] : 'master'
   MRuby::Build.new("test-#{_git.split('/')[-1][0..-5]}") do |conf|
     # Gets set by the VS command prompts.
     if ENV['VisualStudioVersion'] || ENV['VSINSTALLDIR']
@@ -396,14 +397,16 @@ end
     end
 
     enable_debug
-    conf.defines  = mgem[:defines]  if mgem[:defines]
-    conf.flags    = mgem[:flags]    if mgem[:flags]
+    conf.defines          << mgem[:defines] if mgem[:defines]
+    conf.cc.flags         << mgem[:flags]   if mgem[:flags]
+    conf.cc.include_paths << mgem[:inc]     if mgem[:inc]
+    conf.linker.library_paths << mgem[:lib] if mgem[:lib]
     conf.enable_bintest
     conf.enable_test
 
     conf.gembox 'full-core'
     # conf.gembox '../../mruby_build_config/msvc'
-    conf.gem :git => _git
+    conf.gem :git => _git, :branch => _branch
   end
 }
 
