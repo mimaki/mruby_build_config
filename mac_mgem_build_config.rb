@@ -129,6 +129,7 @@ end
 
 [
 =begin
+=end
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # test crush(3)
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
@@ -146,9 +147,7 @@ end
   {:git => 'https://github.com/qtkmz/mruby-base32.git'},
   {:git => 'https://github.com/h2so5/mruby-base58.git'},
   {:git => 'https://github.com/mattn/mruby-base64.git'},
-=end
   {:git => 'https://github.com/baldowl/mruby-bcrypt.git', :inc => '/usr/local/include', :lib => '/usr/local/lib'},  # need oniguruma.h
-=begin
   {:git => 'https://github.com/chasonr/mruby-bignum.git'},
   {:git => 'https://github.com/kyab/mruby-bin-mirb-hostbased.git'},
   # {:git => 'https://github.com/bovi/mruby-bin-mruby-afl.git'},  # compile error (__AFL_LOOP)
@@ -257,7 +256,7 @@ end
   {:git => 'https://github.com/attm2x/m2x-mruby.git'},
   # {:git => 'https://github.com/carsonmcdonald/mruby-markdown.git'}, # compile error (ARG_NONE)
   {:git => 'https://github.com/take-cheeze/mruby-marshal.git'},
-  # {:git => 'https://github.com/listrophy/mruby-matrix.git'},  # git clone error
+  {:git => 'https://github.com/mimaki/mruby-matrix.git', :branch => 'fix_test'},  # original: 'https://github.com/listrophy/mruby-matrix.git'
   # {:git => 'https://github.com/happysiro/mruby-maxminddb' # need maxminddb.h
   {:git => 'https://github.com/mattn/mruby-md5.git'},
   # {:git => 'https://github.com/mattn/mruby-mecab.git'}, # need mecab.h
@@ -293,9 +292,9 @@ end
   {:git => 'https://github.com/iij/mruby-pack.git'},
   {:git => 'https://github.com/Asmod4n/mruby-passwdqc'},
   # {:git => 'https://github.com/mattn/mruby-pcre-regexp.git'}, # need pcre.h
-  # {:git => 'https://github.com/dabroz/mruby-perlin-noise.git'}, # mruby-mtest
+  {:git => 'https://github.com/dabroz/mruby-perlin-noise.git'},
   {:git => 'https://github.com/Asmod4n/mruby-phr.git'},
-  # {:git => 'https://github.com/cadwallion/mruby-pid.git'},
+  {:git => 'https://github.com/cadwallion/mruby-pid.git'},
   # {:git => 'https://github.com/schmurfy/mruby-ping' # need libent.h
   {:git => 'https://github.com/mattn/mruby-pjson.git'},
   {:git => 'https://github.com/hanachin/mruby-pkcs5.git'},
@@ -317,7 +316,7 @@ end
   # {:git => 'https://github.com/mattn/mruby-require.git'}, # build error (mrbc)
   # {:git => 'https://github.com/ksss/mruby-research.git'}, # comppile error (MRB_FIBER_RESUMING, ci->eidx)
   # {:git => 'https://github.com/harasou/mruby-resource.git'},  # test KO(1) crush(3)
-  {:git => 'https://github.com/emsk/mruby-romajify.git'}, # test crush(183)
+  # {:git => 'https://github.com/emsk/mruby-romajify.git'}, # test crush(183)
   # {:git => 'https://github.com/schmurfy/mruby-rubyffi-compat.git'}, # compile (mrb_voidp_value)
   # {:git => 'https://github.com/haconiwa/mruby-seccomp.git'},  # need endian.h
   {:git => 'https://github.com/Asmod4n/mruby-secure-compare.git'},
@@ -388,6 +387,7 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # link error (zlib)
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # test crush(1)
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
+=begin
 =end
 ].each {|mgem|
   _git = mgem[:git]
