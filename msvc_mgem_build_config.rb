@@ -128,6 +128,7 @@ end
 # end
 
 [
+=begin
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # compile error (unistd.h)
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
@@ -196,6 +197,9 @@ end
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-fsm.git'},  # POSIX (alerm, pause)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-ftp.git'},  # compile error (#warning)
   # {:git => 'https://github.com/matsumotory/mruby-geoip.git'}, # need GeoIP.h
+=end
+  {:git => 'https://github.com/takumakume/mruby-getloadavg.git'},
+=begin
   {:git => 'https://github.com/rubiojr/mruby-getoptlong'},
   # {:git => 'https://github.com/mttech/mruby-getopts'},  # need getopt.h
   {:git => 'https://github.com/Asmod4n/mruby-getpass.git'},
@@ -359,6 +363,9 @@ end
   # {:git => 'https://github.com/monochromegane/mruby-time-strftime.git'},  # test KO(5)
   # {:git => 'https://github.com/matsumotory/mruby-timer-thread.git'},  # need pthread.h
   # {:git => 'https://github.com/mimaki/mruby-tiny-io.git'},  # test crush(4)
+=end
+  {:git => 'https://github.com/takumakume/mruby-ionice.git'},
+=begin
   {:git => 'https://github.com/matsumotory/mruby-tinymt.git'},
   # {:git => 'https://github.com/h2so5/mruby-tinyxml2.git'},  # link error (stdc++.lib)
   # {:git => 'https://github.com/Asmod4n/mruby-tls.git'}, # need tls.h
@@ -385,6 +392,7 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # need zlib.h
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # need zmq.h
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
+=end
 ].each {|mgem|
   _git = mgem[:git]
   _branch = mgem[:branch] ? mgem[:branch] : 'master'

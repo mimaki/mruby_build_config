@@ -129,7 +129,6 @@ end
 
 [
 =begin
-=end
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # build error (alarm(time))
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
@@ -198,6 +197,9 @@ end
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-fsm.git'},  # POSIX (alerm, pause)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-ftp.git'},  # build error (GRAB_STDOUT, C90)
   # {:git => 'https://github.com/matsumotory/mruby-geoip.git'}, # need GeoIP.h
+=end
+  {:git => 'https://github.com/takumakume/mruby-getloadavg.git'},
+=begin
   {:git => 'https://github.com/rubiojr/mruby-getoptlong'},
   {:git => 'https://github.com/mttech/mruby-getopts'},
   # {:git => 'https://github.com/Asmod4n/mruby-getpass.git'}, # need termios.h
@@ -231,6 +233,9 @@ end
   # {:git => 'https://github.com/ksss/mruby-io-console.git'}, # need sys/ioctl.h
   # {:git => 'https://github.com/ksss/mruby-io-copy_stream.git'}, # need uio.h
   # {:git => 'https://github.com/iij/mruby-io.git'},  # mkdtemp/mkstemp
+=end
+  {:git => 'https://github.com/takumakume/mruby-ionice.git'},
+=begin
   # {:git => 'https://github.com/iij/mruby-ipaddr.git'},  # need sys/socket.h
   # {:git => 'https://github.com/pepabo/mruby-ipfilter.git'}, # need sys/shm.h
   # {:git => 'https://github.com/rrreeeyyy/mruby-ipvs'  # need sys/wait.h
@@ -387,7 +392,6 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # need zlib.h
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # pkg-config
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
-=begin
 =end
 ].each {|mgem|
   _git = mgem[:git]
