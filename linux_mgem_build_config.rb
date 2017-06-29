@@ -236,7 +236,7 @@ end
   # {:git => 'https://github.com/pepabo/mruby-ipfilter.git'}, # need maxminddb.h
   # {:git => 'https://github.com/rrreeeyyy/mruby-ipvs'  # link error (-lnl)
   # {:git => 'https://github.com/ppibburr/mruby-javascriptcore.git'}, # constant FFI not defined
-  # {:git => 'https://github.com/carsonmcdonald/mruby-jpeg.git'}, # jpeglib.h
+  # {:git => 'https://github.com/carsonmcdonald/mruby-jpeg.git'}, # compile error (old API)
   # {:git => 'https://github.com/mattn/mruby-json.git'},  # test crush(2)
   # {:git => 'https://github.com/jkutner/mruby-jvm.git'}, # need jni.h
   {:git => 'https://github.com/prevs-io/mruby-jwt.git'},
@@ -257,7 +257,7 @@ end
   # {:git => 'https://github.com/attm2x/m2x-mruby.git'},  # test crush(2)
   # {:git => 'https://github.com/carsonmcdonald/mruby-markdown.git'}, # compile error (ARGS_NONE)
   {:git => 'https://github.com/take-cheeze/mruby-marshal.git'},
-  # {:git => 'https://github.com/listrophy/mruby-matrix.git'},  # mruby-mtest
+  {:git => 'https://github.com/mimaki/mruby-matrix.git', :branch => 'fix_test'},  # original: 'https://github.com/listrophy/mruby-matrix.git'
   # {:git => 'https://github.com/happysiro/mruby-maxminddb' # need maxminddb.h
   {:git => 'https://github.com/mattn/mruby-md5.git'},
   # {:git => 'https://github.com/mattn/mruby-mecab.git'}, # need mecab.h
@@ -309,7 +309,7 @@ end
   # {:git => 'https://github.com/ksss/mruby-rake.git'}, # test crush(2)
   # {:git => 'https://github.com/matsumotory/mruby-random.git'},  # compile error (random.c)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-raspberry.git'},  # need wiringPi.h
-  # {:git => 'https://github.com/dyama/mruby-rational.git'},  # test failure (p method)
+  {:git => 'https://github.com/mimaki/mruby-rational.git', :branch => 'fix_test'},  # original: 'https://github.com/dyama/mruby-rational.git'
   # {:git => 'https://github.com/matsumotory/mruby-rcon.git'},  # autoreconf error
   {:git => 'https://github.com/Asmod4n/mruby-redis-ae.git'},
   # {:git => 'https://github.com/matsumotory/mruby-redis.git'}, # test crush(48)
@@ -392,6 +392,7 @@ end
 =end
 ].each {|mgem|
   _git = mgem[:git]
+  _branch = mgem[:branch] ? mgem[:branch] : 'master'
   MRuby::Build.new("test-#{_git.split('/')[-1][0..-5]}") do |conf|
     # Gets set by the VS command prompts.
     if ENV['VisualStudioVersion'] || ENV['VSINSTALLDIR']
@@ -401,8 +402,10 @@ end
     end
 
     enable_debug
-    conf.defines  << mgem[:defines] if mgem[:defines]
-    conf.cc.flags << mgem[:flags]   if mgem[:flags]
+    conf.defines          << mgem[:defines] if mgem[:defines]
+    conf.cc.flags         << mgem[:flags]   if mgem[:flags]
+    conf.cc.include_paths << mgem[:inc]     if mgem[:inc]
+    conf.linker.library_paths << mgem[:lib] if mgem[:lib]
     conf.enable_bintest
     conf.enable_test
 
@@ -413,7 +416,7 @@ end
         conf.gem :git => _dep
       }
     end
-    conf.gem :git => _git
+    conf.gem :git => _git, :branch => _branch
   end
 }
 

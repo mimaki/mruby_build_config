@@ -408,9 +408,13 @@ end
     conf.enable_bintest
     conf.enable_test
 
-
     conf.gembox 'full-core'
     # conf.gembox '../../mruby_build_config/mac'
+    if mgem[:dep]
+      mgem[:dep].each {|_dep|
+        conf.gem :git => _dep
+      }
+    end
     conf.gem :git => _git, :branch => _branch
   end
 }

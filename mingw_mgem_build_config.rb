@@ -256,7 +256,7 @@ end
   # {:git => 'https://github.com/attm2x/m2x-mruby.git'},  # mkdtemp/mkstemp
   # {:git => 'https://github.com/carsonmcdonald/mruby-markdown.git'}, # compile error (ARGS_NONE)
   # {:git => 'https://github.com/take-cheeze/mruby-marshal.git'}, # need oniguruma.h
-  # {:git => 'https://github.com/listrophy/mruby-matrix.git'},  # build error (mruby-mtest)
+  # {:git => 'https://github.com/mimaki/mruby-matrix.git', 'fix_test'},  # test KO(3) crush(2), original: 'https://github.com/listrophy/mruby-matrix.git'
   # {:git => 'https://github.com/happysiro/mruby-maxminddb' # need maxminddb.h
   {:git => 'https://github.com/mattn/mruby-md5.git'},
   # {:git => 'https://github.com/mattn/mruby-mecab.git'}, # need mecab.h
@@ -410,6 +410,11 @@ end
 
     conf.gembox 'full-core'
     # conf.gembox '../../mruby_build_config/mingw'
+    if mgem[:dep]
+      mgem[:dep].each {|_dep|
+        conf.gem :git => _dep
+      }
+    end
     conf.gem :git => _git, :branch => _branch
   end
 }

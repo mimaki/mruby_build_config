@@ -254,7 +254,7 @@ end
   # {:git => 'https://github.com/attm2x/m2x-mruby.git'},  # need POSIX
   # {:git => 'https://github.com/carsonmcdonald/mruby-markdown.git'}, # compile error (ARGS_NONE)
   # {:git => 'https://github.com/take-cheeze/mruby-marshal.git'}, # compile error (over 100)
-  # {:git => 'https://github.com/listrophy/mruby-matrix.git'},  # build error (mruby-mtest)
+  # {:git => 'https://github.com/mimaki/mruby-matrix.git', :branch => 'fix_test'},  # need POSIX, original: 'https://github.com/listrophy/mruby-matrix.git'
   # {:git => 'https://github.com/happysiro/mruby-maxminddb' # need maxminddb.h
   {:git => 'https://github.com/mattn/mruby-md5.git'},
   # {:git => 'https://github.com/mattn/mruby-mecab.git'}, # need mecab.h
@@ -406,6 +406,11 @@ end
 
     conf.gembox 'full-core'
     # conf.gembox '../../mruby_build_config/msvc'
+    if mgem[:dep]
+      mgem[:dep].each {|_dep|
+        conf.gem :git => _dep
+      }
+    end
     conf.gem :git => _git, :branch => _branch
   end
 }
