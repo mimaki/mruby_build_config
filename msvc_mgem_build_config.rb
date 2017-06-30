@@ -197,9 +197,7 @@ end
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-fsm.git'},  # POSIX (alerm, pause)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-ftp.git'},  # compile error (#warning)
   # {:git => 'https://github.com/matsumotory/mruby-geoip.git'}, # need GeoIP.h
-=end
-  {:git => 'https://github.com/takumakume/mruby-getloadavg.git'},
-=begin
+  # {:git => 'https://github.com/takumakume/mruby-getloadavg.git'}, # link error (getloadavg)
   {:git => 'https://github.com/rubiojr/mruby-getoptlong'},
   # {:git => 'https://github.com/mttech/mruby-getopts'},  # need getopt.h
   {:git => 'https://github.com/Asmod4n/mruby-getpass.git'},
@@ -363,9 +361,7 @@ end
   # {:git => 'https://github.com/monochromegane/mruby-time-strftime.git'},  # test KO(5)
   # {:git => 'https://github.com/matsumotory/mruby-timer-thread.git'},  # need pthread.h
   # {:git => 'https://github.com/mimaki/mruby-tiny-io.git'},  # test crush(4)
-=end
-  {:git => 'https://github.com/takumakume/mruby-ionice.git'},
-=begin
+  # {:git => 'https://github.com/takumakume/mruby-ionice.git'}, # need unistd.h
   {:git => 'https://github.com/matsumotory/mruby-tinymt.git'},
   # {:git => 'https://github.com/h2so5/mruby-tinyxml2.git'},  # link error (stdc++.lib)
   # {:git => 'https://github.com/Asmod4n/mruby-tls.git'}, # need tls.h

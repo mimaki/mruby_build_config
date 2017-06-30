@@ -129,6 +129,7 @@ end
 
 [
 =begin
+=end
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # test crush(3)
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
@@ -197,9 +198,7 @@ end
   {:git => 'https://github.com/UniTN-Mechatronics/mruby-fsm.git'},
   {:git => 'https://github.com/UniTN-Mechatronics/mruby-ftp.git'},
   # {:git => 'https://github.com/matsumotory/mruby-geoip.git'}, # need GeoIP.h
-=end
   {:git => 'https://github.com/takumakume/mruby-getloadavg.git'},
-=begin
   {:git => 'https://github.com/rubiojr/mruby-getoptlong'},
   {:git => 'https://github.com/mttech/mruby-getopts'},
   # {:git => 'https://github.com/Asmod4n/mruby-getpass.git'}, # compile error (old API ?)
@@ -233,9 +232,7 @@ end
   {:git => 'https://github.com/ksss/mruby-io-console.git'},
   {:git => 'https://github.com/ksss/mruby-io-copy_stream.git'},
   {:git => 'https://github.com/iij/mruby-io.git'},
-=end
-  {:git => 'https://github.com/takumakume/mruby-ionice.git'},
-=begin
+  # {:git => 'https://github.com/takumakume/mruby-ionice.git'}, # test crush(1)
   # {:git => 'https://github.com/iij/mruby-ipaddr.git'},  # test crush(2)
   # {:git => 'https://github.com/pepabo/mruby-ipfilter.git'}, # need maxminddb.h
   # {:git => 'https://github.com/rrreeeyyy/mruby-ipvs'},  # link error (-lnl)
@@ -392,6 +389,7 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # link error (zlib)
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # pkg-config
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
+=begin
 =end
 ].each {|mgem|
   _git = mgem[:git]

@@ -197,9 +197,7 @@ end
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-fsm.git'},  # POSIX (alerm, pause)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-ftp.git'},  # build error (GRAB_STDOUT, C90)
   # {:git => 'https://github.com/matsumotory/mruby-geoip.git'}, # need GeoIP.h
-=end
-  {:git => 'https://github.com/takumakume/mruby-getloadavg.git'},
-=begin
+  # {:git => 'https://github.com/takumakume/mruby-getloadavg.git'}, # link error (getloadavg)
   {:git => 'https://github.com/rubiojr/mruby-getoptlong'},
   {:git => 'https://github.com/mttech/mruby-getopts'},
   # {:git => 'https://github.com/Asmod4n/mruby-getpass.git'}, # need termios.h
@@ -233,9 +231,7 @@ end
   # {:git => 'https://github.com/ksss/mruby-io-console.git'}, # need sys/ioctl.h
   # {:git => 'https://github.com/ksss/mruby-io-copy_stream.git'}, # need uio.h
   # {:git => 'https://github.com/iij/mruby-io.git'},  # mkdtemp/mkstemp
-=end
-  {:git => 'https://github.com/takumakume/mruby-ionice.git'},
-=begin
+  # {:git => 'https://github.com/takumakume/mruby-ionice.git'}, # need sys/syscall.h
   # {:git => 'https://github.com/iij/mruby-ipaddr.git'},  # need sys/socket.h
   # {:git => 'https://github.com/pepabo/mruby-ipfilter.git'}, # need sys/shm.h
   # {:git => 'https://github.com/rrreeeyyy/mruby-ipvs'  # need sys/wait.h
