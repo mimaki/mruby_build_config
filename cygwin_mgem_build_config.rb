@@ -240,9 +240,7 @@ end
   # {:git => 'https://github.com/ksss/mruby-io-console.git'}, # test KO(1)
   # {:git => 'https://github.com/ksss/mruby-io-copy_stream.git'}, # compile error (O_RDONLY, O_CREAT, ...)
   # {:git => 'https://github.com/iij/mruby-io.git'},  # test KO(1)
-=end
-  {:git => 'https://github.com/takumakume/mruby-ionice.git'},
-=begin
+  # {:git => 'https://github.com/takumakume/mruby-ionice.git'}, # need sys/syscall.h
   # {:git => 'https://github.com/iij/mruby-ipaddr.git'},  # test hungup
   # {:git => 'https://github.com/pepabo/mruby-ipfilter.git'}, # need maxminddb.h
   # {:git => 'https://github.com/rrreeeyyy/mruby-ipvs'  # need linux/types.h
