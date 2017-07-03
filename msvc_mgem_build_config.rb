@@ -129,6 +129,7 @@ end
 
 [
 =begin
+=end
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # compile error (unistd.h)
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
@@ -185,18 +186,14 @@ end
   {:git => 'https://github.com/iij/mruby-env.git'},
   {:git => 'https://github.com/jbreeden/mruby-erb.git'},
   {:git => 'https://github.com/iij/mruby-errno.git'},
-=end
-  {:git => 'https://github.com/mruby-esp32/mruby-esp32-gpio.git'},
-  {:git => 'https://github.com/mruby-esp32/mruby-esp32-i2c.git'},
-  {:git => 'https://github.com/mruby-esp32/mruby-esp32-system.git'},
-  {:git => 'https://github.com/mruby-esp32/mruby-esp32-wifi.git'},
-=begin
+  # {:git => 'https://github.com/mruby-esp32/mruby-esp32-gpio.git'},  # need driver/gpio.h
+  # {:git => 'https://github.com/mruby-esp32/mruby-esp32-i2c.git'}, # need driver/i2c.h
+  # {:git => 'https://github.com/mruby-esp32/mruby-esp32-system.git'},  # need esp_system.h
+  # {:git => 'https://github.com/mruby-esp32/mruby-esp32-wifi.git'},  # need freertos/FreeRTOS.h
   # {:git => 'https://github.com/udzura/mruby-etcd.git'}, # build error (polarssl)
   # {:git => 'https://github.com/matsumotory/mruby-eventfd.git'}, # need unistd.h
   # {:git => 'https://github.com/matsumotory/mruby-fast-remote-check.git'}, # need unistd.h
-=end
-  {:git => 'https://github.com/takumakume/mruby-file-access.git'},
-=begin
+  # {:git => 'https://github.com/takumakume/mruby-file-access.git'},  # need POSIX
   # {:git => 'https://github.com/ksss/mruby-file-stat.git'},  # test KO(2)
   # {:git => 'https://github.com/k0u5uk3/mruby-filemagic.git'}, # need magic.h
   # {:git => 'https://github.com/dabroz/mruby-float4.git'}, # build error (float->int)
@@ -311,9 +308,7 @@ end
   # {:git => 'https://github.com/luisbebop/mruby-polarssl.git'},  # need POSIX
   # {:git => 'https://github.com/Asmod4n/mruby-poll.git'},  # need poll.h
   # {:git => 'https://github.com/udzura/mruby-posix_ipc.git'},  # need mqueue.h
-=end
-  {:git => 'https://github.com/Asmod4n/mruby-proc-irep-ext.git'},
-=begin
+  # {:git => 'https://github.com/Asmod4n/mruby-proc-irep-ext.git'}, # test crush(1)
   # {:git => 'https://github.com/iij/mruby-process.git'}, # need sys/time.h
   {:git => 'https://github.com/h2so5/mruby-pure-regexp.git'},
   # {:git => 'https://github.com/katzer/mruby-r3.git'}, # compile error (r3.h)
@@ -400,6 +395,7 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # need zlib.h
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # need zmq.h
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
+=begin
 =end
 ].each {|mgem|
   _git = mgem[:git]
