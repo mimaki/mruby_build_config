@@ -140,16 +140,19 @@ MRuby::Build.new('test-full-core') do |conf|
 end
 
 [
+  %w(MRB_32BIT),  # conflict with MRB_64BIT
+  %w(MRB_64BIT),  # conflict with MRB_32BIT
+  %w(MRB_METHOD_TABLE_INLINE),  # for Linux by default
   %w(MRB_USE_FLOAT),
   %w(MRB_INT16),
+  %w(MRB_INT32),
   %w(MRB_INT64),
   %w(MRB_NAN_BOXING),
+  %w(MRB_ENDIAN_BIG), # for Big endian machine
   %w(MRB_WORD_BOXING),
   %w(MRB_UTF8_STRING),
   %w(MRB_FUNCALL_ARGC_MAX=8),
   %w(MRB_HEAP_PAGE_SIZE=256),
-  %w(MRB_USE_IV_SEGLIST),
-  %w(MRB_IVHASH_INIT_SIZE=4),
   # %w(MRB_USE_ETEXT_EDATA),                          # msys NG
   # %w(MRB_USE_ETEXT_EDATA MRB_NO_INIT_ARRAY_START),  # msys NG
   %w(MRB_GC_TURN_OFF_GENERATIONAL),
@@ -168,7 +171,6 @@ end
       MRB_UTF8_STRING
       MRB_FUNCALL_ARGC_MAX=8
       MRB_HEAP_PAGE_SIZE=256
-      MRB_USE_IV_SEGLIST
       MRB_NO_INIT_ARRAY_START
       MRB_GC_TURN_OFF_GENERATIONAL
       KHASH_DEFAULT_SIZE=16
@@ -183,7 +185,6 @@ end
       MRB_UTF8_STRING
       MRB_FUNCALL_ARGC_MAX=8
       MRB_HEAP_PAGE_SIZE=256
-      MRB_IVHASH_INIT_SIZE=4
       MRB_NO_INIT_ARRAY_START
       MRB_GC_TURN_OFF_GENERATIONAL
       KHASH_DEFAULT_SIZE=16
