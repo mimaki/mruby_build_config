@@ -190,14 +190,14 @@ end
   {:git => 'https://github.com/iij/mruby-env.git'},
   {:git => 'https://github.com/jbreeden/mruby-erb.git'},
   {:git => 'https://github.com/iij/mruby-errno.git'},
-  {:git => 'https://github.com/mruby-esp32/mruby-esp32-gpio.git'},
-  {:git => 'https://github.com/mruby-esp32/mruby-esp32-i2c.git'},
-  {:git => 'https://github.com/mruby-esp32/mruby-esp32-system.git'},
-  {:git => 'https://github.com/mruby-esp32/mruby-esp32-wifi.git'},
+  # {:git => 'https://github.com/mruby-esp32/mruby-esp32-gpio.git'},  # need driver/gpio.h
+  # {:git => 'https://github.com/mruby-esp32/mruby-esp32-i2c.git'}, # need driver/i2c.h
+  # {:git => 'https://github.com/mruby-esp32/mruby-esp32-system.git'},  # need esp_system.h
+  # {:git => 'https://github.com/mruby-esp32/mruby-esp32-wifi.git'},  # need freertos/FreeRTOS.h
   # {:git => 'https://github.com/udzura/mruby-etcd.git'}, # test crush(9)
   {:git => 'https://github.com/matsumotory/mruby-eventfd.git'},
   # {:git => 'https://github.com/matsumotory/mruby-fast-remote-check.git'}, # test KO(1) crush(3)
-  {:git => 'https://github.com/takumakume/mruby-file-access.git'},
+  # {:git => 'https://github.com/takumakume/mruby-file-access.git'},  # test KO(5)
   {:git => 'https://github.com/ksss/mruby-file-stat.git'},
   # {:git => 'https://github.com/k0u5uk3/mruby-filemagic.git'}, # need magic.h
   {:git => 'https://github.com/dabroz/mruby-float4.git'},
@@ -247,7 +247,7 @@ end
   # {:git => 'https://github.com/pepabo/mruby-ipfilter.git'}, # need maxminddb.h
   # {:git => 'https://github.com/rrreeeyyy/mruby-ipvs'  # link error (-lnl)
   # {:git => 'https://github.com/ppibburr/mruby-javascriptcore.git'}, # constant FFI not defined
-  # {:git => 'https://github.com/carsonmcdonald/mruby-jpeg.git'}, # jpeglib.h
+  # {:git => 'https://github.com/carsonmcdonald/mruby-jpeg.git'}, # compile error (old API)
   # {:git => 'https://github.com/mattn/mruby-json.git'},  # test crush(2)
   # {:git => 'https://github.com/jkutner/mruby-jvm.git'}, # need jni.h
   {:git => 'https://github.com/prevs-io/mruby-jwt.git'},
@@ -271,7 +271,7 @@ end
   # {:git => 'https://github.com/attm2x/m2x-mruby.git'},  # test crush(2)
   # {:git => 'https://github.com/carsonmcdonald/mruby-markdown.git'}, # compile error (ARGS_NONE)
   {:git => 'https://github.com/take-cheeze/mruby-marshal.git'},
-  # {:git => 'https://github.com/listrophy/mruby-matrix.git'},  # mruby-mtest
+  {:git => 'https://github.com/mimaki/mruby-matrix.git', :branch => 'fix_test'},  # original: 'https://github.com/listrophy/mruby-matrix.git'
   # {:git => 'https://github.com/happysiro/mruby-maxminddb' # need maxminddb.h
   {:git => 'https://github.com/mattn/mruby-md5.git'},
   # {:git => 'https://github.com/mattn/mruby-mecab.git'}, # need mecab.h
@@ -318,7 +318,7 @@ end
   # {:git => 'https://github.com/luisbebop/mruby-polarssl.git'},  # test crush(7)
   {:git => 'https://github.com/Asmod4n/mruby-poll.git'},
   {:git => 'https://github.com/udzura/mruby-posix_ipc.git'},
-  {:git => 'https://github.com/Asmod4n/mruby-proc-irep-ext.git'},
+  # {:git => 'https://github.com/Asmod4n/mruby-proc-irep-ext.git'}, # test crush(1)
   {:git => 'https://github.com/iij/mruby-process.git'},
   {:git => 'https://github.com/appPlant/mruby-process.git'},
   {:git => 'https://github.com/h2so5/mruby-pure-regexp.git'},
@@ -326,7 +326,7 @@ end
   # {:git => 'https://github.com/ksss/mruby-rake.git'}, # test crush(2)
   # {:git => 'https://github.com/matsumotory/mruby-random.git'},  # compile error (random.c)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-raspberry.git'},  # need wiringPi.h
-  # {:git => 'https://github.com/dyama/mruby-rational.git'},  # test failure (p method)
+  {:git => 'https://github.com/mimaki/mruby-rational.git', :branch => 'fix_test'},  # original: 'https://github.com/dyama/mruby-rational.git'
   # {:git => 'https://github.com/matsumotory/mruby-rcon.git'},  # autoreconf error
   {:git => 'https://github.com/Asmod4n/mruby-redis-ae.git'},
   # {:git => 'https://github.com/matsumotory/mruby-redis.git'}, # test crush(48)
@@ -381,6 +381,7 @@ end
   # {:git => 'https://github.com/monochromegane/mruby-time-strftime.git'},  # test KO(5)
   # {:git => 'https://github.com/matsumotory/mruby-timer-thread.git'},  # Segmentation Fault
   {:git => 'https://github.com/mimaki/mruby-tiny-io.git'},
+  {:git => 'https://github.com/takumakume/mruby-ionice.git'},
   {:git => 'https://github.com/matsumotory/mruby-tinymt.git'},
   {:git => 'https://github.com/h2so5/mruby-tinyxml2.git'},
   # {:git => 'https://github.com/Asmod4n/mruby-tls.git'}, # need tls.h
@@ -412,6 +413,7 @@ end
 =end
 ].each {|mgem|
   _git = mgem[:git]
+  _branch = mgem[:branch] ? mgem[:branch] : 'master'
   MRuby::Build.new("test-#{_git.split('/')[-1][0..-5]}") do |conf|
     # Gets set by the VS command prompts.
     if ENV['VisualStudioVersion'] || ENV['VSINSTALLDIR']
@@ -421,8 +423,10 @@ end
     end
 
     enable_debug
-    conf.defines  << mgem[:defines] if mgem[:defines]
-    conf.cc.flags << mgem[:flags]   if mgem[:flags]
+    conf.defines          << mgem[:defines] if mgem[:defines]
+    conf.cc.flags         << mgem[:flags]   if mgem[:flags]
+    conf.cc.include_paths << mgem[:inc]     if mgem[:inc]
+    conf.linker.library_paths << mgem[:lib] if mgem[:lib]
     conf.enable_bintest
     conf.enable_test
 
@@ -433,7 +437,7 @@ end
         conf.gem :git => _dep
       }
     end
-    conf.gem :git => _git
+    conf.gem :git => _git, :branch => _branch
   end
 }
 
