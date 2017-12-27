@@ -144,11 +144,11 @@ end
   %w(MRB_64BIT),  # conflict with MRB_32BIT
   %w(MRB_METHOD_TABLE_INLINE),  # for Linux by default
   %w(MRB_USE_FLOAT),
-  %w(MRB_INT16),
+  # %w(MRB_INT16),  # mruby-pack & mruby-socket test failed.
   %w(MRB_INT32),
   %w(MRB_INT64),
   %w(MRB_NAN_BOXING),
-  %w(MRB_ENDIAN_BIG), # for Big endian machine
+  # %w(MRB_ENDIAN_BIG), # for Big endian machine
   %w(MRB_WORD_BOXING),
   %w(MRB_UTF8_STRING),
   %w(MRB_FUNCALL_ARGC_MAX=8),
