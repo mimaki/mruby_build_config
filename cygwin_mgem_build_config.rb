@@ -128,20 +128,20 @@ end
 # end
 
 [
-=begin
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # test crush
-  # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
+   {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   # {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, # build error
-  {:git => 'https://github.com/Mav7/mruby-ansi-colors.git'},
+  #{:git => 'https://github.com/Mav7/mruby-ansi-colors.git'}, # build error
   # {:git => 'https://github.com/jbreeden/mruby-apr.git', :flags => '-DMRB_INT64'}, # need APR
   # {:git => 'https://github.com/kyab/mruby-arduino.git'},  # need wProgram.h
-  {:git => 'https://github.com/Asmod4n/mruby-argon2.git'},
-  # {:git => 'https://github.com/udzura/mruby-argtable.git'}, # need argtable2.h
-  {:git => 'https://github.com/ksss/mruby-at_exit.git'},
+  #{:git => 'https://github.com/Asmod4n/mruby-argon2.git'}, # build error
+  # {:git => 'https://github.com/udzura/mruby-argtable.git'}, # need argtable3.h
+  #{:git => 'https://github.com/ksss/mruby-at_exit.git'}, # build error
   # {:git => 'https://github.com/georgi/mruby-audite.git'}, # need mpg12.h
-  # {:git => 'https://github.com/hercules-team/mruby-augeas'  # need augeas.h
+  # {:git => 'https://github.com/hercules-team/mruby-augeas'}  # need augeas.h
   # {:git => 'https://github.com/randym/mruby-avl.git'},  # test crush(1)
   # {:git => 'https://github.com/iij/mruby-aws-s3.git'},  # build error
+=begin
   {:git => 'https://github.com/Asmod4n/mruby-b64.git'},
   # {:git => 'https://github.com/crimsonwoods/mruby-backtrace.git'},  # build error (need libunwind.h)
   {:git => 'https://github.com/qtkmz/mruby-base32.git'},
@@ -195,8 +195,8 @@ end
   # {:git => 'https://github.com/udzura/mruby-etcd.git'}, # build error (polarssl)
   # {:git => 'https://github.com/matsumotory/mruby-eventfd.git'}, # need eventfd.h
   # {:git => 'https://github.com/matsumotory/mruby-fast-remote-check.git'}, # build error (ICMP_XXXX)
-=end
   {:git => 'https://github.com/takumakume/mruby-file-access.git'},  # test crush(5)
+=end
 =begin
   # {:git => 'https://github.com/ksss/mruby-file-stat.git'},  # test KO(1)
   # {:git => 'https://github.com/k0u5uk3/mruby-filemagic.git'}, # need magic.h
