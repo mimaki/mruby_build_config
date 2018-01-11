@@ -409,7 +409,7 @@ end
   #{:git => 'https://github.com/zeromq/mruby-zmq.git'},  # cannot find libzmq, building it
   #{:git => 'https://github.com/dearblue/mruby-zstd.git'},#test crash(2)
 =end
-{:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
+#{:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
 =begin
 =end
 ].each {|mgem|
