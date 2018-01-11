@@ -18,7 +18,7 @@ File.open("mgemlist.html", "wb") {|html|
   </tr>
   <tr>
     <th rowspan="2">macOS</th>
-    <th rowspan="2">Ubuntu Linx</th>
+    <th rowspan="2">Ubuntu Linux</th>
     <th colspan="4">Windows</th>
   </tr>
   <tr>
