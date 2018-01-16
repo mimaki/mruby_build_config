@@ -240,10 +240,10 @@ end
   # {:git => 'https://github.com/mattn/mruby-iconv.git'}, # link error (-liconv)
   {:git => 'https://github.com/iij/mruby-iijson.git'},
   {:git => 'https://github.com/keizo042/mruby-implerr.git'},
-  # {:git => 'https://github.com/FlavourSys/mruby-inotify.git'},  # compile error (not constant)
+  # {:git => 'https://github.com/mruby-Forum/mruby-inotify.git', :branch => 'fix-build'},  # KO(5) crush(10) (UNIXSocket) origin: 'https://github.com/FlavourSys/mruby-inotify.git'
   # {:git => 'https://github.com/ksss/mruby-io-console.git'}, # test KO(1) crush(5) (mruby-io)
   {:git => 'https://github.com/ksss/mruby-io-copy_stream.git'},
-  ### {:git => 'https://github.com/iij/mruby-io.git'},  # IIJ -> mruby indluded
+  ### {:git => 'https://github.com/iij/mruby-io.git'},  # IIJ -> mruby included
   {:git => 'https://github.com/takumakume/mruby-ionice.git'},
   # {:git => 'https://github.com/iij/mruby-ipaddr.git'},  # compile error (struct mrb_io)
   # {:git => 'https://github.com/pepabo/mruby-ipfilter.git'}, # need maxminddb.h
@@ -271,7 +271,7 @@ end
   # {:git => 'https://github.com/dearblue/mruby-lz4.git'},  # SEGV
   # {:git => 'https://github.com/dearblue/mruby-lzma.git'}, # need lzma.h
   # {:git => 'https://github.com/attm2x/m2x-mruby.git'},  # compile error (mrb_io in mruby-socket)
-  # {:git => 'https://github.com/carsonmcdonald/mruby-markdown.git'}, # compile error (old mruby API)
+  {:git => 'https://github.com/mruby-Forum/mruby-markdown.git', :branch => 'fix-build'}, # compile error (old mruby API) origin: 'https://github.com/carsonmcdonald/mruby-markdown.git'
   {:git => 'https://github.com/take-cheeze/mruby-marshal.git'},
   {:git => 'https://github.com/listrophy/mruby-matrix.git'},
   # {:git => 'https://github.com/happysiro/mruby-maxminddb'}, # need maxminddb.h
@@ -309,11 +309,11 @@ end
   # {:git => 'https://github.com/IceDragon200/mruby-oui'},  # need oui.h
   ### {:git => 'https://github.com/iij/mruby-pack.git'},  # IIJ -> mruby included
   {:git => 'https://github.com/Asmod4n/mruby-passwdqc'},
-  # {:git => 'https://github.com/mattn/mruby-pcre-regexp.git'}, # need pcre.h
+  {:git => 'https://github.com/mattn/mruby-pcre-regexp.git'},
   {:git => 'https://github.com/dabroz/mruby-perlin-noise.git'},
   {:git => 'https://github.com/Asmod4n/mruby-phr.git'},
   {:git => 'https://github.com/cadwallion/mruby-pid.git'},
-  # {:git => 'https://github.com/schmurfy/mruby-ping'}, # need pcap.h
+  {:git => 'https://github.com/schmurfy/mruby-ping'},
   {:git => 'https://github.com/mattn/mruby-pjson.git'},
   {:git => 'https://github.com/hanachin/mruby-pkcs5.git'},
   # {:git => 'https://github.com/pbosetti/mruby-plplot.git'}, # need plConfig.h
@@ -326,9 +326,9 @@ end
   {:git => 'https://github.com/iij/mruby-process.git'},
   {:git => 'https://github.com/appPlant/mruby-process.git'},
   {:git => 'https://github.com/h2so5/mruby-pure-regexp.git'},
-  # {:git => 'https://github.com/katzer/mruby-r3.git'}, # link error (R3 pcre_xxx)
+  {:git => 'https://github.com/katzer/mruby-r3.git'},
   # {:git => 'https://github.com/ksss/mruby-rake.git'}, # test KO(10) crush(7) (UNIXSocket)
-  # {:git => 'https://github.com/matsumotory/mruby-random.git'},  # build error (random.o)
+  ### {:git => 'https://github.com/matsumotory/mruby-random.git'},  # build error (random.o) (mruby included)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-raspberry.git'},  # need wiringPi.h
   {:git => 'https://github.com/dyama/mruby-rational.git'},
   # {:git => 'https://github.com/matsumotory/mruby-rcon.git'},  # link error (cgroup_xxx)
@@ -344,18 +344,20 @@ end
   # {:git => 'https://github.com/haconiwa/mruby-seccomp.git'},  # aclocal-1.14: command error
   {:git => 'https://github.com/Asmod4n/mruby-secure-compare.git'},
   # {:git => 'https://github.com/monochromegane/mruby-secure-random.git'},  # test KO(1) crush(5) (UNIXSocket)
-  # {:git => 'https://github.com/monami-ya-mrb/mruby-serialport.git'},  # compile error (mrb_ary_len)
+  # {:git => 'https://github.com/mruby-Forum/mruby-serialport.git', :branch => 'fix-build'},  # test KO(1) crush(5) (UNIXSocket) origin: 'https://github.com/monami-ya-mrb/mruby-serialport.git'
   {:git => 'https://github.com/yui-knk/mruby-set.git'},
   {:git => 'https://github.com/mattn/mruby-sha1.git'},
   # {:git => 'https://github.com/h2so5/mruby-sha2.git'},  # test abort (core dump)
-  # {:git => 'https://github.com/katzer/mruby-shelf.git'},  # link error (pcre_xxx)
+  {:git => 'https://github.com/katzer/mruby-shelf.git'},
   {:git => 'https://github.com/k0kubun/mruby-shellwords.git'},
   # {:git => 'https://github.com/monochromegane/mruby-sidekiq-client.git'}, # test crush(49)
   # {:git => 'https://github.com/pyama86/mruby-signal-thread.git'}, # Segmentation Fault
   {:git => 'https://github.com/ksss/mruby-signal.git'},
-  # {:git => 'https://github.com/iij/mruby-simple-random.git'}, # build error (mt19937ar.o)
+  # {:git => 'https://github.com/iij/mruby-ple-random.git'}, # build error (mt19937ar.o)
   {:git => 'https://github.com/y-ken/mruby-simplehttp-socket.git'},
-  # {:git => 'https://github.com/matsumotory/mruby-simplehttp.git'},  # build error (mrb_io)
+  {:git => 'https://github.com/matsumotory/mruby-simplehttp.git'},  # build error (mrb_io)
+=end
+=begin
   # {:git => 'https://github.com/matsumotory/mruby-simplehttpserver.git'},  # test KO(1) crush(6) (UNIXSocket)
   {:git => 'https://github.com/Asmod4n/mruby-simplemsgpack.git'},
   {:git => 'https://github.com/matsumotory/mruby-simpletest.git'},
@@ -390,7 +392,9 @@ end
   # {:git => 'https://github.com/Asmod4n/mruby-tls.git'}, # need tls.h
   # {:git => 'https://github.com/take-cheeze/mruby-uchardet.git'},  # build error (mozilla::xxxx)
   {:git => 'https://github.com/matsumotory/mruby-uname.git'},
-  # {:git => 'https://github.com/keizo042/mruby-unbound.git'},  # need unbound.h
+=end
+=begin
+  # {:git => 'https://github.com/keizo042/mruby-unbound.git'},  # test abort (ArgumentError)
   {:git => 'https://github.com/appPlant/mruby-unicode-display_width.git'},
   {:git => 'https://github.com/mattn/mruby-updategems.git'},
   {:git => 'https://github.com/Asmod4n/mruby-uri-parser.git'},
@@ -403,7 +407,7 @@ end
   # {:git => 'https://github.com/ppibburr/mruby-webkit-3.git'}, # build error (old mruby API)
   # {:git => 'https://github.com/sdottaka/mruby-win32ole.git'},  # Windows only
   {:git => 'https://github.com/mattn/mruby-winapp.git'},
-  # {:git => 'https://github.com/akiray03/mruby-WiringPi.git'}, # compile error (old API ?)
+  {:git => 'https://github.com/mruby-Forum/mruby-WiringPi.git', :branch => 'fix-build'},  # origin: 'https://github.com/akiray03/mruby-WiringPi.git'
   # {:git => 'https://github.com/Asmod4n/mruby-wslay'}, # link error (ntohs())
   {:git => 'https://github.com/AndrewBelt/mruby-yaml.git'}, # original: 'https://github.com/hone/mruby-yaml.git'
   # {:git => 'https://github.com/katzer/mruby-yeah.git'}, # link error 'r3_xxxx'
@@ -412,8 +416,6 @@ end
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # need libtool
   # {:git => 'https://github.com/dearblue/mruby-zstd.git'}, # test KO(1) crush(5) (UNIXSocket)
   {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
-=end
-=begin
 =end
 ].each {|mgem|
   _git = mgem[:git]
