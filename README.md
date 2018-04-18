@@ -13,7 +13,7 @@
 
 ```bash
 $ cd <WORKDIR>  # e.g. ~/mrubytest
-$ git clone https://github.com/Kumikomi-Ruby/mruby.git
+$ git clone https://github.com/mruby-Forum/mruby.git
 $ git clone https://bitbucket.org/scskq/mruby_build_config.git
 $ cd mruby_build_config
 ```
