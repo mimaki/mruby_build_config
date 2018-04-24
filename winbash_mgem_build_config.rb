@@ -159,6 +159,7 @@ end
   # {:git => 'https://github.com/IceDragon200/mruby-blendish', :dep => ['https://github.com/IceDragon200/mruby-glew.git']}, # need GL/glew.h
   {:git => 'https://github.com/mruby-Forum/mruby-cache.git', :branch => 'pass-mruby-test'},  # original: 'https://github.com/charlescui/mruby-cache.git'
   {:git => 'https://github.com/matsumotory/mruby-capability.git'},
+  {:git => 'https://github.com/pyama86/mruby-capacity.git'},
   {:git => 'https://github.com/IceDragon200/mruby-catch-throw'},
   # {:git => 'https://github.com/mobiruby/mruby-cfunc.git'},  # compile error (old mruby API)
   # {:git => 'https://github.com/matsumotory/mruby-cgroup.git'},  # build error (cgroup_xxx)
@@ -183,8 +184,8 @@ end
   # {:git => 'https://github.com/Asmod4n/mruby-czmq.git'},  # need czmq.h
   # {:git => 'https://github.com/inokappa/mruby-datadog.git', :lib => 'pcre'},  # test KO(3) crush(15) (UNIXServer)
   {:git => 'https://github.com/iij/mruby-digest.git'},
-  # {:git => 'https://github.com/gromnitsky/mruby-dir-glob.git'}, # test KO(10) crush(5) (UNIXSocket)
   {:git => 'https://github.com/iij/mruby-dir.git'},
+  # {:git => 'https://github.com/gromnitsky/mruby-dir-glob.git'}, # test KO(10) crush(5) (UNIXSocket)
   {:git => 'https://github.com/matsumotory/mruby-discount.git'},
   # {:git => 'https://github.com/matsumotory/mruby-disque.git'},  # test crush(99)
   # {:git => 'https://github.com/mattn/mruby-dll.git'}, # link error (.rodata)
@@ -215,16 +216,16 @@ end
   {:git => 'https://github.com/mttech/mruby-getopts'},
   {:git => 'https://github.com/Asmod4n/mruby-getpass.git'},
   {:git => 'https://github.com/mame/mruby-gettimeofday.git'},
-  # {:git => 'https://github.com/ppibburr/mruby-girffi-docgen.git'},  # compile error @mruby-cfunc (old mruby API)
   # {:git => 'https://github.com/ppibburr/mruby-girffi.git'}, # compile error @mruby-cfunc (old mruby API)
+  # {:git => 'https://github.com/ppibburr/mruby-girffi-docgen.git'},  # compile error @mruby-cfunc (old mruby API)
   # {:git => 'https://github.com/xxuejie/mruby-gles.git'},  # need GLES2/gl2.h
   # {:git => 'https://github.com/take-cheeze/mruby-glfw3.git'}, # need GLFW/glfw3.h
   # {:git => 'https://github.com/jbreeden/mruby-glib.git'}, # need glib.h
   # {:git => 'https://github.com/ppibburr/mruby-glib2.git'},  # compile error @mruby-cfunc (old mruby API)
   # {:git => 'https://github.com/chasonr/mruby-gmp-bignum.git'},  # need gmp.h
   {:git => 'https://github.com/mattn/mruby-gntp.git'},
-  # {:git => 'https://github.com/ppibburr/mruby-gobject-introspection.git'},  # build error @mruby-cfunc (old mruby API)
   # {:git => 'https://github.com/ppibburr/mruby-gobject.git'},  # build error @mruby-cfunc (old mruby API)
+  # {:git => 'https://github.com/ppibburr/mruby-gobject-introspection.git'},  # build error @mruby-cfunc (old mruby API)
   {:git => 'https://github.com/matsumotory/mruby-growthforecast.git'},
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-gsl.git'},  # need gsl/gsl_vector.h
   # {:git => 'https://github.com/ppibburr/mruby-gtk2.git'}, # build error @mruby-cfunc (old mruby API)
@@ -244,9 +245,9 @@ end
   {:git => 'https://github.com/iij/mruby-iijson.git'},
   {:git => 'https://github.com/keizo042/mruby-implerr.git'},
   # {:git => 'https://github.com/mruby-Forum/mruby-inotify.git', :branch => 'fix-build'},  # KO(10) crush(5) (UNIXSocket) origin: 'https://github.com/FlavourSys/mruby-inotify.git'
+  ### {:git => 'https://github.com/iij/mruby-io.git'},  # IIJ -> mruby included
   # {:git => 'https://github.com/ksss/mruby-io-console.git'}, # test KO(1) crush(5) (mruby-io)
   # {:git => 'https://github.com/ksss/mruby-io-copy_stream.git'}, # build error (mrb_ensure)
-  ### {:git => 'https://github.com/iij/mruby-io.git'},  # IIJ -> mruby included
   {:git => 'https://github.com/takumakume/mruby-ionice.git'},
   # {:git => 'https://github.com/iij/mruby-ipaddr.git'},  # test KO(1) crush(15)
   # {:git => 'https://github.com/pepabo/mruby-ipfilter.git'}, # need maxminddb.h
@@ -341,8 +342,8 @@ end
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-raspberry.git'},  # need wiringPi.h
   {:git => 'https://github.com/dyama/mruby-rational.git'},
   # {:git => 'https://github.com/matsumotory/mruby-rcon.git'},  # link error (cgroup_xxx)
-  {:git => 'https://github.com/Asmod4n/mruby-redis-ae.git'},
   # {:git => 'https://github.com/matsumotory/mruby-redis.git'}, # test crush(95)
+  {:git => 'https://github.com/Asmod4n/mruby-redis-ae.git'},
   {:git => 'https://github.com/iij/mruby-regexp-pcre.git'},
   # {:git => 'https://github.com/takumakume/mruby-renice.git'}, # test KO(1) crush(1)
   {:git => 'https://github.com/mattn/mruby-require.git'},
@@ -362,11 +363,11 @@ end
   # {:git => 'https://github.com/katzer/mruby-shelf.git', :lib => 'pcre'},  # test KO(2)crush(5)
   {:git => 'https://github.com/k0kubun/mruby-shellwords.git'},
   # {:git => 'https://github.com/monochromegane/mruby-sidekiq-client.git'}, # test KO(1) crush(100) (AF_UNIX)
-  # {:git => 'https://github.com/pyama86/mruby-signal-thread.git'}, # test crush(8)
   {:git => 'https://github.com/ksss/mruby-signal.git'},
-  # {:git => 'https://github.com/iij/mruby-ple-random.git'}, # git auth error (mruby-ple-random.git)
+  # {:git => 'https://github.com/pyama86/mruby-signal-thread.git'}, # test crush(8)
+  {:git => 'https://github.com/iij/mruby-simple-random.git'},
+# {:git => 'https://github.com/matsumotory/mruby-simplehttp.git', :lib => 'pcre'},  # test KO(2) crush(15) AF_UNIX
   {:git => 'https://github.com/y-ken/mruby-simplehttp-socket.git'},
-  # {:git => 'https://github.com/matsumotory/mruby-simplehttp.git', :lib => 'pcre'},  # test KO(2) crush(15) AF_UNIX
   # {:git => 'https://github.com/matsumotory/mruby-simplehttpserver.git'},  # test KO(2) crush(15) (UNIXSocket)
   {:git => 'https://github.com/Asmod4n/mruby-simplemsgpack.git'},
   {:git => 'https://github.com/matsumotory/mruby-simpletest.git'},
