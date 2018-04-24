@@ -1,14 +1,10 @@
-INFOLINES = 8
+require 'csv'
 
-`mgem update`
-mgeminfo = `mgem info`
-# puts mgeminfo
+OS_NUM = 6        # Number of OSs
+RESULT_BASE = 7   # Index of 1st OS's result base
 
-repolist = mgeminfo.lines.each_slice(INFOLINES).to_a
-# p repolist
-
-# generate CSV
-File.open("mgemlist.html", "wb") {|html|
+def write_table_header(html)
+  # Write header
   html.puts <<EOS
 <table align="center" border="1">
   <tr>
@@ -28,24 +24,76 @@ File.open("mgemlist.html", "wb") {|html|
     <th>WSL (Bash)</th>
   </tr>
 EOS
-  repolist.each {|repo|
-    if repo.size == INFOLINES
-      html.puts <<EOS
-  <tr><td><a href="#{repo[4].split(' ')[1]}" target="_blank">#{repo[1].split(' ')[1]}</a></td>
-  <td>#{repo[3].split(' ')[1..-1].join(' ')}</td>
-  <td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
+end
+
+#------
+# main
+#------
+
+unless ARGV.size > 0
+  puts <<EOS
+Usage: #{$0} <csv>
+  csv: CSV file of test result.
 EOS
-  #     repo[1].split(' ')[1],                # Name
-  #     repo[2].split(' ')[1..-1].join(' '),  # Author
-  #     repo[3].split(' ')[1..-1].join(' '),  # Description
-  #     repo[4].split(' ')[1],                # Website
-  #     repo[5].split(' ')[1],                # Repository
-  #     repo[6].split(' ')[2..-1].join(' '),  # Repo Options
-  #     repo[7].split(' ')[1],                # Protocol
-  #   ] if repo.size == INFOLINES
+  exit -1
+end
+
+begin
+  # Load result.csv
+  result = CSV.read ARGV[0]
+  3.times {result.delete_at(0)}
+
+  # Make mgemlist.csv
+  `ruby mgemcsv.rb`
+
+  # Load mgemlist.csv
+  csv = CSV.read 'mgemlist.csv'
+  csv.delete_at(0)
+
+  # Add result
+  csv.each_with_index {|repo, i|
+    if res = result.find {|r| r[0] == repo[0]}
+      OS_NUM.times {|i|
+        repo << res[RESULT_BASE + i * 2]
+      }
+    else
+      puts "*** #{repo[0]} not found. ***"
     end
   }
-  html.puts <<EOS
+
+  # Generate HTML
+  lines = 0
+  File.open("mgemlist.html", "w") {|html|
+    # Write table header
+    write_table_header(html)
+
+    # Write table body
+    csv.each {|repo|
+      res = repo[-OS_NUM..-1]
+      puts "#{res} #{repo[0]}" if $DEBUG
+      next if res.join.size == 0
+
+      lines += 1
+
+      html.puts <<EOS
+  <tr><td><a href="#{repo[3]}" target="_blank">#{repo[0]}</a></td>
+  <td>#{repo[2]}</td>
+EOS
+      html.print '  '
+      OS_NUM.times {|i|
+        html.print "<td align=\"center\"> #{repo[-OS_NUM+i]} </td>"
+      }
+      html.puts "</tr>"
+    }
+    html.puts <<EOS
 </table>
 EOS
-}
+  }
+
+  puts "Total mgems:  #{csv.size}"
+  puts "Output mgems: #{lines}"
+
+rescue => e
+  p e
+  exit -1
+end
