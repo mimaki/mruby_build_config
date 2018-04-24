@@ -144,7 +144,7 @@ end
   # {:git => 'https://github.com/georgi/mruby-audite.git'}, # need mpg123.h
   # {:git => 'https://github.com/hercules-team/mruby-augeas'},  # need augeas.h
   {:git => 'https://github.com/randym/mruby-avl.git'},
-  # {:git => 'https://github.com/iij/mruby-aws-s3.git'},  # autogen fail (libuv)
+  # {:git => 'https://github.com/iij/mruby-aws-s3.git', :lib => 'pcre'},  # test KO(2) crush(16) (UNIXSocket)
   # {:git => 'https://github.com/hfm/mruby-aws-sigv4.git'}, # test KO(10), crush(5)
   {:git => 'https://github.com/Asmod4n/mruby-b64.git'},
   # {:git => 'https://github.com/crimsonwoods/mruby-backtrace.git'},  # need libunwind.h
@@ -180,7 +180,7 @@ end
   {:git => 'https://github.com/matsumotory/mruby-criu.git'},
   {:git => 'https://github.com/matsumotory/mruby-cross-compile-on-mac-osx.git'},
   {:git => 'https://github.com/mattn/mruby-curl.git'},
-  # {:git => 'https://github.com/jbreeden/mruby-curses.git'}, # build error (link error of curses)
+  {:git => 'https://github.com/jbreeden/mruby-curses.git', :lib => ['ncurses', 'panel']},
   # {:git => 'https://github.com/Asmod4n/mruby-czmq.git'},  # need czmq.h
   # {:git => 'https://github.com/inokappa/mruby-datadog.git', :lib => 'pcre'},  # test KO(3) crush(15) (UNIXServer)
   {:git => 'https://github.com/iij/mruby-digest.git'},
@@ -241,7 +241,7 @@ end
   # {:git => 'https://github.com/matsumotory/mruby-http2.git'}, # build error (autoreconf)
   # {:git => 'https://github.com/matsumotory/mruby-httprequest.git', :lib => 'pcre'}, # test crush(1) (UNIXServer or Regexp)
   # {:git => 'https://github.com/Asmod4n/mruby-httpsclient.git'}, # need tls.h
-  # {:git => 'https://github.com/mattn/mruby-iconv.git'}, # link error (-liconv)
+  {:git => 'https://github.com/mattn/mruby-iconv.git'}, # link error (-liconv)
   {:git => 'https://github.com/iij/mruby-iijson.git'},
   {:git => 'https://github.com/keizo042/mruby-implerr.git'},
   # {:git => 'https://github.com/mruby-Forum/mruby-inotify.git', :branch => 'fix-build'},  # KO(10) crush(5) (UNIXSocket) origin: 'https://github.com/FlavourSys/mruby-inotify.git'
@@ -255,7 +255,7 @@ end
   # {:git => 'https://github.com/ppibburr/mruby-javascriptcore.git'}, # constant (FFI)
   # {:git => 'https://github.com/carsonmcdonald/mruby-jpeg.git'}, # need jpeglib.h
   # {:git => 'https://github.com/mattn/mruby-json.git'},  # test KO(1)
-  # {:git => 'https://github.com/jkutner/mruby-jvm.git', :incpath => ["#{JDK_PATH}/include", "#{JDK_PATH}/include/linux"]}, # link error (dlopne, dlsym)
+  # {:git => 'https://github.com/jkutner/mruby-jvm.git', :incpath => ["#{JDK_PATH}/include", "#{JDK_PATH}/include/linux"], :lib => 'dl'}, # test KO(5)
   {:git => 'https://github.com/prevs-io/mruby-jwt.git'},
   # {:git => 'https://github.com/syucream/mruby-k2hash.git'}, # need k2hash.h
   {:git => 'https://github.com/santazhang/mruby-kmp.git'},
@@ -327,7 +327,7 @@ end
   {:git => 'https://github.com/Asmod4n/mruby-poll.git'},
   # {:git => 'https://github.com/nsheremet/mruby-pong.git'},  # test abort (SimpleTest)
   # {:git => 'https://github.com/udzura/mruby-posix_ipc.git'},  # test SEGV
-  # {:git => 'https://github.com/Asmod4n/mruby-postgresql.git'},  # build error (undefined reference to XXX)
+  {:git => 'https://github.com/Asmod4n/mruby-postgresql.git', :lib => ['ssl' , 'crypto', 'pthread']},
   {:git => 'https://github.com/Asmod4n/mruby-proc-irep-ext.git'},
   {:git => 'https://github.com/iij/mruby-process.git'},
   {:git => 'https://github.com/appPlant/mruby-process.git'},
@@ -352,7 +352,7 @@ end
   {:git => 'https://github.com/scalone/mruby-ripemd.git'},
   # {:git => 'https://github.com/emsk/mruby-romajify.git'}, # test crush(183)
   # {:git => 'https://github.com/schmurfy/mruby-rubyffi-compat.git'}, # build error (mruby-cfunc)
-  # {:git => 'https://github.com/haconiwa/mruby-seccomp.git'},  # aclocal-1.14: command error
+  # {:git => 'https://github.com/haconiwa/mruby-seccomp.git'},  # test KO(1) crush(2)
   {:git => 'https://github.com/Asmod4n/mruby-secure-compare.git'},
   # {:git => 'https://github.com/monochromegane/mruby-secure-random.git'},  # test KO(1) crush(5) (UNIXSocket)
   # {:git => 'https://github.com/monami-ya-mrb/mruby-serialport.git'},  # test KO(1) crush(5) (UNIXSocket)
@@ -371,7 +371,7 @@ end
   # {:git => 'https://github.com/matsumotory/mruby-simplehttpserver.git'},  # test KO(2) crush(15) (UNIXSocket)
   {:git => 'https://github.com/Asmod4n/mruby-simplemsgpack.git'},
   {:git => 'https://github.com/matsumotory/mruby-simpletest.git'},
-  # {:git => 'https://github.com/mattn/mruby-sinatic.git'}, # libtoolize not found
+  # {:git => 'https://github.com/mattn/mruby-sinatic.git'}, # test crush(1)
   {:git => 'https://github.com/ksss/mruby-singleton.git'},
   {:git => 'https://github.com/ksss/mruby-siphash.git'},
   {:git => 'https://github.com/matsumotory/mruby-sleep.git'},
