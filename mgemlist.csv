@@ -20,6 +20,7 @@ mruby-base58,h2so5,Base58 Encoder/Decoder,https://github.com/h2so5/mruby-base58,
 mruby-base64,mattn,Base64 Encoder/Decoder,https://github.com/mattn/mruby-base64,https://github.com/mattn/mruby-base64.git,"",git
 mruby-bcrypt,Emanuele Vicentini,OpenBSD-style Blowfish-based password hashing,https://github.com/baldowl/mruby-bcrypt,https://github.com/baldowl/mruby-bcrypt.git,"",git
 mruby-bignum,Ray Chason,Self-contained Bignum implementation for mruby,https://github.com/chasonr/mruby-bignum,https://github.com/chasonr/mruby-bignum.git,"",git
+mruby-bin-mirb-hostbased,kyab,Hostbased mirb for serial connection,https://github.com/kyab/mruby-bin-mirb-hostbased,https://github.com/kyab/mruby-bin-mirb-hostbased.git,"",git
 mruby-bin-mruby-afl,Daniel Bovensiepen <daniel@bovensiepen.net>,mruby interpreter in american fuzzy lop persistent mode,https://github.com/bovi/mruby-bin-mruby-afl,https://github.com/bovi/mruby-bin-mruby-afl.git,"",git
 mruby-bin-scite-mruby,Takashi Sawanaka,A SciTE based text editor with mruby scripting extension,https://github.com/sdottaka/mruby-bin-scite-mruby,https://github.com/sdottaka/mruby-bin-scite-mruby.git,"",git
 mruby-blendish,Corey Powell,Duangle OUI-blendish bindings.,https://github.com/IceDragon200/mruby-blendish,https://github.com/IceDragon200/mruby-blendish,"",git
@@ -32,7 +33,7 @@ mruby-cgroup,MATSUMOTO Ryosuke,cgroup binding,https://github.com/matsumotory/mru
 mruby-changefinder,MATSUMOTO Ryosuke,Detect change point via continuous outlier and smoothing,https://github.com/matsumotory/mruby-changefinder,https://github.com/matsumotory/mruby-changefinder.git,"",git
 mruby-channel,bggd,named FIFO queue with multithreading,https://github.com/bggd/mruby-channel,https://github.com/bggd/mruby-channel.git,"",git
 mruby-chipmunk2d,Corey Powell,chipmunk2d bindings,https://github.com/IceDragon200/mruby-chipmunk2d,https://github.com/IceDragon200/mruby-chipmunk2d,"",git
-mruby-chrony,Hendrik Beskow,Steady and System clocks for mruby,https://github.com/Asmod4n/mruby-chrono,https://github.com/Asmod4n/mruby-chrono.git,"",git
+mruby-chrono,Hendrik Beskow,Steady and System clocks for mruby,https://github.com/Asmod4n/mruby-chrono,https://github.com/Asmod4n/mruby-chrono.git,"",git
 mruby-cidr,kaihar4,CIDR class,https://github.com/kaihar4/mruby-cidr,https://github.com/kaihar4/mruby-cidr.git,"",git
 mruby-cipher,Seiei Miyagi,OpenSSL Cipher wrapper,https://github.com/hanachin/mruby-cipher,https://github.com/hanachin/mruby-cipher.git,"",git
 mruby-clang-plugin,Takeshi Watanabe,clang plugin to check mruby API call mistakes.,https://github.com/take-cheeze/mruby-clang-plugin,https://github.com/take-cheeze/mruby-clang-plugin.git,"",git
@@ -118,7 +119,6 @@ mruby-ionice,takumakume,Ionice class,https://github.com/takumakume/mruby-ionice,
 mruby-ipaddr,iij,IPAddr class,https://github.com/iij/mruby-ipaddr,https://github.com/iij/mruby-ipaddr.git,"",git
 mruby-ipfilter,tap1ra,IPFilter class,https://github.com/pepabo/mruby-ipfilter,https://github.com/pepabo/mruby-ipfilter.git,"",git
 mruby-ipvs,YOSHIKAWA Ryota,interface to IP Virtual Server (IPVS) for mruby,https://github.com/rrreeeyyy/mruby-ipvs,https://github.com/rrreeeyyy/mruby-ipvs,--recursive,git
-mruby-irb-mirb-hostbased,kyab,Hostbased mirb for serial connection,https://github.com/kyab/mruby-bin-mirb-hostbased,https://github.com/kyab/mruby-bin-mirb-hostbased.git,"",git
 mruby-javascriptcore,ppibburr,bindings to an from JavaScript for JavaScriptCore from WebKitGTK,https://github.com/ppibburr/mruby-javascriptcore,https://github.com/ppibburr/mruby-javascriptcore.git,"",git
 mruby-jpeg,Carson McDonald,JPeg library,https://github.com/carsonmcdonald/mruby-jpeg,https://github.com/carsonmcdonald/mruby-jpeg.git,"",git
 mruby-json,mattn,JavaScript Object Notation,https://github.com/mattn/mruby-json,https://github.com/mattn/mruby-json.git,"",git
