@@ -397,15 +397,16 @@ end
   # {:git => 'https://github.com/matsumotory/mruby-virtualing.git'},  # need libcgroup.h
   # {:git => 'https://github.com/ppibburr/mruby-webkit-1.git'}, # need ffi.h
   # {:git => 'https://github.com/ppibburr/mruby-webkit-3.git'}, # need ffi.h
-  # {:git => 'https://github.com/sdottaka/mruby-win32ole.git'}, # test faile (undefined method foo)
+  # {:git => 'https://github.com/sdottaka/mruby-win32ole.git'}, # Windows only : test fail (undefined method foo)
   {:git => 'https://github.com/mattn/mruby-winapp.git'},
-  # {:git => 'https://github.com/akiray03/mruby-WiringPi.git'}, # compile error (old API ?)
-  # {:git => 'https://github.com/Asmod4n/mruby-wslay'   # compile error (htons)
-  # {:git => 'https://github.com/hone/mruby-yaml.git'}, # curl command error
-  # {:git => 'https://github.com/katzer/mruby-yeah.git'}, # test hangup?
+  # {:git => 'https://github.com/mruby-Forum/mruby-WiringPi.git', :branch => 'fix-build'},  # need linux/spi/spidev.h : original: 'https://github.com/akiray03/mruby-WiringPi.git'
+  # {:git => 'https://github.com/Asmod4n/mruby-wslay'},  # compile error (Winsock?)
+  # {:git => 'https://github.com/hone/mruby-yaml.git'}, # need libtool
+  # {:git => 'https://github.com/katzer/mruby-yeah.git'},
   {:git => 'https://github.com/matsumotory/mruby-zabbix.git'},
+  # {:git => 'https://github.com/mruby-zest/mruby-zest.git'}, # build error (old API)
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # need zlib.h
-  # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  #  pkg-config
+  # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  #  autoreconf and autorake
   {:git => 'https://github.com/dearblue/mruby-zstd.git'},
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
 =end
