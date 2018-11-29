@@ -21,6 +21,9 @@ mac:
 linux:
 	MRUBY_CONFIG=$(CONFDIR)/linux_mgem_build_config.rb make -C ../mruby test
 
+init:
+	rm -rf ../mruby/build/test-*
+
 clean:
 	make -C ../mruby clean
 
