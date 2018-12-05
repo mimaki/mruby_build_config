@@ -46,3 +46,13 @@ mruby_build_configディレクトリ内で以下を実行する。
 ```
 $ make core
 ```
+
+# 評価結果(HTML)の作成
+
+評価結果記入済みの `mruby-x.x.x-mrbgems` (Googleスプレッドシート) をCSV形式で保存して、以下を実行する。
+
+```bash
+$ ruby mgemhtml.rb <csvファイル名>
+```
+
+あとは、出力される mgemlist.html をメンテする。
