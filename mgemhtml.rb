@@ -1,6 +1,6 @@
 require 'csv'
 
-OS_NUM = 6        # Number of OSs
+OS_NUM = 4        # Number of OSs
 RESULT_BASE = 7   # Index of 1st OS's result base
 
 def write_table_header(html)
@@ -15,13 +15,11 @@ def write_table_header(html)
   <tr>
     <th rowspan="2">macOS</th>
     <th rowspan="2">Ubuntu Linux</th>
-    <th colspan="4">Windows</th>
+    <th colspan="2">Windows</th>
   </tr>
   <tr>
     <th>Visual C++</th>
     <th>MinGW</th>
-    <th>Cygwin</th>
-    <th>WSL (Bash)</th>
   </tr>
 EOS
 end
