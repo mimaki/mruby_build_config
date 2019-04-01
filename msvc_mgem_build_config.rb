@@ -128,6 +128,7 @@ end
 # end
 
 [
+=begin
   # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # compile error (unistd.h)
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   {:git => 'https://github.com/ppibburr/mruby-allocate.git'}, 
@@ -430,6 +431,7 @@ end
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # need zmq.h
   # {:git => 'https://github.com/dearblue/mruby-zstd.git'},# many error(mruby-zstd.c)
   # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
+=end
 ].each {|mgem|
   _git = mgem[:git]
   _branch = mgem[:branch] ? mgem[:branch] : 'master'
