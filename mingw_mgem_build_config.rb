@@ -135,16 +135,17 @@ end
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5.h
   {:git => 'https://github.com/ppibburr/mruby-allocate.git'},
   # {:git => 'https://github.com/Mav7/mruby-ansi-colors.git'},  # build error (isdigit())
-  {:git => 'https://github.com/jbreeden/mruby-apr.git'},  # MRB_INT64
+  # {:git => 'https://github.com/jbreeden/mruby-apr.git'},  # MRB_INT64
   # {:git => 'https://github.com/kyab/mruby-arduino.git'},  # need wProgram.h
   # {:git => 'https://github.com/Asmod4n/mruby-argon2.git'}, # path and function error
   # {:git => 'https://github.com/udzura/mruby-argtable.git'}, # need argtable3.h
   {:git => 'https://github.com/ksss/mruby-at_exit.git'},
   # {:git => 'https://github.com/georgi/mruby-audite.git'}, # need pthread.h
   # {:git => 'https://github.com/hercules-team/mruby-augeas'}  # need augeas.h
-  {:git => 'https://github.com/randym/mruby-avl.git'},
+  # {:git => 'https://github.com/randym/mruby-avl.git'},
+  {:git => 'https://github.com/mruby-Forum/mruby-avl.git', :branch => 'mruby-2.0.0-test'}
   # {:git => 'https://github.com/iij/mruby-aws-s3.git'},  # conflicting types for 'spawnve'
-  {:git => 'https://github.com/hfm/mruby-aws-sigv4.git'}, # need sys/wait.h
+  # {:git => 'https://github.com/hfm/mruby-aws-sigv4.git'}, # need sys/wait.h
   {:git => 'https://github.com/Asmod4n/mruby-b64.git'},
   # {:git => 'https://github.com/crimsonwoods/mruby-backtrace.git'},  # build error (need libunwind.h)
   {:git => 'https://github.com/qtkmz/mruby-base32.git'},
@@ -159,7 +160,7 @@ end
   # {:git => 'https://github.com/charlescui/mruby-cache.git'},  # build error (semaphore.h)
   # {:git => 'https://github.com/matsumotory/mruby-capability.git'},  # need linux/types.h
   # {:git => 'https://github.com/pyama86/mruby-capacity.git'}, # test KO(4)
-  {:git => 'https://github.com/IceDragon200/mruby-catch-throw'}, #test error
+  # {:git => 'https://github.com/IceDragon200/mruby-catch-throw'}, #test error
   # {:git => 'https://github.com/mobiruby/mruby-cfunc.git'},  # No such file or directory _rubyvm1.c
   # {:git => 'https://github.com/matsumotory/mruby-cgroup.git'},  # need libcgroup.h
   # {:git => 'https://github.com/matsumotory/mruby-changefinder.git'}, # test KO(1) Crach(1)
@@ -175,9 +176,7 @@ end
   {:git => 'https://github.com/matsumotory/mruby-config.git'},
   # {:git => 'https://github.com/inokappa/mruby-consul.git'}, # spawnve
   {:git => 'https://github.com/matsumotory/mruby-correlation.git'},
-=end
   # {:git => 'https://github.com/dearblue/mruby-crc.git'}, # test error
-=begin
   # {:git => 'https://github.com/matsumotory/mruby-criu.git'},  # need criu/criu.h
   {:git => 'https://github.com/matsumotory/mruby-cross-compile-on-mac-osx.git'},
   # {:git => 'https://github.com/mattn/mruby-curl.git'},  # need curl/curl.h
@@ -258,10 +257,7 @@ end
   # {:git => 'https://github.com/rrreeeyyy/mruby-ipvs'}  # implicit declaration of function
   # {:git => 'https://github.com/ppibburr/mruby-javascriptcore.git'}, # const FFI
   # {:git => 'https://github.com/carsonmcdonald/mruby-jpeg.git'}, # need jpeglib.h
-=end
-{:git => 'https://github.com/mruby-Forum/mruby-json', :branch => 'support-mruby-2.0.1'}
-  # {:git => 'https://github.com/mattn/mruby-json.git'}, # test KO(2)
-=begin
+  {:git => 'https://github.com/mruby-Forum/mruby-json', :branch => 'support-mruby-2.0.1'}, #origin {:git => 'https://github.com/mattn/mruby-json.git'},
   # {:git => 'https://github.com/jkutner/mruby-jvm.git'}, # need jni.h
   # {:git => 'https://github.com/prevs-io/mruby-jwt.git'},  # need openssl/evp.h
   # {:git => 'https://github.com/syucream/mruby-k2hash.git'}, # need k2hash.h
@@ -282,7 +278,7 @@ end
   # {:git => 'https://github.com/dyama/mruby-lua.git'}, # need lua5/lua.h
   {:git => 'https://github.com/dearblue/mruby-lz4.git'},
   # {:git => 'https://github.com/dearblue/mruby-lzma.git'},# need izma.h
-  # {:git => 'https://github.com/attm2x/m2x-mruby.git'}, # test KO(1)
+  {:git => 'https://github.com/attm2x/m2x-mruby.git'}, # need json forum
   # {:git => 'https://github.com/carsonmcdonald/mruby-markdown.git'}, # compile error (ARGS_NONE)
   # {:git => 'https://github.com/take-cheeze/mruby-marshal.git'}, # compile error (onig_~)
   # {:git => 'https://github.com/asfluido/mruby-marshal-fast.git'}, # implicit declaration of function 'bzero'
@@ -338,17 +334,17 @@ end
   # {:git => 'https://github.com/Asmod4n/mruby-postgresql.git'},# compile error (command fault)
   {:git => 'https://github.com/Asmod4n/mruby-proc-irep-ext.git'},
   # {:git => 'https://github.com/iij/mruby-process.git'}, # need sys/wait.h
-  {:git => 'https://github.com/appPlant/mruby-process.git'},# too many arguments to function 'spawnv'
+  # {:git => 'https://github.com/appPlant/mruby-process.git'},# too many arguments to function 'spawnv'
   # {:git => 'https://github.com/hfm/mruby-publicsuffix.git'}, # link error (onig_~)
   {:git => 'https://github.com/h2so5/mruby-pure-regexp.git'},
   {:git => 'https://github.com/mruby-zest/mruby-qml-parse'},
-  # {:git => 'https://github.com/mruby-zest/mruby-qml-spawn'}, # test Crash(25)
+  {:git => 'https://github.com/mruby-zest/mruby-qml-spawn'}, # test Crash(25) # after set OK
   # {:git => 'https://github.com/scalone/mruby-qrcode.git'}, # error qrGetCurrentFunctionName
   # {:git => 'https://github.com/katzer/mruby-r3.git'}, # undefined reference to `asprintf'
   # {:git => 'https://github.com/ksss/mruby-rake.git'}, # implicit declaration of function
   # {:git => 'https://github.com/matsumotory/mruby-random.git'},  # build error (random.c)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-raspberry.git'},  # need wiringPi.h
-  # {:git => 'mruby-Forum/mruby-rational', :branch => 'support-mruby-2.0.0'},  # original: https://github.com/dyama/mruby-rational.git
+  {:git => 'https://github.com/mruby-Forum/mruby-rational', :branch => 'support-mruby-2.0.0'},  # original: https://github.com/dyama/mruby-rational.git
   # {:git => 'https://github.com/matsumotory/mruby-rcon.git'},  # need pthread.h
   # {:git => 'https://github.com/matsumotory/mruby-redis.git'}, # need sys/socket.h
   # {:git => 'https://github.com/Asmod4n/mruby-redis-ae.git'},  # need pthread.h
@@ -359,17 +355,17 @@ end
   # {:git => 'https://github.com/ksss/mruby-research.git'}, # test KO(5)
   # {:git => 'https://github.com/harasou/mruby-resource.git'}, # implicit declaration of function
   {:git => 'https://github.com/scalone/mruby-ripemd.git'},
-  {:git => 'https://github.com/emsk/mruby-romajify.git'}, # link error (onig_xxxx)
+  # {:git => 'https://github.com/emsk/mruby-romajify.git'}, # link error (onig_xxxx)
   # {:git => 'https://github.com/schmurfy/mruby-rubyffi-compat.git'}, # need ffi.h
-  {:git => 'https://github.com/haconiwa/mruby-seccomp.git'},  # build error (mkdir)
+  # {:git => 'https://github.com/haconiwa/mruby-seccomp.git'},  # build error (mkdir)
   {:git => 'https://github.com/Asmod4n/mruby-secure-compare.git'},
   {:git => 'https://github.com/monochromegane/mruby-secure-random.git'},
   # {:git => 'https://github.com/monami-ya-mrb/mruby-serialport.git'},  # need termios.h
-  {:git => 'https://github.com/yui-knk/mruby-set.git'}, # {:git =>'https://github.com/mruby-Forum/mruby-set.git', :branch => 'support-mruby-2.0.0'},
+  {:git =>'https://github.com/mruby-Forum/mruby-set.git', :branch => 'support-mruby-2.0.0'}, # {:git => 'https://github.com/yui-knk/mruby-set.git'}, 
   # {:git => 'https://github.com/katzer/mruby-sftp.git'}, # command error rm_rf
   # {:git => 'https://github.com/appplant/mruby-sftp-glob.git'},# command error rm_rf
   {:git => 'https://github.com/mattn/mruby-sha1.git'},
-  {:git => 'https://github.com/h2so5/mruby-sha2.git'},
+  {:git => 'https://github.com/h2so5/mruby-sha2.git'}
   # {:git => 'https://github.com/katzer/mruby-shelf.git'},  # undefined reference to `asprintf'
   # {:git => 'https://github.com/katzer/mruby-shelf-deflater.git'}, # need zlib.h
   # {:git => 'https://github.com/k0kubun/mruby-shellwords.git'},  # link error (oniguma)
@@ -381,17 +377,17 @@ end
   {:git => 'https://github.com/y-ken/mruby-simplehttp-socket.git'},
   # {:git => 'https://github.com/matsumotory/mruby-simplehttpserver.git'}, # too many arguments to function 'spawnv'
   {:git => 'https://github.com/Asmod4n/mruby-simplemsgpack.git'},
-  {:git => 'https://github.com/matsumotory/mruby-simpletest.git'},
+  # {:git => 'https://github.com/matsumotory/mruby-simpletest.git'}, # test aborted
   # {:git => 'https://github.com/mattn/mruby-sinatic.git'}, # need uv.h
   {:git => 'https://github.com/ksss/mruby-singleton.git'},
   {:git => 'https://github.com/ksss/mruby-siphash.git'},
   {:git => 'https://github.com/matsumotory/mruby-sleep.git'},
   # {:git => 'https://github.com/nsheremet/mruby-smallhttp.git'},#implicit declaration of function 
-  {:git => 'https://github.com/iij/mruby-socket.git'},  # mkdtemp/mkstemp
+  # {:git => 'https://github.com/iij/mruby-socket.git'},  # mkdtemp/mkstemp
   # {:git => 'https://github.com/matsumotory/mruby-spdy.git'},  # autoreconf command not found
   # {:git => 'https://github.com/k0kubun/mruby-specinfra.git'}, # link erorr (onigumo)
   {:git => 'https://github.com/jbreeden/mruby-sqlite.git'},
-  {:git => 'https://github.com/mattn/mruby-sqlite3.git'}, # need sqlite3.h
+  # {:git => 'https://github.com/mattn/mruby-sqlite3.git'}, # need sqlite3.h
   # {:git => 'https://github.com/katzer/mruby-ssh.git'}, # undefined method `rm_rf'
   {:git => 'https://github.com/ascaridol/mruby-statemachine.git'},
   # {:git => 'https://github.com/mattn/mruby-string-crypt.git'},  # need pthread.h
@@ -432,14 +428,14 @@ end
   {:git => 'https://github.com/mattn/mruby-winapp.git'},
   # {:git => 'https://github.com/akiray03/mruby-WiringPi.git'}, # need termios.h
   # {:git => 'https://github.com/Asmod4n/mruby-wslay'} # build error
-  {:git => 'https://github.com/hone/mruby-yaml.git'}, # curl command error
+  # {:git => 'https://github.com/hone/mruby-yaml.git'}, # curl command error
   # {:git => 'https://github.com/katzer/mruby-yeah.git'}, # build error(r3_tree_~)
   {:git => 'https://github.com/matsumotory/mruby-zabbix.git'},
   # {:git => 'https://github.com/mruby-zest/mruby-zest'}, # implicit declaration of function mrb_ary_len
   # {:git => 'https://github.com/jbreeden/mruby-zlib.git'}, # need zlib.h
   # {:git => 'https://github.com/zeromq/mruby-zmq.git'},  # cannot find libzmq, building it
   # {:git => 'https://github.com/dearblue/mruby-zstd.git'},#test crash(2)
-{:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
+  # {:git => 'https://github.com/Asmod4n/mruby-zyre.git'},  # need zyre.h
 =end
 ].each {|mgem|
   _git = mgem[:git]
