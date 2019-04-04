@@ -78,6 +78,7 @@ mruby-fluent-logger,Kentaro Yoshida,A structured logger for Fluentd.,https://git
 mruby-forwardable,Masayoshi Takahashi,forwardable module for mruby,https://github.com/takahashim/mruby-forwardable,https://github.com/takahashim/mruby-forwardable.git,"",git
 mruby-fsm,"Paolo Bosetti, University of Trento",Finite State Machine.,https://github.com/UniTN-Mechatronics/mruby-fsm,https://github.com/UniTN-Mechatronics/mruby-fsm.git,"",git
 mruby-ftp,"Paolo Bosetti and Matteo Ragni, University of Trento",FTP client library.,https://github.com/UniTN-Mechatronics/mruby-ftp,https://github.com/UniTN-Mechatronics/mruby-ftp.git,"",git
+mruby-gemcut,dearblue,runtime reconfigurer for mruby gems,https://github.com/dearblue/mruby-gemcut,https://github.com/dearblue/mruby-gemcut.git,"",git
 mruby-geoip,MATSUMOTO Ryosuke,GeoIP(City) class using GeoIPCity.dat for mruby,https://github.com/matsumotory/mruby-geoip,https://github.com/matsumotory/mruby-geoip.git,"",git
 mruby-getloadavg,takumakume,Linux getloadavg(3) module,https://github.com/takumakume/mruby-getloadavg,https://github.com/takumakume/mruby-getloadavg.git,"",git
 mruby-getoptlong,Sergio Rubio <rubiojr@frameos.org>,An almost straight mruby port of Ruby's GetoptLong,https://github.com/rubiojr/mruby-getoptlong,https://github.com/rubiojr/mruby-getoptlong,"",git
@@ -215,6 +216,7 @@ mruby-rational,Daisuke YAMAGUCHI,Rational class,https://github.com/dyama/mruby-r
 mruby-rcon,MATSUMOTO Ryosuke,resource management mrbgem using cgroup,https://github.com/matsumotory/mruby-rcon,https://github.com/matsumotory/mruby-rcon.git,"",git
 mruby-redis,MATSUMOTO Ryosuke,redis client using hiredis,https://github.com/matsumotory/mruby-redis,https://github.com/matsumotory/mruby-redis.git,"",git
 mruby-redis-ae,Hendrik Beskow,mruby wrapper for the Redis Ae event loop.,https://github.com/Asmod4n/mruby-redis-ae,https://github.com/Asmod4n/mruby-redis-ae.git,"",git
+mruby-redis-cluster,Yuki Kirii,Client library for Redis Cluster based on matsumotory/mruby-redis,https://github.com/shiftky/mruby-redis-cluster,https://github.com/shiftky/mruby-redis-cluster.git,"",git
 mruby-regexp-pcre,iij,regular expression module utilizing PCRE library,https://github.com/iij/mruby-regexp-pcre,https://github.com/iij/mruby-regexp-pcre.git,"",git
 mruby-renice,takumakume,"getpriority(2)/setpriority(2) for mruby, it like renice(1)",https://github.com/takumakume/mruby-renice,https://github.com/takumakume/mruby-renice.git,"",git
 mruby-require,mattn,require implementation,https://github.com/mattn/mruby-require,https://github.com/mattn/mruby-require.git,"",git
