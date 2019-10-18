@@ -148,7 +148,7 @@ end
   # {:git => 'https://github.com/hfm/mruby-aws-sigv4.git'}, #test Crash(50)
   {:git => 'https://github.com/Asmod4n/mruby-b64.git'},
   # {:git => 'https://github.com/crimsonwoods/mruby-backtrace.git'},  # need libunwind.h
-  {:git => 'https://github.com/qtkmz/mruby-base32.git'},
+  {:git => 'https://github.com/tk3/mruby-base32.git'},
   {:git => 'https://github.com/h2so5/mruby-base58.git'},
   {:git => 'https://github.com/mattn/mruby-base64.git'},
   {:git => 'https://github.com/baldowl/mruby-bcrypt.git'},
@@ -157,6 +157,7 @@ end
   # {:git => 'https://github.com/bovi/mruby-bin-mruby-afl.git'},  # compile error (__AFL_LOOP)
   # {:git => 'https://github.com/sdottaka/mruby-bin-scite-mruby.git'},  # need gtk/gtk.h
   # {:git => 'https://github.com/IceDragon200/mruby-blendish', :dep => ['https://github.com/IceDragon200/mruby-glew.git']}, # need GL/glew.h
+  {:git => 'https://github.com/Asmod4n/mruby-c-ext-helpers.git'},
   {:git => 'https://github.com/mruby-Forum/mruby-cache.git', :branch => 'pass-mruby-test'}, # original: 'https://github.com/charlescui/mruby-cache.git'
   {:git => 'https://github.com/matsumotory/mruby-capability.git'},
   {:git => 'https://github.com/pyama86/mruby-capacity.git'},
@@ -183,6 +184,7 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-curses.git'},  # build error
   # {:git => 'https://github.com/Asmod4n/mruby-czmq.git'},  # need czmq.h
   {:git => 'https://github.com/inokappa/mruby-datadog.git'}, # test KO(1) need forum json process
+  {:git => 'https://github.com/dearblue/mruby-delegate.git'},
   {:git => 'https://github.com/iij/mruby-digest.git'},
   {:git => 'https://github.com/iij/mruby-dir.git'},
   {:git => 'https://github.com/gromnitsky/mruby-dir-glob.git'}, # need forum process
@@ -237,7 +239,7 @@ end
   {:git => 'https://github.com/katzer/mruby-heeler.git'},
   # {:git => 'https://github.com/Asmod4n/mruby-hiredis.git'}, # test KO(1) crush(6)
   # {:git => 'https://github.com/scalone/mruby-hmac.git'}, # test crush(2)
-  {:git => 'https://github.com/qtkmz/mruby-hogun.git'},
+  {:git => 'https://github.com/tk3/mruby-hogun.git'},
   # {:git => 'https://github.com/schmurfy/host-stats.git'}, # library not found
   # {:git => 'https://github.com/masamitsu-murase/mruby-hs-regexp.git'},  # compile error (ARGS_NONE)
   {:git => 'https://github.com/mattn/mruby-http.git'},
@@ -308,7 +310,7 @@ end
   # {:git => 'https://github.com/pyama86/mruby-network-analyzer.git'}, # need pcap.h
   {:git => 'https://github.com/matsumotory/mruby-ngx-mruby-ext.git'},
   {:git => 'https://github.com/matsumotory/mruby-oauth.git', :lib => 'pcre'},  # need forum json process
-  # {:git => 'https://github.com/qtkmz/mruby-odbc.git'},  # need sql.h
+  # {:git => 'https://github.com/tk3/mruby-odbc.git'},  # need sql.h
   {:git => 'https://github.com/mruby-Forum/mruby-onig-regexp.git', :branch => 'support-mruby-latest-version-2.0.1'}, # origin {:git => 'https://github.com/mattn/mruby-onig-regexp.git'},
   {:git => 'https://github.com/k0kubun/mruby-open3.git'},
   {:git => 'https://github.com/fastly/mruby-optparse.git'},
@@ -349,7 +351,7 @@ end
   # {:git => 'https://github.com/matsumotory/mruby-rcon.git'},  # libcgroup.h
   # {:git => 'https://github.com/matsumotory/mruby-redis.git'}, # test crash(95)
   # {:git => 'https://github.com/Asmod4n/mruby-redis-ae.git'},
-  # {:git => 'https://github.com/shiftky/mruby-redis-cluster.git'}, # test Crash(98) 
+  # {:git => 'https://github.com/yukirii/mruby-redis-cluster.git'}, # test Crash(98) 
   {:git => 'https://github.com/iij/mruby-regexp-pcre.git'},
   # {:git => 'https://github.com/takumakume/mruby-renice.git'}, # test KO(1)
   # {:git => 'https://github.com/mattn/mruby-require.git'}, # need mruby.h
@@ -423,13 +425,14 @@ end
   # {:git => 'https://github.com/mattn/mruby-v8.git'},  # need v8.h
   {:git => 'https://github.com/matsumotory/mruby-vedis.git'}, 
   # {:git => 'https://github.com/matsumotory/mruby-virtualing.git'},  # need libcgroup.h
+  {:git => 'https://github.com/dearblue/mruby-weakref.git'},
   # {:git => 'https://github.com/ppibburr/mruby-webkit-1.git'}, # library not found (RuntimeError)
   # {:git => 'https://github.com/ppibburr/mruby-webkit-3.git'}, # library not found (RuntimeError)
   # {:git => 'https://github.com/sdottaka/mruby-win32ole.git'}, # Windows only
   {:git => 'https://github.com/mattn/mruby-winapp.git'},
   # {:git => 'https://github.com/akiray03/mruby-WiringPi.git'}, # compile error (old API ?)
   {:git => 'https://github.com/Asmod4n/mruby-wslay'}, 
-  {:git => 'https://github.com/AndrewBelt/mruby-yaml.git'},
+  {:git => 'https://github.com/mrbgems/mruby-yaml.git'},
   {:git => 'https://github.com/katzer/mruby-yeah.git'}, 
   {:git => 'https://github.com/matsumotory/mruby-zabbix.git'},
   # {:git => 'https://github.com/mruby-zest/mruby-zest.git'}, # declaration of function ‘mrb_ary_len’

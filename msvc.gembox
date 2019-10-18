@@ -13,7 +13,7 @@ MRuby::GemBox.new do |conf|
   # conf.gem :git => 'https://github.com/iij/mruby-aws-s3.git'  # build error (polarssl)
   conf.gem :git => 'https://github.com/Asmod4n/mruby-b64.git'
   # conf.gem :git => 'https://github.com/crimsonwoods/mruby-backtrace.git'  # build error (need libunwind.h)
-  conf.gem :git => 'https://github.com/qtkmz/mruby-base32.git'
+  conf.gem :git => 'https://github.com/tk3/mruby-base32.git'
   conf.gem :git => 'https://github.com/h2so5/mruby-base58.git'
   conf.gem :git => 'https://github.com/mattn/mruby-base64.git'
   # conf.gem :git => 'https://github.com/baldowl/mruby-bcrypt.git'  # need openssl/rand.h
@@ -22,6 +22,7 @@ MRuby::GemBox.new do |conf|
   # conf.gem :git => 'https://github.com/bovi/mruby-bin-mruby-afl.git'  # compile error (__AFL_LOOP)
   conf.gem :git => 'https://github.com/sdottaka/mruby-bin-scite-mruby.git'
   # conf.gem :git => 'https://github.com/IceDragon200/mruby-blendish' # need mruby-glew
+  conf.gem :git => 'https://github.com/Asmod4n/mruby-c-ext-helpers.git'
   # conf.gem :git => 'https://github.com/charlescui/mruby-cache.git'  # need semaphore.h
   # conf.gem :git => 'https://github.com/matsumotory/mruby-capability.git'  # build error (libcap-2.25)
   conf.gem :git => 'https://github.com/IceDragon200/mruby-catch-throw'
@@ -45,6 +46,7 @@ MRuby::GemBox.new do |conf|
   # conf.gem :git => 'https://github.com/jbreeden/mruby-curses.git' # need curses.h
   # conf.gem :git => 'https://github.com/Asmod4n/mruby-czmq.git'  # need czmq.h
   # conf.gem :git => 'https://github.com/inokappa/mruby-datadog.git'  # build error (polarssl)
+  conf.gem :git => 'https://github.com/dearblue/mruby-delegate.git'
   # conf.gem :git => 'https://github.com/iij/mruby-digest.git'  # need openssl/evp.h
   # conf.gem :git => 'https://github.com/gromnitsky/mruby-dir-glob.git' # need sys/time.h
   # conf.gem :git => 'https://github.com/iij/mruby-dir.git' # need dirent.h
@@ -87,7 +89,7 @@ MRuby::GemBox.new do |conf|
   conf.gem :git => 'https://github.com/k0kubun/mruby-hashie.git'
   # conf.gem :git => 'https://github.com/kentaro/mruby-hibari.git'  # gzip
   # conf.gem :git => 'https://github.com/Asmod4n/mruby-hiredis.git' # need sys/time.h
-  conf.gem :git => 'https://github.com/qtkmz/mruby-hogun.git'
+  conf.gem :git => 'https://github.com/tk3/mruby-hogun.git'
   # conf.gem :git => 'https://github.com/schmurfy/host-stats.git' # need ffi.h
   # conf.gem :git => 'https://github.com/masamitsu-murase/mruby-hs-regexp.git'  # compile error (ARGS_NONE)
   conf.gem :git => 'https://github.com/mattn/mruby-http.git'
@@ -149,7 +151,7 @@ MRuby::GemBox.new do |conf|
   # conf.gem :git => 'https://github.com/matsumotory/mruby-netlink.git' # need net/if.h
   conf.gem :git => 'https://github.com/matsumotory/mruby-ngx-mruby-ext.git'
   # conf.gem :git => 'https://github.com/matsumotory/mruby-oauth.git' # cl command error (/W)
-  # conf.gem :git => 'https://github.com/qtkmz/mruby-odbc.git'  # compile error (sqlite)
+  # conf.gem :git => 'https://github.com/tk3/mruby-odbc.git'  # compile error (sqlite)
   # conf.gem :git => 'https://github.com/mattn/mruby-onig-regexp.git' # zgip error
   # conf.gem :git => 'https://github.com/k0kubun/mruby-open3.git' # need unistd.h
   # conf.gem :git => 'https://github.com/fastly/mruby-optparse.git' # gzip error
@@ -244,13 +246,14 @@ MRuby::GemBox.new do |conf|
   # conf.gem :git => 'https://github.com/mattn/mruby-v8.git'  # need v8.h
   # conf.gem :git => 'https://github.com/matsumotory/mruby-vedis.git' # test abort
   # conf.gem :git => 'https://github.com/matsumotory/mruby-virtualing.git'  # grep command error
+  conf.gem :git => 'https://github.com/dearblue/mruby-weakref.git'
   # conf.gem :git => 'https://github.com/ppibburr/mruby-webkit-1.git' # need ffi.h
   # conf.gem :git => 'https://github.com/ppibburr/mruby-webkit-3.git' # need ffi.h
   # conf.gem :git => 'https://github.com/sdottaka/mruby-win32ole.git' # test abort
   # conf.gem :git => 'https://github.com/mattn/mruby-winapp.git'  # link error
   # conf.gem :git => 'https://github.com/akiray03/mruby-WiringPi.git' # need unistd.h
   # conf.gem :git => 'https://github.com/Asmod4n/mruby-wslay' # build error (mrb_wslay.c)
-  # conf.gem :git => 'https://github.com/hone/mruby-yaml.git' # curl command error
+  # conf.gem :git => 'https://github.com/mrbgems/mruby-yaml.git' # curl command error
   # conf.gem :git => 'https://github.com/katzer/mruby-yeah.git' # build error (R3)
   conf.gem :git => 'https://github.com/matsumotory/mruby-zabbix.git'
   # conf.gem :git => 'https://github.com/jbreeden/mruby-zlib.git' # need zlib.h

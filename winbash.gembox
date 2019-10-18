@@ -14,7 +14,7 @@ MRuby::GemBox.new do |conf|
   # conf.gem :git => 'https://github.com/iij/mruby-aws-s3.git'  # autogen fail (libuv)
   conf.gem :git => 'https://github.com/Asmod4n/mruby-b64.git'
   # conf.gem :git => 'https://github.com/crimsonwoods/mruby-backtrace.git'  # need libunwind.h
-  conf.gem :git => 'https://github.com/qtkmz/mruby-base32.git'
+  conf.gem :git => 'https://github.com/tk3/mruby-base32.git'
   conf.gem :git => 'https://github.com/h2so5/mruby-base58.git'
   conf.gem :git => 'https://github.com/mattn/mruby-base64.git'
   # conf.gem :git => 'https://github.com/baldowl/mruby-bcrypt.git'  # need oniguruma.h
@@ -23,6 +23,7 @@ MRuby::GemBox.new do |conf|
   # conf.gem :git => 'https://github.com/bovi/mruby-bin-mruby-afl.git'  # compile error (__AFL_LOOP)
   # conf.gem :git => 'https://github.com/sdottaka/mruby-bin-scite-mruby.git'  # need g++
   # conf.gem :git => 'https://github.com/IceDragon200/mruby-blendish' # need mruby-glew
+  conf.gem :git => 'https://github.com/Asmod4n/mruby-c-ext-helpers.git'
   # conf.gem :git => 'https://github.com/charlescui/mruby-cache.git'  # test aborted
   conf.gem :git => 'https://github.com/matsumotory/mruby-capability.git'
   conf.gem :git => 'https://github.com/IceDragon200/mruby-catch-throw'
@@ -46,6 +47,7 @@ MRuby::GemBox.new do |conf|
   # conf.gem :git => 'https://github.com/jbreeden/mruby-curses.git' # need curses.h
   # conf.gem :git => 'https://github.com/Asmod4n/mruby-czmq.git'  # need czmq.h
   # conf.gem :git => 'https://github.com/inokappa/mruby-datadog.git'  # test crush(11)
+  conf.gem :git => 'https://github.com/dearblue/mruby-delegate.git'
   conf.gem :git => 'https://github.com/iij/mruby-digest.git'
   # conf.gem :git => 'https://github.com/gromnitsky/mruby-dir-glob.git' # test KO(9) abort
   conf.gem :git => 'https://github.com/iij/mruby-dir.git'
@@ -90,7 +92,7 @@ MRuby::GemBox.new do |conf|
   conf.gem :git => 'https://github.com/kentaro/mruby-hibari.git'
 =begin
   conf.gem :git => 'https://github.com/Asmod4n/mruby-hiredis.git'
-  conf.gem :git => 'https://github.com/qtkmz/mruby-hogun.git'
+  conf.gem :git => 'https://github.com/tk3/mruby-hogun.git'
   conf.gem :git => 'https://github.com/schmurfy/host-stats.git'
   conf.gem :git => 'https://github.com/masamitsu-murase/mruby-hs-regexp.git'
   conf.gem :git => 'https://github.com/mattn/mruby-http.git'
@@ -152,7 +154,7 @@ MRuby::GemBox.new do |conf|
   conf.gem :git => 'https://github.com/matsumotory/mruby-netlink.git'
   conf.gem :git => 'https://github.com/matsumotory/mruby-ngx-mruby-ext.git'
   conf.gem :git => 'https://github.com/matsumotory/mruby-oauth.git'
-  conf.gem :git => 'https://github.com/qtkmz/mruby-odbc.git'
+  conf.gem :git => 'https://github.com/tk3/mruby-odbc.git'
   conf.gem :git => 'https://github.com/mattn/mruby-onig-regexp.git'
   conf.gem :git => 'https://github.com/k0kubun/mruby-open3.git'
   conf.gem :git => 'https://github.com/fastly/mruby-optparse.git'
@@ -247,13 +249,14 @@ MRuby::GemBox.new do |conf|
   conf.gem :git => 'https://github.com/mattn/mruby-v8.git'
   conf.gem :git => 'https://github.com/matsumotory/mruby-vedis.git'
   conf.gem :git => 'https://github.com/matsumotory/mruby-virtualing.git'
+  conf.gem :git => 'https://github.com/dearblue/mruby-weakref.git'
   conf.gem :git => 'https://github.com/ppibburr/mruby-webkit-1.git'
   conf.gem :git => 'https://github.com/ppibburr/mruby-webkit-3.git'
   conf.gem :git => 'https://github.com/sdottaka/mruby-win32ole.git'
   conf.gem :git => 'https://github.com/mattn/mruby-winapp.git'
   conf.gem :git => 'https://github.com/akiray03/mruby-WiringPi.git'
   conf.gem :git => 'https://github.com/Asmod4n/mruby-wslay'
-  conf.gem :git => 'https://github.com/hone/mruby-yaml.git'
+  conf.gem :git => 'https://github.com/mrbgems/mruby-yaml.git'
   conf.gem :git => 'https://github.com/katzer/mruby-yeah.git'
   conf.gem :git => 'https://github.com/matsumotory/mruby-zabbix.git'
   conf.gem :git => 'https://github.com/jbreeden/mruby-zlib.git'

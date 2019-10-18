@@ -154,6 +154,7 @@ end
   # {:git => 'https://github.com/bovi/mruby-bin-mruby-afl.git'},  # compile error (__AFL_LOOP)
   # {:git => 'https://github.com/sdottaka/mruby-bin-scite-mruby.git'},  # build error
   # {:git => 'https://github.com/IceDragon200/mruby-blendish'}, # need mruby-glew
+  {:git => 'https://github.com/Asmod4n/mruby-c-ext-helpers.git'},
   # {:git => 'https://github.com/charlescui/mruby-cache.git'},  # test aborted
   # {:git => 'https://github.com/matsumotory/mruby-capability.git'},  # need linux/types.h
   {:git => 'https://github.com/pyama86/mruby-capacity.git'}, 
@@ -180,6 +181,7 @@ end
   # {:git => 'https://github.com/jbreeden/mruby-curses.git'}, # need curses.h
   # {:git => 'https://github.com/Asmod4n/mruby-czmq.git'},  # need czmq.h
   # {:git => 'https://github.com/inokappa/mruby-datadog.git'},  # build error (polarssl)
+  {:git => 'https://github.com/dearblue/mruby-delegate.git'},
   # {:git => 'https://github.com/iij/mruby-digest.git'},  # openssl/evp.h
   # {:git => 'https://github.com/gromnitsky/mruby-dir-glob.git'}, # test KO(1)
   # {:git => 'https://github.com/iij/mruby-dir.git'},
@@ -231,7 +233,7 @@ end
   # {:git => 'https://github.com/kentaro/mruby-hibari.git'},  # compile error (onigumo)
   # {:git => 'https://github.com/Asmod4n/mruby-hiredis.git'}, # test crush(7)
   # {:git=> 'https://github.com/scalone/mruby-hmac'}, # test crash(2)
-  {:git => 'https://github.com/qtkmz/mruby-hogun.git'},
+  {:git => 'https://github.com/tk3/mruby-hogun.git'},
   # {:git => 'https://github.com/schmurfy/host-stats.git'}, # need ffi.h
   # {:git => 'https://github.com/masamitsu-murase/mruby-hs-regexp.git'},  # compile error (ARGS_NONE)
   {:git => 'https://github.com/mattn/mruby-http.git'},
@@ -300,7 +302,7 @@ end
   # {:git => 'https://github.com/matsumotory/mruby-netlink.git'}, # need libnetlink.h
   {:git => 'https://github.com/matsumotory/mruby-ngx-mruby-ext.git'},
   # {:git => 'https://github.com/matsumotory/mruby-oauth.git'}, # build error (polarssl.c)
-  # {:git => 'https://github.com/qtkmz/mruby-odbc.git'},  # compile error (SQL)
+  # {:git => 'https://github.com/tk3/mruby-odbc.git'},  # compile error (SQL)
   # {:git => 'https://github.com/mattn/mruby-onig-regexp.git'}, # build error (onigmo)
   {:git => 'https://github.com/k0kubun/mruby-open3.git'},
   # {:git => 'https://github.com/fastly/mruby-optparse.git'}, # build error (onigumo)
@@ -410,13 +412,14 @@ end
   # {:git => 'https://github.com/mattn/mruby-v8.git'},  # need v8.h
   {:git => 'https://github.com/matsumotory/mruby-vedis.git'},
   # {:git => 'https://github.com/matsumotory/mruby-virtualing.git'},  # need libcgroup.h
+  {:git => 'https://github.com/dearblue/mruby-weakref.git'},
   # {:git => 'https://github.com/ppibburr/mruby-webkit-1.git'}, # need ffi.h
   # {:git => 'https://github.com/ppibburr/mruby-webkit-3.git'}, # need ffi.h
   # {:git => 'https://github.com/sdottaka/mruby-win32ole.git'}, # Windows only : test fail (undefined method foo)
   {:git => 'https://github.com/mattn/mruby-winapp.git'},
   # {:git => 'https://github.com/mruby-Forum/mruby-WiringPi.git', :branch => 'fix-build'},  # need linux/spi/spidev.h : original: 'https://github.com/akiray03/mruby-WiringPi.git'
   # {:git => 'https://github.com/Asmod4n/mruby-wslay'},  # compile error (Winsock?)
-  # {:git => 'https://github.com/hone/mruby-yaml.git'}, # need libtool
+  # {:git => 'https://github.com/mrbgems/mruby-yaml.git'}, # need libtool
   # {:git => 'https://github.com/katzer/mruby-yeah.git'},
   {:git => 'https://github.com/matsumotory/mruby-zabbix.git'},
   # {:git => 'https://github.com/mruby-zest/mruby-zest.git'}, # build error (old API)
