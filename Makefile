@@ -28,4 +28,4 @@ clean:
 	make -C ../mruby clean
 
 clean_mgem:
-	rm -rf ../mruby/build/mrbgems/
+	rm -rf ../mruby/build/repos/
