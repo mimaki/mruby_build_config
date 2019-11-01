@@ -2,7 +2,6 @@ JDK_PATH = '/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home'
 
 MRuby::Build.new do |conf|
   # load specific toolchain settings
-
   # Gets set by the VS command prompts.
   if ENV['VisualStudioVersion'] || ENV['VSINSTALLDIR']
     toolchain :visualcpp
@@ -131,7 +130,7 @@ end
 
 [
 =begin
-  # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # test crush(3)
+  # {:git => 'https://github.com/k0u5uk3/mruby-alarm.git'}, # test crash(3)
   # {:git => 'https://github.com/cremno/mruby-allegro.git'}, # need allegro5/allegro5.h
   {:git => 'https://github.com/ppibburr/mruby-allocate.git'},
   {:git => 'https://github.com/Mav7/mruby-ansi-colors.git'},
@@ -143,40 +142,40 @@ end
   # {:git => 'https://github.com/georgi/mruby-audite.git'}, # need mpg123.h
   # {:git => 'https://github.com/hercules-team/mruby-augeas'},  # need augeas.h
   # {:git => 'https://github.com/randym/mruby-avl.git'}, # crach(2) forum OK {:git => 'https://github.com/mruby-Forum/mruby-avl.git', :branch => 'mruby-2.0.0-test'}
-  # {:git => 'https://github.com/iij/mruby-aws-s3.git', :lib => 'pcre'},  # test rake aborted
-  # {:git => 'https://github.com/hfm/mruby-aws-sigv4.git'}, #KO(1) Crash(50)
+  # {:git => 'https://github.com/iij/mruby-aws-s3.git', :lib => 'pcre'},  # build error (mruby-uv)
+  # {:git => 'https://github.com/hfm/mruby-aws-sigv4.git'}, # KO(1) Crash(52)
   {:git => 'https://github.com/Asmod4n/mruby-b64.git'},
   # {:git => 'https://github.com/crimsonwoods/mruby-backtrace.git'},  # build error (old mrubyVM)
   {:git => 'https://github.com/tk3/mruby-base32.git'},
   {:git => 'https://github.com/h2so5/mruby-base58.git'},
   {:git => 'https://github.com/mattn/mruby-base64.git'},
   {:git => 'https://github.com/baldowl/mruby-bcrypt.git', :incpath => '/usr/local/include', :libpath => '/usr/local/lib'}, # need onih-regexp forum
-  {:git => 'https://github.com/chasonr/mruby-bignum.git'},
-  # {:git => 'https://github.com/kyab/mruby-bin-mirb-hostbased.git'}, 
+  # {:git => 'https://github.com/chasonr/mruby-bignum.git'},  # KO(1)
+  # {:git => 'https://github.com/kyab/mruby-bin-mirb-hostbased.git'}, # build error: old parser
   # {:git => 'https://github.com/bovi/mruby-bin-mruby-afl.git'},  # compile error (__AFL_LOOP)
   # {:git => 'https://github.com/sdottaka/mruby-bin-scite-mruby.git'},  # no gtk/gtk.h
   # {:git => 'https://github.com/IceDragon200/mruby-blendish', :dep => ['https://github.com/IceDragon200/mruby-glew']}, # need GL/mruby-glew
   {:git => 'https://github.com/Asmod4n/mruby-c-ext-helpers.git'},
-  {:git => 'https://github.com/mruby-Forum/mruby-cache.git', :branch => 'pass-mruby-test'}, # original: 'https://github.com/charlescui/mruby-cache.git'
+  {:git => 'https://github.com/charlescui/mruby-cache.git'},
   # {:git => 'https://github.com/matsumotory/mruby-capability.git'},  # need linux/types.h
-  {:git => 'https://github.com/pyama86/mruby-capacity.git'},
+  # {:git => 'https://github.com/pyama86/mruby-capacity.git'},  # KO(2)
   {:git => 'https://github.com/IceDragon200/mruby-catch-throw'},
   # {:git => 'https://github.com/mobiruby/mruby-cfunc.git'},  # need _rubyvm1.c
   # {:git => 'https://github.com/matsumotory/mruby-cgroup.git'},  # need libcgroup.h
-  # {:git => 'https://github.com/matsumotory/mruby-changefinder.git'}, # test KO(1) Crash(1)
+  # {:git => 'https://github.com/matsumotory/mruby-changefinder.git'}, # test KO(1)
   # {:git => 'https://github.com/bggd/mruby-channel.git'},  # build error (c++11)
   # {:git => 'https://github.com/IceDragon200/mruby-chipmunk2d'}, # need chipmunk/chipmunk.h
   {:git => 'https://github.com/Asmod4n/mruby-chrono.git'},
-  # {:git => 'https://github.com/kaihar4/mruby-cidr.git'},  # test KO(3) crush(526)
+  # {:git => 'https://github.com/kaihar4/mruby-cidr.git'},  # test KO(3) crash(526)
   # {:git => 'https://github.com/hanachin/mruby-cipher.git'}, # need openssl/err.h
   {:git => 'https://github.com/take-cheeze/mruby-clang-plugin.git'},
   # {:git => 'https://github.com/mobiruby/mruby-cocoa.git'},  # need cfunc.h
-  {:git => 'https://github.com/pbosetti/mruby-complex.git'},
+  ### {:git => 'https://github.com/pbosetti/mruby-complex.git'},  # mruby included
   # {:git => 'https://github.com/christopheraue/m-ruby-concurrently.git'}, # test KO(1) Crash(5)
   {:git => 'https://github.com/matsumotory/mruby-config.git'},
   {:git => 'https://github.com/inokappa/mruby-consul.git', :lib => 'pcre'}, # need forum json
   {:git => 'https://github.com/matsumotory/mruby-correlation.git'},
-  {:git => 'https://github.com/dearblue/mruby-crc.git'},
+  # {:git => 'https://github.com/dearblue/mruby-crc.git'},  # build error: can't modify frozen String (FrozenError)
   # {:git => 'https://github.com/matsumotory/mruby-criu.git'},  # need criu/criu.h
   {:git => 'https://github.com/matsumotory/mruby-cross-compile-on-mac-osx.git'},
   {:git => 'https://github.com/mattn/mruby-curl.git'},
@@ -184,11 +183,11 @@ end
   # {:git => 'https://github.com/Asmod4n/mruby-czmq.git'},  # need czmq.h
   {:git => 'https://github.com/inokappa/mruby-datadog.git', :lib => 'pcre'},  # need forum json
   {:git => 'https://github.com/dearblue/mruby-delegate.git'},
-  # {:git => 'https://github.com/iij/mruby-digest.git'},
+  {:git => 'https://github.com/iij/mruby-digest.git'},
   {:git => 'https://github.com/iij/mruby-dir.git'},
-  {:git => 'https://github.com/gromnitsky/mruby-dir-glob.git'},
+  # {:git => 'https://github.com/gromnitsky/mruby-dir-glob.git'}, # KO(1)
   {:git => 'https://github.com/matsumotory/mruby-discount.git'},
-  # {:git => 'https://github.com/matsumotory/mruby-disque.git'},  # test crush(99)
+  # {:git => 'https://github.com/matsumotory/mruby-disque.git'},  # test crash(101)
   # {:git => 'https://github.com/mattn/mruby-dll.git'}, # link error
   # {:git => 'https://github.com/mattn/mruby-eject.git'}, # need linux/cdrom.h
   {:git => 'https://github.com/iij/mruby-env.git'},
@@ -204,12 +203,12 @@ end
   {:git => 'https://github.com/mattn/mruby-fiberpool.git'},
   {:git => 'https://github.com/takumakume/mruby-file-access.git'},
   {:git => 'https://github.com/appplant/mruby-file-fnmatch.git'},
-  {:git => 'https://github.com/ksss/mruby-file-stat.git'},
+  # {:git => 'https://github.com/ksss/mruby-file-stat.git'},  # KO(1)
   # {:git => 'https://github.com/k0u5uk3/mruby-filemagic.git'}, # need magic.h
-  # {:git => 'https://github.com/dabroz/mruby-float4.git'}, # test KO(10)
+  # {:git => 'https://github.com/dabroz/mruby-float4.git'}, # Crash(1)
   # {:git => 'https://github.com/mattn/mruby-fltk3.git'}, # No such file of directory - fltk-config
   {:git => 'https://github.com/y-ken/fluent-logger-mruby.git'},
-  # {:git => 'https://github.com/takahashim/mruby-forwardable.git'}, # test KO(1) Forum onig-regexp
+  {:git => 'https://github.com/takahashim/mruby-forwardable.git'},
   {:git => 'https://github.com/UniTN-Mechatronics/mruby-fsm.git'},
   {:git => 'https://github.com/UniTN-Mechatronics/mruby-ftp.git'},
   {:git => 'https://github.com/dearblue/mruby-gemcut.git'},
@@ -234,10 +233,10 @@ end
   # {:git => 'https://github.com/ppibburr/mruby-gtk2.git'}, # need ffi.h
   # {:git => 'https://github.com/ppibburr/mruby-gtk3.git'}, # need ffi.h
   {:git => 'https://github.com/k0kubun/mruby-hashie.git'},
-  # {:git => 'https://github.com/kentaro/mruby-hibari.git', :lib => 'pcre'},  # test crush(3)
+  {:git => 'https://github.com/kentaro/mruby-hibari.git', :lib => 'pcre'},
   {:git => 'https://github.com/katzer/mruby-heeler.git'},
-  # {:git => 'https://github.com/Asmod4n/mruby-hiredis.git'}, # test crush(６) KO(1) (Connection refused)
-  # {:git => 'https://github.com/scalone/mruby-hmac.git'},  # test crush(2)
+  # {:git => 'https://github.com/Asmod4n/mruby-hiredis.git'}, # KO(1) Crash(6)
+  # {:git => 'https://github.com/scalone/mruby-hmac.git'},  # test crash(2)
   {:git => 'https://github.com/tk3/mruby-hogun.git'},
   # {:git => 'https://github.com/schmurfy/host-stats.git'}, # need ffi.h
   # {:git => 'https://github.com/masamitsu-murase/mruby-hs-regexp.git'},  # build error (old mruby API)
@@ -246,7 +245,7 @@ end
   {:git => 'https://github.com/matsumotory/mruby-httprequest.git', :lib => 'pcre'}, 
   # {:git => 'https://github.com/Asmod4n/mruby-httpsclient.git'}, # need tls.h
   {:git => 'https://github.com/mattn/mruby-iconv.git'},
-  {:git => 'https://github.com/iij/mruby-iijson.git'},
+  # {:git => 'https://github.com/iij/mruby-iijson.git'},  # Crash(6)
   {:git => 'https://github.com/keizo042/mruby-implerr.git'},
   # {:git => 'https://github.com/FlavourSys/mruby-inotify.git'},  # need sys/inotify.h
   ### {:git => 'https://github.com/iij/mruby-io.git'},  # build error (IIJ -> included)
@@ -256,11 +255,11 @@ end
   {:git => 'https://github.com/iij/mruby-ipaddr.git'},
   # {:git => 'https://github.com/pepabo/mruby-ipfilter.git'}, # need maxminddb.h
   # {:git => 'https://github.com/rrreeeyyy/mruby-ipvs'},  # implicit declaration of function
-  # {:git => 'https://github.com/ppibburr/mruby-javascriptcore.git'}, # uninitialized constant FFI
+  # {:git => 'https://github.com/ppibburr/mruby-javascriptcore.git'}, # build error: uninitialized constant FFI
   # {:git => 'https://github.com/carsonmcdonald/mruby-jpeg.git'}, # need jpeglib.h
-  {:git => 'https://github.com/mruby-Forum/mruby-json.git', :branch => 'support-mruby-2.0.1'}, origin # {:git => 'https://github.com/mattn/mruby-json.git'},
+  # {:git => 'https://github.com/mattn/mruby-json.git'}, #{:git => 'https://github.com/mruby-Forum/mruby-json.git', :branch => 'support-mruby-2.0.1'}, # origin {:git => 'https://github.com/mattn/mruby-json.git'},
   # {:git => 'https://github.com/jkutner/mruby-jvm.git', :incpath => ["#{JDK_PATH}/include", "#{JDK_PATH}/include/darwin"]}, # test KO(5)
-  # {:git => 'https://github.com/prevs-io/mruby-jwt.git'}, # test KO(1)
+  # {:git => 'https://github.com/prevs-io/mruby-jwt.git'}, # Crash(6)
   # {:git => 'https://github.com/syucream/mruby-k2hash.git'}, # No such file or directory @ dir_chdir
   {:git => 'https://github.com/santazhang/mruby-kmp.git'},
   {:git => 'https://github.com/tsurubee/mruby-knn-detector.git'},
@@ -279,17 +278,17 @@ end
   # {:git => 'https://github.com/dyama/mruby-lua.git'}, # need lua5.2/lua.h
   {:git => 'https://github.com/dearblue/mruby-lz4.git'},
   # {:git => 'https://github.com/dearblue/mruby-lzma.git'}, # need lzma.h
-  # {:git => 'https://github.com/attm2x/m2x-mruby.git'}, # test KO(1)
-  {:git => 'https://github.com/mruby-Forum/mruby-markdown.git', :branch => 'fix-build'},  #original: 'https://github.com/carsonmcdonald/mruby-markdown.git'
+  # {:git => 'https://github.com/attm2x/m2x-mruby.git'}, # test abort
+  # {:git => 'https://github.com/carsonmcdonald/mruby-markdown.git'}, # Crash(1) 'https://github.com/mruby-Forum/mruby-markdown.git', :branch => 'fix-build'},  #original: 'https://github.com/carsonmcdonald/mruby-markdown.git'
   # {:git => 'https://github.com/take-cheeze/mruby-marshal.git'}, # build error
   # {:git => 'https://github.com/asfluido/mruby-marshal-fast.git'},# unknown warning option
-  # {:git => 'https://github.com/listrophy/mruby-matrix.git', :dep => ['https://github.com/iij/mruby-mtest.git']}, # test Crash(1)
+  {:git => 'https://github.com/listrophy/mruby-matrix.git', :dep => ['https://github.com/iij/mruby-mtest.git']}, # test Crash(1)
   # {:git => 'https://github.com/happysiro/mruby-maxminddb'}, # need maxminddb.h
   {:git => 'https://github.com/mattn/mruby-md5.git'},
   # {:git => 'https://github.com/mattn/mruby-mecab.git'}, # need mecab.h
   # {:git => 'https://github.com/matsumotory/mruby-memcached.git'}, # need libmemcached/memcached.h
-  # {:git => 'https://github.com/pbosetti/mruby-merb.git'}, # test crush(1) (Regexp)
-  # {:git => 'https://github.com/ksss/mruby-method.git'}, # test Crash(5)
+  # {:git => 'https://github.com/pbosetti/mruby-merb.git'}, # test crash(1) (Regexp)
+  # {:git => 'https://github.com/ksss/mruby-method.git'}, # test Crash(6)
   # {:git => 'https://github.com/bggd/mruby-minigame.git'}, # need allogro5/allegro.h
   {:git => 'https://github.com/scalone/mruby-miniz.git'},
   {:git => 'https://github.com/matsumotory/mruby-mod-mruby-ext.git'},
@@ -297,7 +296,7 @@ end
   # {:git => 'https://github.com/kjunichi/mruby-mrmagick.git'}, # Magick++-config
   # {:git => 'https://github.com/mattn/mruby-msagent.git'}, # Windows only
   # {:git => 'https://github.com/pepabo/mruby-msd.git'},  # mysql_config
-  # {:git => 'https://github.com/suzukaze/mruby-msgpack.git'},  # test crush(11)
+  # {:git => 'https://github.com/suzukaze/mruby-msgpack.git'},  # test crash(11)
   {:git => 'https://github.com/iij/mruby-mtest.git'},
   {:git => 'https://github.com/ksss/mruby-murmurhash1.git'},
   {:git => 'https://github.com/ksss/mruby-murmurhash2.git'},
@@ -308,11 +307,11 @@ end
   # {:git => 'https://github.com/matsumotory/mruby-netlink.git'}, # need asm/types.h
   # {:git => 'https://github.com/pyama86/mruby-network-analyzer.git'}, # build error(sigwaitinfo, mrb_float)
   {:git => 'https://github.com/matsumotory/mruby-ngx-mruby-ext.git'},
-  # {:git => 'https://github.com/matsumotory/mruby-oauth.git', :lib => 'pcre'}, # test KO(1) need forum json
+  {:git => 'https://github.com/matsumotory/mruby-oauth.git', :lib => 'pcre'},
   # {:git => 'https://github.com/tk3/mruby-odbc.git'},  # need sql.h
-  {:git => 'https://github.com/mruby-Forum/mruby-onig-regexp.git', :branch => 'support-mruby-latest-version-2.0.1'}, # origin {:git => 'https://github.com/mattn/mruby-onig-regexp.git'},
+  # {:git => 'https://github.com/mattn/mruby-onig-regexp.git'}, # 'build error: https://github.com/mruby-Forum/mruby-onig-regexp.git', :branch => 'support-mruby-latest-version-2.0.1'}, # origin {:git => 'https://github.com/mattn/mruby-onig-regexp.git'},
   {:git => 'https://github.com/k0kubun/mruby-open3.git'},
-  # {:git => 'https://github.com/fastly/mruby-optparse.git'}, # test KO(1) Forum onig_regexp
+  {:git => 'https://github.com/fastly/mruby-optparse.git'},
   # {:git => 'https://github.com/hanachin/mruby-opvault.git'},  # need openssl/err.h
   {:git => 'https://github.com/appPlant/mruby-os.git'},
   # {:git => 'https://github.com/ksss/mruby-ostruct.git'}, # test KO(1) Crash(9)
@@ -321,7 +320,7 @@ end
   # {:git => 'https://github.com/IceDragon200/mruby-oui'}, # need oui.h
   ### {:git => 'https://github.com/iij/mruby-pack.git'},  # IIJ -> included
   {:git => 'https://github.com/Asmod4n/mruby-passwdqc'},
-  {:git => 'https://github.com/mattn/mruby-pcre-regexp.git'},
+  # {:git => 'https://github.com/mattn/mruby-pcre-regexp.git'}, # test abort
   # {:git => 'https://github.com/dabroz/mruby-perlin-noise.git', :dep => ['https://github.com/iij/mruby-mtest.git']}, # test undefined method 'instance_methods'
   {:git => 'https://github.com/Asmod4n/mruby-phr.git'},
   {:git => 'https://github.com/cadwallion/mruby-pid.git'},
@@ -331,14 +330,14 @@ end
   # {:git => 'https://github.com/pbosetti/mruby-plplot.git'}, # need plConfig.h
   {:git => 'https://github.com/luisbebop/mruby-polarssl.git'},
   {:git => 'https://github.com/Asmod4n/mruby-poll.git'},
-  # {:git => 'https://github.com/nsheremet/mruby-pong.git'},  # NameError (SimpleTest)
+  # {:git => 'https://github.com/nsheremet/mruby-pong.git'},  # Test hangup
   # {:git => 'https://github.com/udzura/mruby-posix_ipc.git'},  # need mqueue.h
   # {:git => 'https://github.com/Asmod4n/mruby-postgresql.git'}, # clone error
   {:git => 'https://github.com/Asmod4n/mruby-proc-irep-ext.git'},
-  # {:git => 'https://github.com/iij/mruby-process.git'}, # test Crash(1) Forum {:git => 'https://github.com/mruby-Forum/mruby-process.git' , :branch => 'support-mruby-latest-version-2.0.1'}
+  {:git => 'https://github.com/iij/mruby-process.git'},
   {:git => 'https://github.com/appPlant/mruby-process.git'},
-  # {:git => 'https://github.com/hfm/mruby-publicsuffix.git'}, # test KO(1) Forum onig-regexp
-  {:git => 'https://github.com/h2so5/mruby-pure-regexp.git'},
+  {:git => 'https://github.com/hfm/mruby-publicsuffix.git'},
+  # {:git => 'https://github.com/h2so5/mruby-pure-regexp.git'}, # test abort: SEGV?
   {:git => 'https://github.com/mruby-zest/mruby-qml-parse'},
   # {:git => 'https://github.com/mruby-zest/mruby-qml-spawn'},
   # {:git => 'https://github.com/scalone/mruby-qrcode.git'},  # test KO(1)
@@ -346,32 +345,32 @@ end
   # {:git => 'https://github.com/ksss/mruby-rake.git'}, # implicit declaration invalid in C99
   # {:git => 'https://github.com/matsumotory/mruby-random.git'},  # build error (random.o)
   # {:git => 'https://github.com/UniTN-Mechatronics/mruby-raspberry.git'},  # need wiringPi.h
-  {:git => 'https://github.com/mruby-Forum/mruby-rational.git', :branch => 'support-mruby-2.0.0'}, # test Crash(21) 'https://github.com/dyama/mruby-rational.git'
+  ### {:git => 'https://github.com/dyama/mruby-rational.git'},  # mruby inclued
   # {:git => 'https://github.com/matsumotory/mruby-rcon.git'},  # need sys/eventfd.h
-  # {:git => 'https://github.com/matsumotory/mruby-redis.git'}, # test crush(95)
+  # {:git => 'https://github.com/matsumotory/mruby-redis.git'}, # test crash(97)
   {:git => 'https://github.com/Asmod4n/mruby-redis-ae.git'},
   # {:git => 'https://github.com/yukirii/mruby-redis-cluster.git'}, # test Crash(98)
   {:git => 'https://github.com/iij/mruby-regexp-pcre.git'},
-  # {:git => 'https://github.com/takumakume/mruby-renice.git'}, # test KO(1) crush(2)
+  # {:git => 'https://github.com/takumakume/mruby-renice.git'}, # test KO(1) crash(1)
   # {:git => 'https://github.com/mattn/mruby-require.git'}, # need mruby.h
-  # {:git => 'https://github.com/ksss/mruby-research.git'}, # test Crash(5)
-  # {:git => 'https://github.com/harasou/mruby-resource.git'},  # test crush(4)
+  # {:git => 'https://github.com/ksss/mruby-research.git'}, # build error: old api?
+  # {:git => 'https://github.com/harasou/mruby-resource.git'},  # test crash(3)
   {:git => 'https://github.com/scalone/mruby-ripemd.git'},
-  # {:git => 'https://github.com/emsk/mruby-romajify.git'}, # test KO(1) Forum onig_regexp test Crash(183)
+  # {:git => 'https://github.com/emsk/mruby-romajify.git'}, # Crash(183)
   # {:git => 'https://github.com/schmurfy/mruby-rubyffi-compat.git'}, # need ffi.h
   # {:git => 'https://github.com/haconiwa/mruby-seccomp.git'},  # need elf.h
   {:git => 'https://github.com/Asmod4n/mruby-secure-compare.git'},
   {:git => 'https://github.com/monochromegane/mruby-secure-random.git'},
   {:git => 'https://github.com/monami-ya-mrb/mruby-serialport.git'},
-  # {:git =>'https://github.com/yui-knk/mruby-set.git'}, #forum OK {:git =>'https://github.com/mruby-Forum/mruby-set.git', :branch => 'support-mruby-2.0.0'}
+  # {:git =>'https://github.com/yui-knk/mruby-set.git'}, # Crash(25)
   # {:git => 'https://github.com/katzer/mruby-sftp.git'},# undefined method `rm_rf'
   # {:git => 'https://github.com/appplant/mruby-sftp-glob.git'},# undefined method `rm_rf'
   {:git => 'https://github.com/mattn/mruby-sha1.git'},
-  {:git => 'https://github.com/h2so5/mruby-sha2.git'}, 
+  # {:git => 'https://github.com/h2so5/mruby-sha2.git'},  # Crash(3)
   {:git => 'https://github.com/katzer/mruby-shelf.git', :lib => 'pcre'},
   {:git => 'https://github.com/katzer/mruby-shelf-deflater.git'},
-  # {:git => 'https://github.com/k0kubun/mruby-shellwords.git'}, # test KO(1) Forum onig_regexp
-  # {:git => 'https://github.com/monochromegane/mruby-sidekiq-client.git'}, # test crush(95)
+  {:git => 'https://github.com/k0kubun/mruby-shellwords.git'},
+  # {:git => 'https://github.com/monochromegane/mruby-sidekiq-client.git'}, # Crash(103)
   {:git => 'https://github.com/ksss/mruby-signal.git'},
   # {:git => 'https://github.com/pyama86/mruby-signal-thread.git'}, # compile error (sigwaitinfo)
   # {:git => 'https://github.com/iij/mruby-simple-random.git'}, # Don't know how to rake
@@ -379,16 +378,16 @@ end
   {:git => 'https://github.com/y-ken/mruby-simplehttp-socket.git'},
   {:git => 'https://github.com/matsumotory/mruby-simplehttpserver.git', :lib => 'pcre'},
   {:git => 'https://github.com/Asmod4n/mruby-simplemsgpack.git'},
-  # {:git => 'https://github.com/matsumotory/mruby-simpletest.git'}, # test aborted
-  # {:git => 'https://github.com/mattn/mruby-sinatic.git'}, # test rake aborted
+  {:git => 'https://github.com/matsumotory/mruby-simpletest.git'},  # 'https://github.com/mruby-Forum/mruby-simpletest.git', :branch => 'fix-mruby-2.1.0-test'}, # original: 
+  # {:git => 'https://github.com/mattn/mruby-sinatic.git'}, # test rake aborted (mruby-uv: old API)
   {:git => 'https://github.com/ksss/mruby-singleton.git'},
   {:git => 'https://github.com/ksss/mruby-siphash.git'},
-  {:git => 'https://github.com/matsumotory/mruby-sleep.git'},
-  # {:git => 'https://github.com/mruby-Forum/mruby-json.git' , :branch => 'support-mruby-2.0.1'},  
-  # {:git => 'https://github.com/nsheremet/mruby-smallhttp.git'}, # test error
+  # {:git => 'https://github.com/matsumotory/mruby-sleep.git'}, # Move to mruby/mrbgems
+  # {:git => 'https://github.com/mattn/mruby-json.git'},  # KO(1)
+  {:git => 'https://github.com/nsheremet/mruby-smallhttp.git'},
   ### {:git => 'https://github.com/iij/mruby-socket.git'},  # IIJ -> included
-  # {:git => 'https://github.com/matsumotory/mruby-spdy.git'},  # autoreconf -i failed
-  # {:git => 'https://github.com/k0kubun/mruby-specinfra.git'}, # test KO(1) Forum onig regexp
+  # {:git => 'https://github.com/matsumotory/mruby-spdy.git'},  # build error: openssl/ssl.h not found
+  {:git => 'https://github.com/k0kubun/mruby-specinfra.git'},
   {:git => 'https://github.com/jbreeden/mruby-sqlite.git'},
   # {:git => 'https://github.com/mattn/mruby-sqlite3.git'}, # test rake aborded
   # {:git => 'https://github.com/katzer/mruby-ssh.git'}, # undefined method `rm_rf'
@@ -397,18 +396,20 @@ end
   {:git => 'https://github.com/appPlant/mruby-string-ext-latin9.git'},
   {:git => 'https://github.com/Asmod4n/mruby-string-is-utf8.git'},
   {:git => 'https://github.com/hanachin/mruby-string-xor.git'},
-  {:git => 'https://github.com/ksss/mruby-stringio.git'},
+  # {:git => 'https://github.com/ksss/mruby-stringio.git'}, # Crash(7)
   # {:git => 'https://github.com/naritta/mruby-strptime.git'},  # implicitly declaring library function
   {:git => 'https://github.com/pyama86/mruby-sysconf.git'},
   {:git => 'https://github.com/iij/mruby-syslog.git'},
   {:git => 'https://github.com/Asmod4n/mruby-sysrandom.git'},
-  # {:git => 'https://github.com/nsheremet/mruby-tbot.git'},  # test KO(1) crush(4)
+  # {:git => 'https://github.com/nsheremet/mruby-tbot.git'},  # Crash(4)
   {:git => 'https://github.com/iij/mruby-tempfile.git'},
   {:git => 'https://github.com/appPlant/mruby-terminal-table.git'},
-  # {:git => 'https://github.com/mattn/mruby-thread.git'}, # test KO(1)
+  # {:git => 'https://github.com/mattn/mruby-thread.git'}, # test hangup
   {:git => 'https://github.com/monochromegane/mruby-time-strftime.git'},
   # {:git => 'https://github.com/matsumotory/mruby-timer-thread.git'},  # compile error (sigwaitinfo)
-  {:git => 'https://github.com/mimaki/mruby-tiny-io.git'},
+=end
+  {:git => 'https://github.com/mimaki/mruby-tiny-io.git'},  # Crash(1)
+=begin
   {:git => 'https://github.com/katzer/mruby-tiny-opt-parser.git'},
   {:git => 'https://github.com/matsumotory/mruby-tinymt.git'},
   {:git => 'https://github.com/h2so5/mruby-tinyxml2.git'},
@@ -421,16 +422,16 @@ end
   {:git => 'https://github.com/mattn/mruby-updategems.git'},
   {:git => 'https://github.com/Asmod4n/mruby-uri-parser.git'},
   {:git => 'https://github.com/matsumotory/mruby-userdata.git'},
-  # {:git => 'https://github.com/mattn/mruby-uv.git'},  # test rake aborted
+  # {:git => 'https://github.com/mattn/mruby-uv.git'},  # build error: MRB_TT_HAS_BASIC
   # {:git => 'https://github.com/mattn/mruby-v8.git'},  # need v8.h
-  {:git => 'https://github.com/matsumotory/mruby-vedis.git'}, # test KO(1)
+  # {:git => 'https://github.com/matsumotory/mruby-vedis.git'}, # test KO(5)
   # {:git => 'https://github.com/matsumotory/mruby-virtualing.git'},  # need libcgroup.h
   {:git => 'https://github.com/dearblue/mruby-weakref.git'},
   # {:git => 'https://github.com/ppibburr/mruby-webkit-1.git'}, # need ffi.h
   # {:git => 'https://github.com/ppibburr/mruby-webkit-3.git'}, # need ffi.h
   # {:git => 'https://github.com/sdottaka/mruby-win32ole.git'}, # Windows only
   {:git => 'https://github.com/mattn/mruby-winapp.git'},
-  # {:git => 'https://github.com/mruby-Forum/mruby-WiringPi.git', :branch => 'fix-build'},  # original: 'https://github.com/akiray03/mruby-WiringPi.git'  # compile error (linux/spi/spidev.h)
+  # {:git => 'https://github.com/akiray03/mruby-WiringPi.git'}, # compile error (linux/spi/spidev.h)
   {:git => 'https://github.com/Asmod4n/mruby-wslay'},
   {:git => 'https://github.com/mrbgems/mruby-yaml.git', :incpath => '/opt/local/include', :libpath => '/opt/local/lib'}, # origin: 'https://github.com/hone/mruby-yaml.git'
   {:git => 'https://github.com/katzer/mruby-yeah.git', :lib => 'pcre'}, 
