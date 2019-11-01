@@ -91,7 +91,7 @@ end
 # main
 #
 
-mrbgems = CSV.read 'mgemlist.csv'
+mrbgems = CSV.read('mgemlist.csv', encoding: 'utf-8')
 mrbgems.delete_at(0)  # delete header
 
 _mrbgem = nil

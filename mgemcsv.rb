@@ -24,7 +24,7 @@ repolist.map {|repo|
 # p repos.sort_by {|repo| repo[0].downcase}
 
 # generate CSV
-CSV.open("mgemlist.csv", "wb") {|csv|
+CSV.open('mgemlist.csv', 'w:utf-8') {|csv|
   csv << [
     'Name', 'Author', 'Description', 'Website',
     'Repository', 'Repo Options', 'Protocol'
