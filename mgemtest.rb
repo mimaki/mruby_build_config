@@ -97,8 +97,6 @@ mrbgems.delete_at(0)  # delete header
 _mrbgem = nil
 MRBGEM.verbose = $DEBUG
 
-cnt = 0
-
 # test mrbgems
 mrbgems.each_with_index {|mgem, i|
   _mrbgem = MRBGEM.new(*mgem)
@@ -113,7 +111,4 @@ mrbgems.each_with_index {|mgem, i|
   result = _mrbgem.result
   puts result
   puts
-
-  cnt += 1
-  break if cnt >= 3 # for debug
 }
