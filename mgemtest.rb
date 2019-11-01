@@ -58,6 +58,11 @@ class MRBGEM
     p e
   end
 
+  def cleanup
+    FileUtils.rm_rf "../mruby/build/test-#{@name}"
+    FileUtils.rm_rf "../mruby/build/repos/test-#{@name}"
+  end
+
   def parse_result(key)
     `grep #{sprintf("%7s:", key)} #{@logfile}`.lines.map {|ln|
       ln[8..-1].to_i
@@ -91,22 +96,27 @@ end
 # main
 #
 
+start = ARGV[0] ? ARGV[0].to_i : 1
+start = 1 if start < 1
+
 mrbgems = CSV.read('mgemlist.csv', encoding: 'utf-8')
 mrbgems.delete_at(0)  # delete header
+count = ARGV[1] ? ARGV[1].to_i : mrbgems.size
 
 _mrbgem = nil
 MRBGEM.verbose = $DEBUG
 
 # test mrbgems
-mrbgems.each_with_index {|mgem, i|
+mrbgems[start-1, count].each_with_index {|mgem, i|
   _mrbgem = MRBGEM.new(*mgem)
 
-  title = "[#{i+1}/#{mrbgems.size}] << #{_mrbgem.name} >>"
+  title = "#{Time.now.strftime('%H:%M:%S')} [#{start+i}/#{mrbgems.size}] << #{_mrbgem.name} >>"
   puts title
   
   _mrbgem.make_config
 
   _mrbgem.test
+  _mrbgem.cleanup
 
   result = _mrbgem.result
   puts result
