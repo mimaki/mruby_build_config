@@ -9,7 +9,7 @@ LOGDIR = './log'
 # MRBGEM class
 class MRBGEM
   @@verbose = false
-  attr_reader :name, :author, :desc, :site, :repo, :opt, :prot
+  attr_reader :name, :author, :desc, :site, :repo, :opt, :prot, :config
   
   def initialize(*args)
     # ["Name", "Author", "Description", "Website", "Repository", "Repo Options", "Protocol"]
@@ -28,17 +28,28 @@ class MRBGEM
 
     # make build_config
     build_config = ERB.new(File.read('./mgem_build_config.erb')).result
-    puts config if $DEBUG
+    puts build_config if $DEBUG
     File.open(File.join(@logdir, 'mgem_build_config.rb'), 'w') {|f|
       f.write(build_config)
     }
   end
 
+  def make_makefile
+    # make Makefile
+    @config = File.join('../mruby_build_config', @logdir, 'mgem_build_config.rb')
+    makefile = ERB.new(File.read('./Makefile.erb')).result
+    puts makefile if $DEBUG
+    File.open(File.join(@logdir, 'Makefile'), 'w') {|f|
+      f.write(makefile)
+    }
+  end
+
   def test
-    config = File.join('../mruby_build_config', @logdir, 'mgem_build_config.rb')
+    # config = File.join('../mruby_build_config', @logdir, 'mgem_build_config.rb')
     File.open(@logfile, "w") {|log|
       begin
-        Open3.popen3("MRUBY_CONFIG=#{config} make -C ../mruby test") {|_i, o, e, w|
+        # Open3.popen3("MRUBY_CONFIG=#{config} make -C ../mruby test") {|_i, o, e, w|
+        Open3.popen3("make -C #{@logdir}") {|_i, o, e, w|
           o.each {|line|
             puts line if @@verbose
             log.puts line
@@ -114,6 +125,7 @@ mrbgems[start-1, count].each_with_index {|mgem, i|
   puts title
   
   _mrbgem.make_config
+  _mrbgem.make_makefile
 
   _mrbgem.test
   _mrbgem.cleanup
