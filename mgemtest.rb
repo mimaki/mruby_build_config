@@ -75,9 +75,20 @@ class MRBGEM
   end
 
   def parse_result(key)
-    `grep #{sprintf("%7s:", key)} #{@logfile}`.lines.map {|ln|
-      ln[8..-1].to_i
-    }
+    begin
+      `grep #{sprintf("%7s:", key)} #{@logfile}`.lines.map {|ln|
+        ln[8..-1].to_i
+      }
+    rescue  # for Windows
+      `find #{sprintf("%7s:", key).inspect} #{@logfile}`.lines[2..-1].map {|ln|
+        ln[8..-1].to_i
+      }
+    end
+  end
+
+  def tail(file, lines=3)
+    logs = File.readlines(file)
+    logs[-lines, lines].join
   end
 
   def result
@@ -97,7 +108,7 @@ class MRBGEM
         res << "\n"
       }
     else
-      res = `tail -n 3 #{@logfile}`
+      res = tail(@logfile)  #`tail -n 3 #{@logfile}`
     end
     res
   end
