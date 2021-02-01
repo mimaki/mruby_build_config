@@ -205,7 +205,7 @@ MRuby::GemBox.new do |conf|
   conf.gem :git => 'https://github.com/chasonr/mruby-bignum.git'
   conf.gem :git => 'https://github.com/nsheremet/mruby-smallhttp.git'
   conf.gem :git => 'https://github.com/matsumotory/mruby-correlation.git'
-  conf.gem :git => 'https://github.com/Mav7/mruby-ansi-colors.git'
+  conf.gem :git => 'https://github.com/mruby-Forum/mruby-ansi-colors.git'
   conf.gem :git => 'https://github.com/pyama86/mruby-network-analyzer.git'
   conf.gem :git => 'https://github.com/pbosetti/mruby-plplot.git'
   conf.gem :git => 'https://github.com/mattn/mruby-sinatic.git'

@@ -5,15 +5,18 @@
 ## セットアップするもの
 ### mruby開発環境
 - Cコンパイラ
-- GNU Bison
 - CRuby
 
+#### mruby 2.1.2以降、mrubyのビルドにGNU Bisonは不要になりました。
 
 ## ソース取得
 
 ```bash
 $ cd <WORKDIR>  # e.g. ~/mrubytest
 $ git clone https://github.com/mruby-Forum/mruby.git
+$ cd mruby
+$ git checkout <revision/tag for test>  # e.g., 2.1.2-rc2
+$ cd ..
 $ git clone https://bitbucket.org/scskq/mruby_build_config.git
 $ cd mruby_build_config
 ```
@@ -37,6 +40,20 @@ mruby_build_configディレクトリ内で以下を実行する。
 
 
 # 標準ライブラリテスト
+
+1. mgemlist更新  
+```sh
+$ ruby mgemcsv.rb
+```
+2. 前回のテスト結果の削除  
+テスト結果を削除する場合には`log`ディレクトリ配下を削除する。
+
+3. テスト実行  
+```sh
+$ ruby mgemtest.rb
+```
+
+# 標準ライブラリテスト (old ver.)
 
 1. core_test_build_config.rbを編集  
 テスト環境に応じたコンパイルオプションであるか確認し、必要に応じて編集する。
