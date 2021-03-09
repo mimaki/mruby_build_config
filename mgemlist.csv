@@ -71,7 +71,7 @@ mruby-eventfd,MATSUMOTO Ryosuke,Eventfd class,https://github.com/matsumotory/mru
 mruby-fast-remote-check,MATSUMOTO Ryosuke,FastRemoteCheck can perform port listening check at high speed using raw socket,https://github.com/matsumotory/mruby-fast-remote-check,https://github.com/matsumotory/mruby-fast-remote-check.git,"",git
 mruby-fiberpool,mattn,mruby port of fiberpool,https://github.com/mattn/mruby-fiberpool,https://github.com/mattn/mruby-fiberpool.git,"",git
 mruby-file-access,takumakume,File access class,https://github.com/takumakume/mruby-file-access,https://github.com/takumakume/mruby-file-access.git,"",git
-mruby-file-fnmatch,katzer,File.fnmatch(),https://github.com/appplant/mruby-file-fnmatch,https://github.com/appplant/mruby-file-fnmatch.git,"",git
+mruby-file-fnmatch,katzer,File.fnmatch(),https://github.com/katzer/mruby-file-fnmatch,https://github.com/katzer/mruby-file-fnmatch.git,"",git
 mruby-file-stat,ksss,File::Stat class implementation,https://github.com/ksss/mruby-file-stat,https://github.com/ksss/mruby-file-stat.git,"",git
 mruby-filemagic,k0u5uk3,filemagic class implementation,https://github.com/k0u5uk3/mruby-filemagic.git,https://github.com/k0u5uk3/mruby-filemagic.git,"",git
 mruby-float4,Tomasz Dabrowski,small vector classes for mruby,https://github.com/dabroz/mruby-float4,https://github.com/dabroz/mruby-float4.git,"",git
@@ -150,9 +150,10 @@ mruby-lzma,dearblue,mruby bindings for lzma,https://github.com/dearblue/mruby-lz
 mruby-m2x,AT&T M2X Team,Client library for AT&T’s M2X API,https://github.com/attm2x/m2x-mruby,https://github.com/attm2x/m2x-mruby.git,"",git
 mruby-markdown,Carson McDonald,Markdown library,https://github.com/carsonmcdonald/mruby-markdown,https://github.com/carsonmcdonald/mruby-markdown.git,--recursive,git
 mruby-marshal,Takeshi Watanabe,Marshal module for mruby,https://github.com/take-cheeze/mruby-marshal,https://github.com/take-cheeze/mruby-marshal.git,"",git
+mruby-marshal-c,Lanza Schneider,Marshal module for mruby written in C-language with full object-link & symbol link support,https://github.com/LanzaSchneider/mruby-marshal-c,https://github.com/LanzaSchneider/mruby-marshal-c.git,"",git
 mruby-marshal-fast,Carlo Prelz,"Marshal module for mruby written in C, with speed advantages",https://github.com/asfluido/mruby-marshal-fast,https://github.com/asfluido/mruby-marshal-fast.git,"",git
 mruby-matrix,listrophy,Matrix and vector library,https://github.com/listrophy/mruby-matrix,https://github.com/listrophy/mruby-matrix.git,"",git
-mruby-maxminddb,Kenichi Mitsugi,mruby [GeoIP2 MaxMind DB](http://maxmind.github.io/MaxMind-DB/) reader,https://github.com/happysiro/mruby-maxminddb,https://github.com/happysiro/mruby-maxminddb,"",git
+mruby-maxminddb,Kenichi Mitsugi,mruby [GeoIP2 MaxMind DB](https://maxmind.github.io/MaxMind-DB/) reader,https://github.com/happysiro/mruby-maxminddb,https://github.com/happysiro/mruby-maxminddb,"",git
 mruby-md5,mattn,MD5 Hash Alghorithm,https://github.com/mattn/mruby-md5,https://github.com/mattn/mruby-md5.git,"",git
 mruby-mecab,mattn,Japanese morphological analyzer,https://github.com/mattn/mruby-mecab,https://github.com/mattn/mruby-mecab.git,"",git
 mruby-memcached,MATSUMOTO Ryosuke,libmemcached bindings by mruby,https://github.com/matsumotory/mruby-memcached,https://github.com/matsumotory/mruby-memcached.git,"",git
@@ -182,7 +183,7 @@ mruby-onig-regexp,mattn,Onigumo Regular Expression,https://github.com/mattn/mrub
 mruby-open3,Takashi Kokubun,"Popen, but with stderr, too",https://github.com/k0kubun/mruby-open3,https://github.com/k0kubun/mruby-open3.git,"",git
 mruby-optparse,fastly,OptionParser ported to mruby,https://github.com/fastly/mruby-optparse,https://github.com/fastly/mruby-optparse.git,"",git
 mruby-opvault,Seiei Miyagi,decrypt OPVault,https://github.com/hanachin/mruby-opvault,https://github.com/hanachin/mruby-opvault.git,"",git
-mruby-os,katzer,Determine system and binary capabilities,https://github.com/appPlant/mruby-os,https://github.com/appPlant/mruby-os.git,"",git
+mruby-os,katzer,Determine system and binary capabilities,https://github.com/katzer/mruby-os,https://github.com/katzer/mruby-os.git,"",git
 mruby-ostruct,ksss,OpenStruct binding in mruby,https://github.com/ksss/mruby-ostruct,https://github.com/ksss/mruby-ostruct.git,"",git
 mruby-otp,Emanuele Vicentini,Generate and verify OTPs (HOTP and TOTP),https://github.com/baldowl/mruby-otp,https://github.com/baldowl/mruby-otp.git,"",git
 mruby-otpauth,qtakamitsu,One time password class,https://github.com/tk3/mruby-otpauth,https://github.com/tk3/mruby-otpauth.git,"",git
@@ -204,7 +205,7 @@ mruby-posix_ipc,Uchio Kondo,A mgem for access to POSIX IPC API,https://github.co
 mruby-postgresql,Hendrik Beskow,Postgresql adapter for mruby,https://github.com/Asmod4n/mruby-postgresql,https://github.com/Asmod4n/mruby-postgresql.git,"",git
 mruby-proc-irep-ext,Hendrik Beskow,irep extensions for Proc class,https://github.com/Asmod4n/mruby-proc-irep-ext,https://github.com/Asmod4n/mruby-proc-irep-ext.git,"",git
 mruby-process,"Internet Initiative Japan., Inc.","Process interface (waitpid, pid, kill, fork, ppid)",https://github.com/iij/mruby-process,https://github.com/iij/mruby-process.git,"",git
-mruby-process2,katzer,Implementation of the Ruby 2.4.1 Core Library Process for mruby.,https://github.com/appPlant/mruby-process,https://github.com/appPlant/mruby-process.git,"",git
+mruby-process2,katzer,Implementation of the Ruby 2.4.1 Core Library Process for mruby.,https://github.com/katzer/mruby-process,https://github.com/katzer/mruby-process.git,"",git
 mruby-publicsuffix,Okumura Takahiro,"mruby port of publicsuffix-ruby. PublicSuffix can parse and decompose a domain name into top level domain, domain and subdomains.",https://github.com/hfm/mruby-publicsuffix,https://github.com/hfm/mruby-publicsuffix.git,"",git
 mruby-pure-regexp,h2so5,Pure mruby Regexp,https://github.com/h2so5/mruby-pure-regexp,https://github.com/h2so5/mruby-pure-regexp.git,"",git
 mruby-qml-parse,fundamental,QML Parser for mruby,https://github.com/mruby-zest/mruby-qml-parse,https://github.com/mruby-zest/mruby-qml-parse,"",git
@@ -233,7 +234,7 @@ mruby-secure-random,monochromegane,SecureRandom class,https://github.com/monochr
 mruby-serialport,"Monami-ya LLC, Japan",Serialport support,https://github.com/monami-ya-mrb/mruby-serialport/,https://github.com/monami-ya-mrb/mruby-serialport.git,"",git
 mruby-set,yui-knk,Set class,https://github.com/yui-knk/mruby-set,https://github.com/yui-knk/mruby-set.git,"",git
 mruby-sftp,katzer,Simple SFTP client for mruby,https://github.com/katzer/mruby-sftp,https://github.com/katzer/mruby-sftp.git,"",git
-mruby-sftp-glob,katzer,SFTP::Dir#glob extension for mruby-sftp,https://github.com/appplant/mruby-sftp-glob,https://github.com/appplant/mruby-sftp-glob.git,"",git
+mruby-sftp-glob,katzer,SFTP::Dir#glob extension for mruby-sftp,https://github.com/katzer/mruby-sftp-glob,https://github.com/katzer/mruby-sftp-glob.git,"",git
 mruby-sha1,mattn,SHA1 Hash Alghorithm,https://github.com/mattn/mruby-sha1,https://github.com/mattn/mruby-sha1.git,"",git
 mruby-sha2,h2so5,SHA2 Hash Algorithm,https://github.com/h2so5/mruby-sha2,https://github.com/h2so5/mruby-sha2.git,"",git
 mruby-shelf,katzer,modular webserver interface inspired by rack,https://github.com/katzer/mruby-shelf,https://github.com/katzer/mruby-shelf.git,"",git
@@ -261,7 +262,7 @@ mruby-sqlite3,mattn,SQLite3 Database,https://github.com/mattn/mruby-sqlite3,http
 mruby-ssh,katzer,Simple SSH client for mruby,https://github.com/katzer/mruby-ssh,https://github.com/katzer/mruby-ssh.git,"",git
 mruby-statemachine,Hendrik Beskow,a tiny state machine for mruby,https://github.com/ascaridol/mruby-statemachine,https://github.com/ascaridol/mruby-statemachine.git,"",git
 mruby-string-crypt,mattn,implementation of String#crypt,https://github.com/mattn/mruby-string-crypt,https://github.com/mattn/mruby-string-crypt.git,"",git
-mruby-string-ext-latin9,katzer,Conversion from iso-8859-15 (Latin9) to UTF-8,https://github.com/appPlant/mruby-string-ext-latin9,https://github.com/appPlant/mruby-string-ext-latin9.git,"",git
+mruby-string-ext-latin9,katzer,Conversion from iso-8859-15 (Latin9) to UTF-8,https://github.com/katzer/mruby-string-ext-latin9,https://github.com/katzer/mruby-string-ext-latin9.git,"",git
 mruby-string-is-utf8,Hendrik Beskow,checks if a string is valid utf8,https://github.com/Asmod4n/mruby-string-is-utf8,https://github.com/Asmod4n/mruby-string-is-utf8.git,"",git
 mruby-string-xor,Seiei Miyagi,XOR two strings,https://github.com/hanachin/mruby-string-xor,https://github.com/hanachin/mruby-string-xor.git,"",git
 mruby-stringio,ksss,StringIO class,https://github.com/ksss/mruby-stringio,https://github.com/ksss/mruby-stringio.git,"",git
@@ -271,7 +272,7 @@ mruby-syslog,iij,Syslog binding,https://github.com/iij/mruby-syslog,https://gith
 mruby-sysrandom,Hendrik Beskow,Secure random number generation for mruby,https://github.com/Asmod4n/mruby-sysrandom,https://github.com/Asmod4n/mruby-sysrandom.git,"",git
 mruby-tbot,Nazarii Sheremet,MRuby wrapper for Telegram's Bot API,https://github.com/nsheremet/mruby-tbot,https://github.com/nsheremet/mruby-tbot.git,"",git
 mruby-tempfile,iij,Tempfile class,https://github.com/iij/mruby-tempfile,https://github.com/iij/mruby-tempfile.git,"",git
-mruby-terminal-table,katzer,"A fast and simple, yet feature rich ASCII table generator",https://github.com/appPlant/mruby-terminal-table,https://github.com/appPlant/mruby-terminal-table.git,"",git
+mruby-terminal-table,katzer,"A fast and simple, yet feature rich ASCII table generator",https://github.com/katzer/mruby-terminal-table,https://github.com/katzer/mruby-terminal-table.git,"",git
 mruby-thread,mattn,Thread Library,https://github.com/mattn/mruby-thread,https://github.com/mattn/mruby-thread.git,"",git
 mruby-time-strftime,monochromegane,Time#strftime for mruby,https://github.com/monochromegane/mruby-time-strftime,https://github.com/monochromegane/mruby-time-strftime.git,"",git
 mruby-timer-thread,MATSUMOTO Ryosuke,Timer Thread class,https://github.com/matsumotory/mruby-timer-thread,https://github.com/matsumotory/mruby-timer-thread.git,"",git
@@ -284,7 +285,7 @@ mruby-tty-screen,"Piotr Murach, Jeremy Jung",Detects terminal screen size,https:
 mruby-uchardet,Takeshi Watanabe,mruby binding of Mozilla's universal charset detector.,https://github.com/take-cheeze/mruby-uchardet/,https://github.com/take-cheeze/mruby-uchardet.git,"",git
 mruby-uname,MATSUMOTO Ryosuke,Uname class,https://github.com/matsumotory/mruby-uname,https://github.com/matsumotory/mruby-uname.git,"",git
 mruby-unbound,Kouichi Nakanishi,mruby client for Unbound (libunbound),https://github.com/keizo042/mruby-unbound,https://github.com/keizo042/mruby-unbound.git,"",git
-mruby-unicode-display_width,katzer,Monospace Unicode character width,https://github.com/appPlant/mruby-unicode-display_width,https://github.com/appPlant/mruby-unicode-display_width.git,"",git
+mruby-unicode-display_width,katzer,Monospace Unicode character width,https://github.com/katzer/mruby-unicode-display_width,https://github.com/katzer/mruby-unicode-display_width.git,"",git
 mruby-updategems,mattn,Rake task to update GEMs,https://github.com/mattn/mruby-updategems,https://github.com/mattn/mruby-updategems.git,"",git
 mruby-uri-parser,Hendrik Beskow,URI parser for mruby,https://github.com/Asmod4n/mruby-uri-parser,https://github.com/Asmod4n/mruby-uri-parser.git,"",git
 mruby-userdata,MATSUMOTO Ryosuke,"When shared mrb_state, you can share userdata objects between one Ruby code and the other.",https://github.com/matsumotory/mruby-userdata,https://github.com/matsumotory/mruby-userdata.git,"",git
