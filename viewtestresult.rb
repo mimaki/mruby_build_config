@@ -88,6 +88,7 @@ class MRBGEM
 
   def tail(file, lines=3)
     logs = File.readlines(file)
+    lines = logs.length if logs.length < lines
     logs[-lines, lines].join
   end
 
