@@ -96,6 +96,7 @@ mruby-gmp-bignum,Ray Chason,GMP-based Bignum implementation for mruby,https://gi
 mruby-gntp,mattn,Growl Notification Transfer Protocol,https://github.com/mattn/mruby-gntp,https://github.com/mattn/mruby-gntp.git,"",git
 mruby-gobject,ppibburr,Bindings to GObject. uses mruby-girffi,https://github.com/ppibburr/mruby-gobject,https://github.com/ppibburr/mruby-gobject.git,"",git
 mruby-gobject-introspection,ppibburr,bindings to GObjectIntrospection (libgirepository),https://github.com/ppibburr/mruby-gobject-introspection,https://github.com/ppibburr/mruby-gobject-introspection.git,"",git
+mruby-gosu,cyberarm,mruby wrapper for the Gosu game library,https://github.com/cyberarm/mruby-gosu,https://github.com/cyberarm/mruby-gosu.git,"",git
 mruby-growthforecast,MATSUMOTO Ryosuke,GrowthForecast client class,https://github.com/matsumotory/mruby-growthforecast,https://github.com/matsumotory/mruby-growthforecast.git,"",git
 mruby-gsl,"Paolo Bosetti, University of Trento",Wrapper to GNU Scientific Library (GSL).,https://github.com/UniTN-Mechatronics/mruby-gsl,https://github.com/UniTN-Mechatronics/mruby-gsl.git,"",git
 mruby-gtk2,ppibburr,Bindings to Gtk2. uses mruby-girffi,https://github.com/ppibburr/mruby-gtk2,https://github.com/ppibburr/mruby-gtk2.git,"",git
