@@ -21,6 +21,7 @@ mruby-base64,mattn,Base64 Encoder/Decoder,https://github.com/mattn/mruby-base64,
 mruby-bcrypt,Emanuele Vicentini,OpenBSD-style Blowfish-based password hashing,https://github.com/baldowl/mruby-bcrypt,https://github.com/baldowl/mruby-bcrypt.git,"",git
 mruby-bignum,Ray Chason,Self-contained Bignum implementation for mruby,https://github.com/chasonr/mruby-bignum,https://github.com/chasonr/mruby-bignum.git,"",git
 mruby-bin-mirb-hostbased,kyab,Hostbased mirb for serial connection,https://github.com/kyab/mruby-bin-mirb-hostbased,https://github.com/kyab/mruby-bin-mirb-hostbased.git,"",git
+mruby-bin-monolith,Chris Reuter,Tool to package mruby code in a single standalone executable,https://github.com/suetanvil/mruby-bin-monolith,https://github.com/suetanvil/mruby-bin-monolith.git,"",git
 mruby-bin-mruby-afl,Daniel Bovensiepen <daniel@bovensiepen.net>,mruby interpreter in american fuzzy lop persistent mode,https://github.com/bovi/mruby-bin-mruby-afl,https://github.com/bovi/mruby-bin-mruby-afl.git,"",git
 mruby-bin-scite-mruby,Takashi Sawanaka,A SciTE based text editor with mruby scripting extension,https://github.com/sdottaka/mruby-bin-scite-mruby,https://github.com/sdottaka/mruby-bin-scite-mruby.git,"",git
 mruby-blendish,Corey Powell,Duangle OUI-blendish bindings.,https://github.com/IceDragon200/mruby-blendish,https://github.com/IceDragon200/mruby-blendish,"",git
@@ -37,16 +38,18 @@ mruby-chipmunk2d,Corey Powell,chipmunk2d bindings,https://github.com/IceDragon20
 mruby-chrono,Hendrik Beskow,Steady and System clocks for mruby,https://github.com/Asmod4n/mruby-chrono,https://github.com/Asmod4n/mruby-chrono.git,"",git
 mruby-cipher,Seiei Miyagi,OpenSSL Cipher wrapper,https://github.com/hanachin/mruby-cipher,https://github.com/hanachin/mruby-cipher.git,"",git
 mruby-clang-plugin,Takeshi Watanabe,clang plugin to check mruby API call mistakes.,https://github.com/take-cheeze/mruby-clang-plugin,https://github.com/take-cheeze/mruby-clang-plugin.git,"",git
+mruby-cmake-build,Lanza Schneider,CMake configuration (CMakeLists.txt) generator for mruby.,https://github.com/LanzaSchneider/mruby-cmake-build,https://github.com/LanzaSchneider/mruby-cmake-build.git,"",git
 mruby-cocoa,Yuichiro MASUI,Interface to Cocoa based on Objective-C Runtime and mruby-cfunc.,https://github.com/mobiruby/mruby-cocoa,https://github.com/mobiruby/mruby-cocoa.git,"",git
 mruby-concurrently,Christopher Aue,A concurrency framework based on fibers,https://github.com/christopheraue/m-ruby-concurrently,https://github.com/christopheraue/m-ruby-concurrently.git,"",git
 mruby-config,MATSUMOTO Ryosuke,With mruby we continuously switching between Ruby and C code. mruby-config gives you an easy way to maintain configuration values on both sides.,https://github.com/matsumotory/mruby-config,https://github.com/matsumotory/mruby-config.git,"",git
 mruby-consul,Yohei Kawahara,Consul HTTP API Client.,https://github.com/inokappa/mruby-consul,https://github.com/inokappa/mruby-consul.git,"",git
 mruby-correlation,MATSUMOTO Ryosuke,Array extended for correlation coefficient,https://github.com/matsumotory/mruby-correlation,https://github.com/matsumotory/mruby-correlation.git,"",git
-mruby-crc,dearblue,Configurable general CRC calcurator for mruby,https://github.com/dearblue/mruby-crc,https://github.com/dearblue/mruby-crc.git,"",git
+mruby-crc,dearblue,Configurable general CRC calculator for mruby,https://github.com/dearblue/mruby-crc,https://github.com/dearblue/mruby-crc.git,"",git
 mruby-criu,MATSUMOTO Ryosuke,"CRIU, Checkpoint Restart In Userspace for Linux, class",https://github.com/matsumotory/mruby-criu,https://github.com/matsumotory/mruby-criu.git,"",git
 mruby-cross-compile-on-mac-osx,MATSUMOTO Ryosuke,"Cross compile osx, linux or win32 binary of mruby on Mac OSX",https://github.com/matsumotory/mruby-cross-compile-on-mac-osx,https://github.com/matsumotory/mruby-cross-compile-on-mac-osx.git,"",git
 mruby-curl,mattn,CURL HTTP Client,https://github.com/mattn/mruby-curl,https://github.com/mattn/mruby-curl.git,"",git
 mruby-curses,Jared Breeden,Curses for mruby. Links to NCurses or PDCurses.,https://github.com/jbreeden/mruby-curses,https://github.com/jbreeden/mruby-curses.git,"",git
+mruby-cyberarm_engine,cyberarm,Yet another framework for building games with Gosu,https://github.com/cyberarm/cyberarm_engine,https://github.com/cyberarm/cyberarm_engine.git,"",git
 mruby-czmq,Hendrik Beskow,mruby bindings for czmq.,https://github.com/Asmod4n/mruby-czmq,https://github.com/Asmod4n/mruby-czmq.git,"",git
 mruby-datadog,Yohei Kawahara,Datadog API Client.,https://github.com/inokappa/mruby-datadog,https://github.com/inokappa/mruby-datadog.git,"",git
 mruby-delegate,dearblue,delegate implementation for mruby,https://github.com/dearblue/mruby-delegate,https://github.com/dearblue/mruby-delegate.git,"",git
