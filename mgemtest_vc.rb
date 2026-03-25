@@ -4,7 +4,9 @@ require 'csv'
 require 'erb'
 
 # constants
-LOGDIR = './log'
+CURDIR = `cd`.chomp
+LOGDIR = File.join(CURDIR, 'log')
+MRBDIR = File.expand_path(File.join(CURDIR, '..', 'mruby'))
 
 # MRBGEM class
 class MRBGEM
@@ -34,41 +36,45 @@ class MRBGEM
     }
   end
 
-  def make_makefile
-    # make Makefile
-    # @config = File.join('../mruby_build_config', @logdir, 'mgem_build_config.rb')
-    makefile = ERB.new(File.read('./Makefile.erb')).result
-    puts makefile if $DEBUG
-    File.open(File.join(@logdir, 'Makefile'), 'w') {|f|
-      f.write(makefile)
-    }
-  end
+  # def make_makefile
+  #   # make Makefile
+  #   # @config = File.join('../mruby_build_config', @logdir, 'mgem_build_config.rb')
+  #   makefile = ERB.new(File.read('./Makefile.erb')).result
+  #   puts makefile if $DEBUG
+  #   File.open(File.join(@logdir, 'Makefile'), 'w') {|f|
+  #     f.write(makefile)
+  #   }
+  # end
 
-  def make_test_bat
-    # make test.bat
-    # @config = File.join('../mruby_build_config', @logdir, 'mgem_build_config.rb')
-    test_bat = ERB.new(File.read('./test_bat.erb')).result
-    puts test_bat if $DEBUG
-    File.open(File.join(@logdir, 'test.bat'), 'w') {|f|
-      f.write(test_bat)
-    }
-  end
+  # def make_test_bat
+  #   # make test.bat
+  #   # @config = File.join('../mruby_build_config', @logdir, 'mgem_build_config.rb')
+  #   test_bat = ERB.new(File.read('./test_bat.erb')).result
+  #   puts test_bat if $DEBUG
+  #   File.open(File.join(@logdir, 'testmgem.bat'), 'w') {|f|
+  #     f.write(test_bat)
+  #   }
+  # end
 
   def make_test_script
-    # make Makefile / test.bat
-    @config = File.join('../mruby_build_config', @logdir, 'mgem_build_config.rb')
+    # make Makefile / testmgem.bat
+    # @config = File.join('../mruby_build_config', @logdir, 'mgem_build_config.rb')
+    @config = File.join(@logdir, 'mgem_build_config.rb')
     # make_makefile
-    make_test_bat
+    # make_test_bat
   end
 
   def test
     # config = File.join('../mruby_build_config', @logdir, 'mgem_build_config.rb')
+    puts "logfile: #{@logfile}" if @@verbose
     File.open(@logfile, "w") {|log|
-      `pushd #{@logdir}`
+      # `cd #{MRBDIR}`
       begin
+        rakefile = File.join(MRBDIR, 'Rakefile')
+        puts "Rakefile: #{rakefile}" if @@verbose
         # Open3.popen3("MRUBY_CONFIG=#{config} make -C ../mruby test") {|_i, o, e, w|
         # Open3.popen3("make -C #{@logdir}") {|_i, o, e, w|
-        Open3.popen3("test") {|_i, o, e, w|
+        Open3.popen3({'MRUBY_CONFIG' => @config}, 'rake', '-f', rakefile, 'clean', 'all', 'test') {|_i, o, e, w|
           o.each {|line|
             puts line if @@verbose
             log.puts line
@@ -83,15 +89,14 @@ class MRBGEM
       rescue => e
         log.puts e
       end
-      `popd`
     }
   rescue => e
     p e
   end
 
   def cleanup
-    FileUtils.rm_rf "../mruby/build/test-#{@name}"
-    FileUtils.rm_rf "../mruby/build/repos/test-#{@name}"
+    FileUtils.rm_rf File.join(MRBDIR, 'build', "test-#{@name}")
+    FileUtils.rm_rf File.join(MRBDIR, 'build', 'repos', "test-#{@name}")
   end
 
   def parse_result(key)
