@@ -54,7 +54,6 @@ mruby-criu,MATSUMOTO Ryosuke,"CRIU, Checkpoint Restart In Userspace for Linux, c
 mruby-cross-compile-on-mac-osx,MATSUMOTO Ryosuke,"Cross compile osx, linux or win32 binary of mruby on Mac OSX",https://github.com/matsumotory/mruby-cross-compile-on-mac-osx,https://github.com/matsumotory/mruby-cross-compile-on-mac-osx.git,"",git
 mruby-curl,mattn,CURL HTTP Client,https://github.com/mattn/mruby-curl,https://github.com/mattn/mruby-curl.git,"",git
 mruby-curses,Jared Breeden,Curses for mruby. Links to NCurses or PDCurses.,https://github.com/jbreeden/mruby-curses,https://github.com/jbreeden/mruby-curses.git,"",git
-mruby-cyberarm_engine,cyberarm,Yet another framework for building games with Gosu,https://github.com/cyberarm/cyberarm_engine,https://github.com/cyberarm/cyberarm_engine.git,"",git
 mruby-datadog,Yohei Kawahara,Datadog API Client.,https://github.com/inokappa/mruby-datadog,https://github.com/inokappa/mruby-datadog.git,"",git
 mruby-delegate,dearblue,delegate implementation for mruby,https://github.com/dearblue/mruby-delegate,https://github.com/dearblue/mruby-delegate.git,"",git
 mruby-digest,"Internet Initiative Japan., Inc.","MD5, RMD160, SHA1, SHA256, SHA384, SHA512 and HMAC Digests.",https://github.com/iij/mruby-digest,https://github.com/iij/mruby-digest.git,"",git
@@ -317,4 +316,3 @@ mruby-zest,fundamental,Widget classes for the mruby-zest framework,https://githu
 mruby-zlib,Jared Breeden,ZLib bindings for mruby,https://github.com/jbreeden/mruby-zlib,https://github.com/jbreeden/mruby-zlib.git,"",git
 mruby-zmq,Hendrik Beskow,mruby bindings for libzmq4,https://github.com/zeromq/mruby-zmq,https://github.com/zeromq/mruby-zmq.git,"",git
 mruby-zstd,dearblue,mruby bindings for zstd,https://github.com/dearblue/mruby-zstd,https://github.com/dearblue/mruby-zstd.git,"",git
-typedargs,Hendrik Beskow,A tiny operator‑typed CLI language for structured data.,https://github.com/Asmod4n/typedargs,https://github.com/Asmod4n/typedargs.git,"",git
